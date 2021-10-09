@@ -1,0 +1,121 @@
+@import "var";
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin container {
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  padding: .5rem 2rem;
+  @include horontal-center-by-margin;
+}
+
+@mixin horontal-center-by-margin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin grid {
+  display: grid;
+}
+
+@mixin grid--center {
+  @include grid;
+  place-items: center;
+}
+
+@mixin gap($gap) {
+  column-gap: $gap;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex--space-between {
+  @include flex;
+  justify-content: space-between;
+}
+
+@mixin flex--start {
+  @include flex;
+  justify-content: flex-start;
+}
+
+@mixin flex--space-between--ver-center {
+  @include flex--space-between;
+  align-items: center;
+}
+
+@mixin flex--start--ver-base {
+  @include flex--start;
+  align-items: baseline;
+}
+
+@mixin flex--hor-center {
+  @include flex;
+  justify-content: center;
+}
+
+@mixin flex--hor-end {
+  @include flex;
+  justify-content: end;
+}
+
+@mixin flex--ver-center {
+  @include flex;
+  align-items: center;
+}
+
+@mixin flex--y-center {
+  @include flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin flex--xy-center {
+  @include flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex--y-space-between {
+  @include flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin kill-ul {
+  list-style-type: none;
+}
+
+@mixin kill {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin pointer-cursor {
+  cursor: pointer;
+}
+
+@mixin button--icon($w, $h) {
+  @include kill;
+  @include pointer-cursor;
+  width: $w;
+  height: $h;
+}
+
+@mixin button--icon--round($w, $h) {
+  @include button--icon($w, $h);
+  border-radius: 50%;
+}
+
+@mixin kill-anchore {
+  color: inherit;
+  text-decoration: none;
+}

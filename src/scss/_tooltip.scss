@@ -1,0 +1,22 @@
+// Version 2
+[data-title] {
+  position: relative;
+  text-decoration: underline dotted; 
+}
+[data-title]:hover::after,
+[data-title]:focus::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 60%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  width: auto;
+  white-space: nowrap;
+  background: transparent;
+  color: $color-text-primary;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.1);
+  font-size: 14px;
+  padding: 3px 5px;
+  z-index: 10;
+}

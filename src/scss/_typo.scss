@@ -1,0 +1,40 @@
+@mixin text--bold {
+  font-weight: bold;
+}
+
+@mixin text--uppercase {
+    text-transform: uppercase;
+}
+
+@mixin text--sm {
+  font-size: 0.75rem;
+}
+
+@mixin text--md {
+  font-size: 0.88rem;
+}
+
+@mixin text--md--bold {
+  @include text--md;
+  @include text--bold;
+}
+
+@mixin text--lg {
+  font-size: 1.25rem;
+}
+
+@mixin text--lg--bold {
+  @include text--lg;
+  @include text--bold;
+}
+
+@mixin text--lg--bold--uppercase {
+    @include text--lg--bold;
+    @include text--uppercase;
+  }
+
+@mixin text-limited {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

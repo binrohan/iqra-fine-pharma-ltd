@@ -1,0 +1,101 @@
+.product-card {
+    @include pointer-cursor;
+    @include flex--y-space-between;
+    padding: 5px;
+    width: 189px;
+    height: 100%;
+    border-radius: 0.25rem;
+    background: $color-foreground;
+    box-shadow: -2px 4px 3px 1px #a9a9a980;
+    position: relative;
+  
+    &__img {
+      img {
+        max-width: 100%;
+      }
+    }
+  
+    &__text {
+      padding: 10px;
+      &--type {
+        @include text--md--bold;
+        margin-bottom: 10px;
+      }
+  
+      &--name {
+        @include text-limited;
+        @include text--md;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+    }
+  
+    &__price {
+      @include flex--x--space-between--y--base;
+      margin-bottom: 10px;
+      &--current {
+        @include text--md--bold;
+        color: $color-parmary;
+      }
+  
+      &--original {
+        @include text--sm;
+        text-decoration: line-through;
+        color: $color-secondary;
+      }
+    }
+  
+    &__actions {
+      @include flex--x--space-between(2px);
+  
+      &--add-to-wishlist {
+        @include kill;
+        @include transition-ease;
+        @include pointer-cursor;
+        height: 2rem;
+        width: 2rem;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: -1px 1px 3px -1px #000000;
+  
+        &:hover {
+          background-color: $color-secondary;
+        }
+      }
+  
+      &--add-to-cart {
+        @include kill;
+        @include transition-ease;
+        @include pointer-cursor;
+        @include flex--x--space-between--y--center(5px);
+        color: $color-text-secondary;
+        background: $color-parmary;
+        height: 2rem;
+        padding: 8px;
+        border-radius: 1rem;
+        box-shadow: -1px 1px 3px -1px #000000;
+  
+        img {
+          width: 22px;
+          height: 22px;
+        }
+  
+        &:hover {
+          box-shadow: -2px 4px 6px -1px #444444;
+        }
+      }
+    }
+  
+    &__tag {
+      @include text--md--bold;
+      @include grid--xy--center;
+      top: 10px;
+      left: 0;
+      height: 17px;
+      position: absolute;
+      color: $color-text-secondary;
+      background: $color-parmary;
+      box-shadow: 1px 1px 2px 0px #000000a6;
+    }
+  }
+  

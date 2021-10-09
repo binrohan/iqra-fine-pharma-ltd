@@ -1,0 +1,38 @@
+@mixin gap($c: 0, $r: 0) {
+    column-gap: $c;
+    row-gap: $r;
+}
+
+@mixin flex {
+    display: flex;
+}
+
+
+@mixin flex--x--space-between($g: 0) {
+    @include flex;
+    @include gap($g);
+    justify-content: space-between;
+}
+
+@mixin flex--x--space-between--y--base {
+    @include flex--x--space-between;
+    align-items: baseline;
+}
+
+@mixin flex--x--space-between--y--center($c: 0) {
+    @include flex--x--space-between;
+    @include gap($c);
+    align-items: center;
+}
+
+@mixin flex--xy--center {
+    @include flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex--x--start--y--center {
+    @include flex;
+    justify-content: start;
+    align-items: center;
+}

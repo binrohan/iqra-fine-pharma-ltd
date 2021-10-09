@@ -1,0 +1,24 @@
+@import 'var';
+@import 'config';
+@import 'tooltip';
+@import 'mixins';
+@import 'flex';
+@import 'typo';
+@import 'grid';
+@import 'icon';
+@import 'classes';
+@import 'nav';
+@import 'slider';
+@import 'perks';
+@import 'product-row';
+@import 'product';
+@import 'footer';
+
+body{
+    background: white;
+    color: $color-text-primary;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+}
+

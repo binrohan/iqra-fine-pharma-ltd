@@ -1,0 +1,13 @@
+.bg-slider{
+    background: $color-bg;
+}
+
+.slider{
+    padding: 10px 0;
+    &__item{
+         
+        img{
+            max-width: 100%;
+        }
+    }
+}

@@ -1,0 +1,129 @@
+.bg-footer{
+    background: black;
+}
+
+.footer {
+    @include container;
+    color: $color-text-footer-2;
+  
+    h3 {
+      margin-bottom: 20px;
+      color: $color-text-footer;
+    }
+  
+    &__features {
+      @include flex--x--space-between;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgb(59, 59, 59);
+  
+      
+      
+      &--feature {
+        @include flex--x--space-between--y--center;
+        border-right: 1px solid rgb(59, 59, 59);
+  
+        &:last-child{
+        border-right: none;
+      }
+  
+        &__icon {
+          width: 52px;
+        }
+  
+        &:nth-child(1) {
+          .footer__features--feature__icon {
+            width: 70px;
+            
+          }
+        }
+  
+         
+  
+       
+  
+        &__text {
+          width: 200px;
+          margin-left: 20px;
+          @include transition-ease;
+  
+          
+  
+          h3 {
+            margin-bottom: 10px;
+          }
+  
+          
+        }
+      }
+  
+    }
+  
+    &__content {
+      @include grid;
+      @include gap(10px);
+      padding-top: 20px;
+      grid-template-columns: repeat(4, 1fr);
+  
+      &--address {
+        .logo {
+          width: 200px;
+          margin-bottom: 10px;
+  
+          img {
+            max-width: 100%;
+          }
+        }
+        p {
+          margin-bottom: 10px;
+        }
+      }
+  
+      &--links {
+        ul {
+          @include kill-ul;
+  
+          li {
+            margin-bottom: 10px;
+            a {
+                @include kill-anchore;
+                @include transition-ease;
+  
+                &:hover {
+                  color: $color-parmary;
+                  text-decoration: underline;
+                }
+            }
+          }
+        }
+      }
+  
+      &--socials {
+        .social-links {
+          @include flex;
+          @include gap(10px);
+          margin-bottom: 20px;
+  
+          &__link {
+            width: 52px;
+          }
+        }
+      }
+    }
+
+    &-license{
+        padding: 1rem 0;
+        border-top: 1px solid rgb(59, 59, 59);
+        font-size: .8rem;
+        text-align: center;
+
+        a{
+            @include kill-anchore;
+            color: $color-secondary;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+  }
+  

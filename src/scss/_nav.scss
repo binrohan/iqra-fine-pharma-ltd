@@ -1,0 +1,171 @@
+.bg-nav-top {
+  background: $top-nav-color;
+}
+
+.bg-nav-mid {
+  background: $mid-nav-color;
+}
+
+.bg-nav-bottom {
+  background: $bottom-nav-color;
+}
+
+.nav-top {
+  @include container;
+  @include flex--x--space-between;
+
+  &__contacts {
+    @include flex;
+    column-gap: 1.5rem;
+
+    &--contact {
+      @include flex--x--space-between--y--center(0.5rem);
+      @include text--md;
+    }
+  }
+
+  &__download {
+    @include flex--x--space-between--y--center;
+    @include text--md;
+    column-gap: 0.5rem;
+  }
+}
+
+.nav-mid {
+  @include container;
+  @include flex--x--space-between--y--center;
+  padding: 1.25rem 2rem;
+
+  &__logo {
+    @include flex--x--space-between--y--center;
+    width: 240px;
+    height: auto;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__search {
+    @include flex--xy--center;
+    width: 100%;
+
+    input {
+      @include kill;
+      @include text--sm;
+      width: 100%;
+      max-width: 600px;
+      height: 40px;
+      padding: 0 17px;
+      border: 3px solid $color-parmary;
+      border-radius: 0;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+
+      &:focus {
+        background: $color-bg;
+      }
+    }
+
+    button {
+      @include kill;
+      @include grid--xy--center;
+      height: 40px;
+      padding: 5px 29px;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      background: $color-parmary;
+
+      &:hover {
+        @include pointer-cursor;
+      }
+
+      img {
+        width: 25px;
+      }
+    }
+  }
+
+  &__links {
+    @include kill-ul;
+    @include flex;
+    column-gap: 1rem;
+
+    &--link {
+      @include grid--xy--center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      box-shadow: -1px 1px 3px -1px #000000;
+      
+      img {
+        @include icon--sm;
+      }
+    }
+  }
+}
+
+.nav-bottom{
+    @include container;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+    &__items{
+        @include flex--x--start--y--center;
+        @include text--sm;
+
+        &__btns{
+            @include text--lg--bold--uppercase;
+            @include flex--xy--center;
+            column-gap: 1.5rem;
+            height: 48px;
+            padding: .25rem 1.5rem;
+            background: $color-secondary;
+            color: $color-text-secondary;
+
+            &--ham{
+                img{
+                    @include pointer-cursor;
+                    width: 2rem;
+                    height: 2rem;
+                    padding: .25rem;
+                    border-radius: .125rem;
+
+                    &:hover{
+                        background: $color-secondary-hover;
+                    }
+                }
+            }
+
+            &--category-dropdown-btn{
+                @include flex--x--space-between--y--center;
+                @include pointer-cursor;
+                column-gap: 2rem;
+                padding: .5rem;
+                border-radius: .125rem;
+
+                &:hover{
+                    background: $color-secondary-hover;
+                }
+            }
+        }
+
+        &__links{
+            padding: .25rem 1.5rem;
+
+            &--link{
+                @include kill-anchore;
+                @include text--md--bold;
+                padding: .25rem 1rem;
+                color: $color-text-secondary;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+    }
+}

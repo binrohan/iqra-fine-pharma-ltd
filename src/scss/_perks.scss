@@ -1,0 +1,36 @@
+.bg-perks {
+  background: $color-foreground;
+}
+
+.perks {
+  @include container;
+  @include flex--x--space-between;
+  border-bottom: 1px solid $color-perk-border;
+
+  &__perk {
+    @include flex--x--space-between--y--center;
+    column-gap: .5rem;
+    border-right: 1px solid $color-perk-border;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &--icon {
+      width: 52px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &--text {
+      width: 200px;
+
+      h3 {
+        @include text--md--bold;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
