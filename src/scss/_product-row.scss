@@ -1,10 +1,18 @@
 .bg-products {
-  background: $color-bg;
+  background: $color-foreground;
 }
 
 .product-row {
   @include container;
   overflow-x: hidden;
+  background-color: $color-bg;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+
+
+  &:first-child{
+    margin-top: 1rem;
+  }
 
   &__item {
     overflow-x: hidden;
@@ -32,8 +40,6 @@
         button.view-all {
           @include btn--outline--success;
         }
-
-        
       }
     }
 
