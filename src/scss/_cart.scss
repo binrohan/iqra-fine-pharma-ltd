@@ -1,0 +1,36 @@
+.cart {
+  right: 20px;
+  bottom: 20px;
+  padding: 5px;
+  position: fixed;
+  border-radius: 0.2rem;
+  color: $color-text-secondary;
+  background: $color-parmary;
+
+  &:hover {
+    @include pointer-cursor;
+    background: #008665;
+  }
+
+  &__icon {
+    @include flex--xy--center;
+    column-gap: 5px;
+
+    img {
+      max-width: 25px;
+      height: 25px;
+    }
+
+    &__count {
+      @include grid--xy--center;
+      width: 25px;
+      height: 25px;
+      font-weight: bold;
+    }
+  }
+
+  &__amount {
+    @include text--md;
+    padding-top: 3px;
+  }
+}

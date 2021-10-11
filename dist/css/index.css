@@ -520,6 +520,46 @@ section {
   box-shadow: 1px 1px 2px 0px #000000a6;
 }
 
+.cart {
+  right: 20px;
+  bottom: 20px;
+  padding: 5px;
+  position: fixed;
+  border-radius: 0.2rem;
+  color: #f7fbf9;
+  background: #00a27a;
+}
+
+.cart:hover {
+  cursor: pointer;
+  background: #008665;
+}
+
+.cart__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.cart__icon img {
+  max-width: 25px;
+  height: 25px;
+}
+
+.cart__icon__count {
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+}
+
+.cart__amount {
+  font-size: 0.88rem;
+  padding-top: 3px;
+}
+
 .bg-footer {
   background: black;
 }
@@ -655,5 +695,6 @@ body {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
   line-height: 1;
+  position: relative;
 }
 /*# sourceMappingURL=index.css.map */

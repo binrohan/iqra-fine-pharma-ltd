@@ -12,6 +12,7 @@
 @import 'perks';
 @import 'product-row';
 @import 'product';
+@import 'cart';
 @import 'footer';
 
 body{
@@ -20,5 +21,6 @@ body{
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     line-height: 1;
+    position: relative;
 }
 
