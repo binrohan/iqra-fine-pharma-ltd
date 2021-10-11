@@ -10,6 +10,11 @@
   font-size: 0.75rem;
 }
 
+@mixin text--sm--bold {
+  @include text--sm;
+  @include text--bold;
+}
+
 @mixin text--md {
   font-size: 0.88rem;
 }

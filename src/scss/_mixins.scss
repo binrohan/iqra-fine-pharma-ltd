@@ -1,13 +1,13 @@
 @import "var";
 
 @mixin transition-ease {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @mixin container {
   width: 100%;
   height: 100%;
-  max-width: 1280px;
+  max-width: 1160px;
   padding: .5rem 2rem;
   @include horontal-center-by-margin;
 }

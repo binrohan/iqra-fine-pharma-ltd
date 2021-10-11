@@ -16,18 +16,46 @@ section{
     }
 }
 
+
+@mixin media-sm {
+    @media screen and (max-width: 480px){
+        @content;
+    }
+}
 @mixin media-md {
-    @media screen and (min-width: 768px){
+    @media screen and (max-width: 768px){
         @content;
     }
 }
 @mixin media-lg {
-    @media screen and (min-width: 1024px){
+    @media screen and (max-width: 1024px){
         @content;
     }
 }
 @mixin media-xl {
-    @media screen and (min-width: 1600px){
+    @media screen and (max-width: 1600px){
         @content;
     }
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 50%;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

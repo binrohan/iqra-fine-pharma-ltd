@@ -1,0 +1,25 @@
+@include media-sm{
+    .perks{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 1rem;
+
+        &__perk{
+            &:nth-child(n){
+                border: none;
+            }
+        }
+    }
+
+    .footer {
+        &__features {
+          @include grid;
+          grid-template-columns: repeat(1, 1fr);
+    
+          &--feature{
+             &:nth-child(n){
+                border: none;
+             }
+          }
+        }
+      }
+}

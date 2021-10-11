@@ -46,7 +46,7 @@
     &__slider {
       &__items {
         @include flex;
-        @include gap(1rem);
+        @include gap(.5rem);
         padding: 0 0 0.5rem 0;
         align-items: stretch;
       }

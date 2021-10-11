@@ -1,0 +1,63 @@
+.cart-product{
+    @include grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: .4rem;
+    padding: .5rem .5rem 1rem .5rem;
+
+
+    &:nth-child(2n){
+        background: $color-bg;
+    }
+
+    &__remove{
+        div{
+            @include grid--xy--center;
+            padding: .125rem;
+            border-radius: .1rem;
+            color: $color-secondary-hover;
+
+            &:hover{
+                @include pointer-cursor;
+                background: $color-secondary-hover;
+                color: $color-text-secondary;
+
+            }
+        }
+    }
+
+    &__details{
+        
+        &--name{
+            @include text--md--bold;
+            margin-bottom: .4rem;
+        }
+
+        &__price{
+            @include flex--start--ver-base;
+            @include text--sm--bold;
+            margin-bottom: .5rem;
+            column-gap: 0.8rem;
+
+            .total{
+                color: $color-parmary;
+            }
+        }
+
+        &__actions{
+            @include flex--start--ver-base;
+
+            button{
+                @include btn--outline--success;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+
+            &--count{
+                @include grid--xy--center;
+                width: 1.5rem;
+                height: 1.5rem;
+
+            }   
+        }
+    }
+}
