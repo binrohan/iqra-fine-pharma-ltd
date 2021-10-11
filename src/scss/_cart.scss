@@ -1,37 +1,120 @@
 .cart {
-  right: 20px;
-  bottom: 20px;
-  padding: 5px;
+  right: 0px;
+  bottom: 50%;
+  transform: translateY(50%);
   position: fixed;
-  border-radius: 0.2rem;
   color: $color-text-secondary;
-  background: $color-parmary;
-  box-shadow: -1px 1px 3px -1px #000000;
+  background: transparent;
+  @include transition-ease;
+  z-index: 11;
 
-  &:hover {
-    @include pointer-cursor;
-    background: #008665;
-  }
+  &--compact {
+    background: $color-parmary;
+    border-bottom-left-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
 
-  &__icon {
-    @include flex--xy--center;
-    column-gap: 5px;
+    display: block;
+    box-shadow: -1px 1px 3px -1px #000000;
 
-    img {
-      max-width: 25px;
-      height: 25px;
+    &:hover {
+      @include pointer-cursor;
     }
 
-    &__count {
+    &__icon {
       @include grid--xy--center;
-      width: 25px;
-      height: 25px;
+      margin-bottom: 0.5rem;
+
+      img {
+        max-width: 25px;
+      }
+    }
+
+    &__amount {
+      @include text--md--bold;
+      margin-top: 3px;
+      text-align: center;
+      background: $color-bg;
+      color: $color-text-primary;
+      padding: 0.4rem 0.4rem;
       font-weight: bold;
+      border-bottom-left-radius: 0.4rem;
+      font-size: 15px;
+    }
+
+    &__item-count {
+      @include text--md--bold;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      background: darken($color-parmary, 10);
+      color: $color-text-secondary;
+      padding: 0.4rem 0.4rem;
+      font-weight: bold;
+      border-top-left-radius: 0.4rem;
+      font-size: 17px;
     }
   }
 
-  &__amount {
-    @include text--md;
-    padding-top: 3px;
+  &--expan {
+    display: none;
+    box-shadow: -1px 1px 3px -1px #000000;
+
+    &__header {
+      @include flex--x--space-between;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: $color-parmary;
+
+      &--text {
+        padding: 0.5rem;
+      }
+
+      &--close {
+        padding: 0.5rem;
+
+        &:hover {
+          @include pointer-cursor;
+        }
+      }
+    }
+
+    &__items {
+      width: 250px;
+      height: 360px;
+      background: $color-foreground;
+      color: $color-text-primary;
+
+      &--empty-message {
+        @include text--md--bold;
+        padding: 0.4rem;
+        text-align: center;
+      }
+    }
+
+    &__calc {
+      background: $color-bg;
+      color: $color-text-primary;
+      padding: 0.5rem;
+      @include text--md--bold;
+
+      &--item-count {
+        @include flex--x--space-between;
+        margin-bottom: 0.5rem;
+      }
+
+      &--total-amount {
+        @include flex--x--space-between;
+      }
+    }
+
+    &__actions {
+      @include flex--space-between;
+      padding: 0.5rem;
+      background: $color-foreground;
+
+      button {
+        @include btn--bg--success;
+      }
+    }
   }
 }

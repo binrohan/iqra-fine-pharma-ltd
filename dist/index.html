@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/style.js" defer></script>
     <title>Fine Pharma</title>
   </head>
   <body>
@@ -32,10 +33,10 @@
         </div>
       </nav>
     </section>
-    <section class="bg-nav-mid">
-      <nav class="nav-mid">
+    <section class="bg-nav-mid" id="mid-nav">
+      <nav class="nav-mid" >
         <div class="nav-mid__logo">
-          <img src="./images/original.jpeg" alt="fine pharma logo" />
+          <img src="./images/Fine Pharma2.png" alt="fine pharma logo" />
         </div>
         <div class="nav-mid__search">
           <input type="text" placeholder="Search by Trade or Generic Names" />
@@ -72,7 +73,7 @@
         </ul>
       </nav>
     </section>
-    <section class="bg-nav-bottom">
+    <section class="bg-nav-bottom" id="bottom-nav">
       <nav class="nav-bottom">
         <div class="nav-bottom__items">
           <div class="nav-bottom__items__btns">
@@ -167,13 +168,18 @@
     </section>
     <section class="bg-products">
         <div class="product-row">
-            <div>
-                <h2 class="product-row__title">
+            <div class="product-row__item">
+                <div class="product-row__item__title">
+                  <div class="product-row__item__title--text">
                     <a href="">Covid-19 Special</a>
-                  </h2>
-                  <div class="product-row__slider">
-                    <div class="product-row__slider__items">
-                      <div class="product-row__slider__item">
+                  </div>
+                  <div class="product-row__item__title__actions">
+                    <button class="view-all">View All</button>
+                  </div>
+                  </div>
+                  <div class="product-row__item__item__slider">
+                    <div class="product-row__item__slider__items">
+                      <div class="product-row__item__slider__item">
                         <div class="product-card">
                           <div class="product-card__img">
                             <img src="./images/p (1).jpg" alt="" />
@@ -390,7 +396,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product-row__slider__buttons">
+                    <div class="product-row__item__slider__buttons">
                       <button><img src="./icons/previous.svg" alt="" /></button>
                       <button><img src="./icons/next.svg" alt="" /></button>
                     </div>
@@ -398,246 +404,253 @@
             </div>
           </div>
           <div class="product-row">
-            <h2 class="product-row__title">
-              <a href="">Baby Product</a>
-            </h2>
-            <div class="product-row__slider">
-              <div class="product-row__slider__items">
-                <!-- product -->
-                <div class="product-row__slider__item">
-                  <div class="product-card">
-                    <div class="product-card__img">
-                      <img src="./images/b (1).jpg" alt="" />
-                    </div>
-                    <div class="product-card__text">
-                      <div class="product-card__text--type">Baby Product</div>
-                      <div class="product-card__text--name">
-                        Lorem ipsum dolor sit.
-                      </div>
-                      <div class="product-card__price">
-                        <div class="product-card__price--current">900BDT</div>
-                        <div class="product-card__price--original">1200BDT</div>
-                      </div>
-                      <div class="product-card__actions">
-                        <button
-                          data-title="Add to wishlist"
-                          class="product-card__actions--add-to-wishlist"
-                        >
-                          <img src="./icons/heart-outline.svg" alt="" />
-                        </button>
-                        <button class="product-card__actions--add-to-cart">
-                          <img src="./icons/cart-filled.svg" alt="" />
-                          Add to Cart
-                        </button>
-                      </div>
-                    </div>
-  
-                    <div class="product-card__tag">25%</div>
-                  </div>
+            <div class="product-row__item">
+              <div class="product-row__item__title">
+                <div class="product-row__item__title--text">
+                  <a href="">Baby Product</a>
                 </div>
-                <!-- product end -->
-                <!-- product -->
-                <div class="product-row__slider__item">
-                  <div class="product-card">
-                    <div class="product-card__img">
-                      <img src="./images/b (1).webp" alt="" />
-                    </div>
-                    <div class="product-card__text">
-                      <div class="product-card__text--type">Baby Product</div>
-                      <div class="product-card__text--name">
-                        Lorem, ipsum dolor.
-                      </div>
-                      <div class="product-card__price">
-                        <div class="product-card__price--current">400BDT</div>
-                        <div class="product-card__price--original"></div>
-                      </div>
-                      <div class="product-card__actions">
-                        <button
-                          data-title="Add to wishlist"
-                          class="product-card__actions--add-to-wishlist"
-                        >
-                          <img src="./icons/heart-outline.svg" alt="" />
-                        </button>
-                        <button class="product-card__actions--add-to-cart">
-                          <img src="./icons/cart-filled.svg" alt="" />Add to
-                          Cart
-                        </button>
-                      </div>
-                    </div>
-  
-                    <div class="product-card__tag"></div>
-                  </div>
+                <div class="product-row__item__title__actions">
+                  <button class="view-all">View All</button>
                 </div>
-                <!-- product end -->
-                <!-- product -->
-                <div class="product-row__slider__item">
-                  <div class="product-card">
-                    <div class="product-card__img">
-                      <img src="./images/b (2).jpg" alt="" />
-                    </div>
-                    <div class="product-card__text">
-                      <div class="product-card__text--type">Baby Product</div>
-                      <div class="product-card__text--name">
-                        Lorem, ipsum.
-                      </div>
-                      <div class="product-card__price">
-                        <div class="product-card__price--current">1000BDT</div>
-                        <div class="product-card__price--original">1200BDT</div>
-                      </div>
-                      <div class="product-card__actions">
-                        <button
-                          data-title="Add to wishlist"
-                          class="product-card__actions--add-to-wishlist"
-                        >
-                          <img src="./icons/heart-outline.svg" alt="" />
-                        </button>
-                        <button class="product-card__actions--add-to-cart">
-                          <img src="./icons/cart-filled.svg" alt="" />Add to
-                          Cart
-                        </button>
-                      </div>
-                    </div>
-  
-                    <div class="product-card__tag">200BDT OFF</div>
-                  </div>
                 </div>
-                <!-- product end -->
-                <!-- product -->
-                <div class="product-row__slider__item">
-                  <div class="product-card">
-                    <div class="product-card__img">
-                      <img src="./images/b (2).webp" alt="" />
+              <div class="product-row__item__slider">
+                <div class="product-row__item__slider__items">
+                  <!-- product -->
+                  <div class="product-row__item__slider__item">
+                    <div class="product-card">
+                      <div class="product-card__img">
+                        <img src="./images/b (1).jpg" alt="" />
+                      </div>
+                      <div class="product-card__text">
+                        <div class="product-card__text--type">Baby Product</div>
+                        <div class="product-card__text--name">
+                          Lorem ipsum dolor sit.
+                        </div>
+                        <div class="product-card__price">
+                          <div class="product-card__price--current">900BDT</div>
+                          <div class="product-card__price--original">1200BDT</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <button
+                            data-title="Add to wishlist"
+                            class="product-card__actions--add-to-wishlist"
+                          >
+                            <img src="./icons/heart-outline.svg" alt="" />
+                          </button>
+                          <button class="product-card__actions--add-to-cart">
+                            <img src="./icons/cart-filled.svg" alt="" />
+                            Add to Cart
+                          </button>
+                        </div>
+                      </div>
+    
+                      <div class="product-card__tag">25%</div>
                     </div>
-                    <div class="product-card__text">
-                      <div class="product-card__text--type">Baby Product</div>
-                      <div class="product-card__text--name">
-                        Lorem, ipsum dolor.
-                      </div>
-                      <div class="product-card__price">
-                        <div class="product-card__price--current">780BDT</div>
-                        <div class="product-card__price--original"></div>
-                      </div>
-                      <div class="product-card__actions">
-                        <button
-                          data-title="Add to wishlist"
-                          class="product-card__actions--add-to-wishlist"
-                        >
-                          <img src="./icons/heart-outline.svg" alt="" />
-                        </button>
-                        <button class="product-card__actions--add-to-cart">
-                          <img src="./icons/cart-filled.svg" alt="" />Add to
-                          Cart
-                        </button>
-                      </div>
-                    </div>
-  
-                    <div class="product-card__tag"></div>
                   </div>
-                </div>
-                <!-- product end -->
-                <!-- product -->
-                <div class="product-row__slider__item">
-                  <div class="product-card">
-                    <div class="product-card__img">
-                      <img src="./images/b (3).jpg" alt="" />
+                  <!-- product end -->
+                  <!-- product -->
+                  <div class="product-row__slider__item">
+                    <div class="product-card">
+                      <div class="product-card__img">
+                        <img src="./images/b (1).webp" alt="" />
+                      </div>
+                      <div class="product-card__text">
+                        <div class="product-card__text--type">Baby Product</div>
+                        <div class="product-card__text--name">
+                          Lorem, ipsum dolor.
+                        </div>
+                        <div class="product-card__price">
+                          <div class="product-card__price--current">400BDT</div>
+                          <div class="product-card__price--original"></div>
+                        </div>
+                        <div class="product-card__actions">
+                          <button
+                            data-title="Add to wishlist"
+                            class="product-card__actions--add-to-wishlist"
+                          >
+                            <img src="./icons/heart-outline.svg" alt="" />
+                          </button>
+                          <button class="product-card__actions--add-to-cart">
+                            <img src="./icons/cart-filled.svg" alt="" />Add to
+                            Cart
+                          </button>
+                        </div>
+                      </div>
+    
+                      <div class="product-card__tag"></div>
                     </div>
-                    <div class="product-card__text">
-                      <div class="product-card__text--type">Baby Product</div>
-                      <div class="product-card__text--name">
-                        Lorem ipsum dolor sit amet consectetur.
-                      </div>
-                      <div class="product-card__price">
-                        <div class="product-card__price--current">150BDT</div>
-                        <div class="product-card__price--original">200BDT</div>
-                      </div>
-                      <div class="product-card__actions">
-                        <button
-                          data-title="Add to wishlist"
-                          class="product-card__actions--add-to-wishlist"
-                        >
-                          <img src="./icons/heart-outline.svg" alt="" />
-                        </button>
-                        <button class="product-card__actions--add-to-cart">
-                          <img src="./icons/cart-filled.svg" alt="" />Add to
-                          Cart
-                        </button>
-                      </div>
-                    </div>
-  
-                    <div class="product-card__tag">25%</div>
                   </div>
-                </div>
-                <!-- product end -->
-                <!-- product -->
-                <div class="product-row__slider__item">
-                  <div class="product-card">
-                    <div class="product-card__img">
-                      <img src="./images/b (3).webp" alt="" />
+                  <!-- product end -->
+                  <!-- product -->
+                  <div class="product-row__slider__item">
+                    <div class="product-card">
+                      <div class="product-card__img">
+                        <img src="./images/b (2).jpg" alt="" />
+                      </div>
+                      <div class="product-card__text">
+                        <div class="product-card__text--type">Baby Product</div>
+                        <div class="product-card__text--name">
+                          Lorem, ipsum.
+                        </div>
+                        <div class="product-card__price">
+                          <div class="product-card__price--current">1000BDT</div>
+                          <div class="product-card__price--original">1200BDT</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <button
+                            data-title="Add to wishlist"
+                            class="product-card__actions--add-to-wishlist"
+                          >
+                            <img src="./icons/heart-outline.svg" alt="" />
+                          </button>
+                          <button class="product-card__actions--add-to-cart">
+                            <img src="./icons/cart-filled.svg" alt="" />Add to
+                            Cart
+                          </button>
+                        </div>
+                      </div>
+    
+                      <div class="product-card__tag">200BDT OFF</div>
                     </div>
-                    <div class="product-card__text">
-                      <div class="product-card__text--type">Baby Product</div>
-                      <div class="product-card__text--name">
-                        Lorem ipsum dolor sit amet.
-                      </div>
-                      <div class="product-card__price">
-                        <div class="product-card__price--current">900BDT</div>
-                        <div class="product-card__price--original">1000BDT</div>
-                      </div>
-                      <div class="product-card__actions">
-                        <button
-                          data-title="Add to wishlist"
-                          class="product-card__actions--add-to-wishlist"
-                        >
-                          <img src="./icons/heart-outline.svg" alt="" />
-                        </button>
-                        <button class="product-card__actions--add-to-cart">
-                          <img src="./icons/cart-filled.svg" alt="" />Add to
-                          Cart
-                        </button>
-                      </div>
-                    </div>
-  
-                    <div class="product-card__tag">10%</div>
                   </div>
-                </div>
-                <!-- product end -->
-                <!-- product -->
-                <div class="product-row__slider__item">
-                  <div class="product-card">
-                    <div class="product-card__img">
-                      <img src="./images/b (4).webp" alt="" />
+                  <!-- product end -->
+                  <!-- product -->
+                  <div class="product-row__slider__item">
+                    <div class="product-card">
+                      <div class="product-card__img">
+                        <img src="./images/b (2).webp" alt="" />
+                      </div>
+                      <div class="product-card__text">
+                        <div class="product-card__text--type">Baby Product</div>
+                        <div class="product-card__text--name">
+                          Lorem, ipsum dolor.
+                        </div>
+                        <div class="product-card__price">
+                          <div class="product-card__price--current">780BDT</div>
+                          <div class="product-card__price--original"></div>
+                        </div>
+                        <div class="product-card__actions">
+                          <button
+                            data-title="Add to wishlist"
+                            class="product-card__actions--add-to-wishlist"
+                          >
+                            <img src="./icons/heart-outline.svg" alt="" />
+                          </button>
+                          <button class="product-card__actions--add-to-cart">
+                            <img src="./icons/cart-filled.svg" alt="" />Add to
+                            Cart
+                          </button>
+                        </div>
+                      </div>
+    
+                      <div class="product-card__tag"></div>
                     </div>
-                    <div class="product-card__text">
-                      <div class="product-card__text--type">Baby Product</div>
-                      <div class="product-card__text--name">
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                      </div>
-                      <div class="product-card__price">
-                        <div class="product-card__price--current">258BDT</div>
-                        <div class="product-card__price--original"></div>
-                      </div>
-                      <div class="product-card__actions">
-                        <button
-                          data-title="Add to wishlist"
-                          class="product-card__actions--add-to-wishlist"
-                        >
-                          <img src="./icons/heart-outline.svg" alt="" />
-                        </button>
-                        <button class="product-card__actions--add-to-cart">
-                          <img src="./icons/cart-filled.svg" alt="" />Add to
-                          Cart
-                        </button>
-                      </div>
-                    </div>
-  
-                    <div class="product-card__tag"></div>
                   </div>
+                  <!-- product end -->
+                  <!-- product -->
+                  <div class="product-row__slider__item">
+                    <div class="product-card">
+                      <div class="product-card__img">
+                        <img src="./images/b (3).jpg" alt="" />
+                      </div>
+                      <div class="product-card__text">
+                        <div class="product-card__text--type">Baby Product</div>
+                        <div class="product-card__text--name">
+                          Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                        <div class="product-card__price">
+                          <div class="product-card__price--current">150BDT</div>
+                          <div class="product-card__price--original">200BDT</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <button
+                            data-title="Add to wishlist"
+                            class="product-card__actions--add-to-wishlist"
+                          >
+                            <img src="./icons/heart-outline.svg" alt="" />
+                          </button>
+                          <button class="product-card__actions--add-to-cart">
+                            <img src="./icons/cart-filled.svg" alt="" />Add to
+                            Cart
+                          </button>
+                        </div>
+                      </div>
+    
+                      <div class="product-card__tag">25%</div>
+                    </div>
+                  </div>
+                  <!-- product end -->
+                  <!-- product -->
+                  <div class="product-row__slider__item">
+                    <div class="product-card">
+                      <div class="product-card__img">
+                        <img src="./images/b (3).webp" alt="" />
+                      </div>
+                      <div class="product-card__text">
+                        <div class="product-card__text--type">Baby Product</div>
+                        <div class="product-card__text--name">
+                          Lorem ipsum dolor sit amet.
+                        </div>
+                        <div class="product-card__price">
+                          <div class="product-card__price--current">900BDT</div>
+                          <div class="product-card__price--original">1000BDT</div>
+                        </div>
+                        <div class="product-card__actions">
+                          <button
+                            data-title="Add to wishlist"
+                            class="product-card__actions--add-to-wishlist"
+                          >
+                            <img src="./icons/heart-outline.svg" alt="" />
+                          </button>
+                          <button class="product-card__actions--add-to-cart">
+                            <img src="./icons/cart-filled.svg" alt="" />Add to
+                            Cart
+                          </button>
+                        </div>
+                      </div>
+    
+                      <div class="product-card__tag">10%</div>
+                    </div>
+                  </div>
+                  <!-- product end -->
+                  <!-- product -->
+                  <div class="product-row__slider__item">
+                    <div class="product-card">
+                      <div class="product-card__img">
+                        <img src="./images/b (4).webp" alt="" />
+                      </div>
+                      <div class="product-card__text">
+                        <div class="product-card__text--type">Baby Product</div>
+                        <div class="product-card__text--name">
+                          Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </div>
+                        <div class="product-card__price">
+                          <div class="product-card__price--current">258BDT</div>
+                          <div class="product-card__price--original"></div>
+                        </div>
+                        <div class="product-card__actions">
+                          <button
+                            data-title="Add to wishlist"
+                            class="product-card__actions--add-to-wishlist"
+                          >
+                            <img src="./icons/heart-outline.svg" alt="" />
+                          </button>
+                          <button class="product-card__actions--add-to-cart">
+                            <img src="./icons/cart-filled.svg" alt="" />Add to
+                            Cart
+                          </button>
+                        </div>
+                      </div>
+    
+                      <div class="product-card__tag"></div>
+                    </div>
+                  </div>
+                  <!-- product end -->
                 </div>
-                <!-- product end -->
-              </div>
-              <div class="product-row__slider__buttons">
-                <button><img src="./icons/previous.svg" alt="" /></button>
-                <button><img src="./icons/next.svg" alt="" /></button>
+                <div class="product-row__item__slider__buttons">
+                  <button><img src="./icons/previous.svg" alt="" /></button>
+                  <button><img src="./icons/next.svg" alt="" /></button>
+                </div>
               </div>
             </div>
           </div>
@@ -685,7 +698,7 @@
             <div class="footer__content">
               <div class="footer__content--address">
                   <div class="logo">
-                    <img src="./images/original.jpeg" alt="">
+                    <img src="./images/Fine Pharma2.png" alt="">
                   </div>
                   <h3>Address</h3>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti commodi quia sapiente!</p>
@@ -751,15 +764,53 @@
         </div>
     </section>
     <div class="cart">
-      <div class="cart__icon">
-        <img src="./icons/cart-filled.svg" alt="">
-        <div class="cart__icon__count">
-          9
+      <div class="cart--compact" id="cart-open-btn">
+        <div class="cart--compact__item-count">
+          <span>Items: </span>9
+        </div>
+        <div class="cart--compact__icon">
+          <img src="./icons/cart-filled.svg" alt="">
+        </div>
+        <div class="cart--compact__amount">
+          2800 <span>BDT</span>
         </div>
       </div>
-      <div class="cart__amount">
-        2800 <span>BDT</span>
-      </div>
+      <div class="cart--expan" id="cart-expan">
+        <div class="cart--expan__header">
+          <div class="cart--expan__header--text">
+            Your Cart
+          </div>
+          <div class="cart--expan__header--close" id="cart-close-btn">
+            X
+          </div>
+        </div>
+        <div class="cart--expan__items">
+          <div class="cart--expan__items--empty-message">
+            Your shopping cart is empty!
+          </div>
+        </div>
+        <div class="cart--expan__calc">
+          <div class="cart--expan__calc--item-count">
+            <div class="cart--expan__calc--item-count__text">
+              Total Items
+            </div>
+            <div class="cart--expan__calc--item-count__number"> 
+              9
+            </div>
+          </div>
+          <div class="cart--expan__calc--total-amount">
+            <div class="cart--expan__calc--total-amount__text">
+              Total Amount
+            </div>
+            <div class="cart--expan__calc--total-amount__number"> 
+              3560 <span>BDT</span>
+            </div>
+          </div>
+        </div>
+        <div class="cart--expan__actions">
+          <button>Order Now</button>
+        </div>
+    </div>
     </div>
   </body>
 </html>

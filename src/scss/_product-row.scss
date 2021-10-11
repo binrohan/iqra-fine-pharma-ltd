@@ -1,45 +1,61 @@
-.bg-products{
-    background: $color-bg;
+.bg-products {
+  background: $color-bg;
 }
 
-.product-row{
-    @include container;
+.product-row {
+  @include container;
+  overflow-x: hidden;
+
+  &__item {
     overflow-x: hidden;
+    &__title {
+      @include text--lg--bold--uppercase;
+      @include flex--x--space-between--y--center;
+      padding: 0.5rem 1.25rem;
 
-    &__title{
-        @include text--lg--bold--uppercase;
-        padding: .5rem 1.25rem;
+      &--text {
+        a {
+          @include kill-anchore;
+          @include transition-ease;
+          color: $color-parmary;
 
-        a{
-            @include kill-anchore;
-            @include transition-ease;
-            color: $color-parmary;
-
-            &:hover{
-                text-decoration: underline;
-            }
+          &:hover {
+            text-decoration: underline;
+          }
         }
+      }
+
+      &__actions {
+        @include flex;
+        column-gap: 20px;
+
+        button.view-all {
+          @include btn--outline--success;
+        }
+
+        
+      }
     }
 
-    &__slider{
+    &__slider {
+      &__items {
+        @include flex;
+        @include gap(1rem);
+        padding: 0 0 0.5rem 0;
+        align-items: stretch;
+      }
 
-        &__items{
-            @include flex;
-            @include gap(1rem);
-            padding: 0 0 .5rem 0;
-            align-items: stretch;
+      &__buttons {
+        @include flex--hor-end;
+        background: $color-bg;
+        button {
+          @include button--icon--round(30px, 30px);
+          margin: 0.5rem;
+          box-shadow: -1px 1px 3px -1px #000000;
+          padding: 0.2rem;
+          background: $color-foreground;
         }
-
-        &__buttons{
-            @include flex--hor-end;
-            background: $color-bg;
-            button{
-                @include button--icon--round(30px, 30px);
-                margin: .5rem;
-                box-shadow: -1px 1px 3px -1px #000000;
-                padding: .2rem;
-                background: $color-foreground;
-            }
-        }
+      }
     }
+  }
 }

@@ -30,6 +30,7 @@
       h3 {
         @include text--md--bold;
         margin-bottom: 0.5rem;
+        color: $color-parmary;
       }
     }
   }

@@ -4,10 +4,16 @@
 
 .bg-nav-mid {
   background: $mid-nav-color;
+  z-index: 10;
+  position: sticky;
+  top: 0;
 }
 
 .bg-nav-bottom {
   background: $bottom-nav-color;
+  z-index: 10;
+  position: sticky;
+  top: 82.2px;
 }
 
 .nav-top {
@@ -36,6 +42,8 @@
   @include flex--x--space-between--y--center;
   padding: 1.25rem 2rem;
 
+
+
   &__logo {
     @include flex--x--space-between--y--center;
     width: 240px;
@@ -57,7 +65,7 @@
       max-width: 600px;
       height: 40px;
       padding: 0 17px;
-      border: 3px solid $color-parmary;
+      border: 2px solid $color-parmary;
       border-radius: 0;
       border-bottom-left-radius: 5px;
       border-top-left-radius: 5px;
@@ -111,6 +119,7 @@
     @include container;
     padding-top: 0;
     padding-bottom: 0;
+    z-index: 10;
     
     &__items{
         @include flex--x--start--y--center;
@@ -134,7 +143,7 @@
                     border-radius: .125rem;
 
                     &:hover{
-                        background: $color-secondary-hover;
+                        background: initial;
                     }
                 }
             }
@@ -147,7 +156,7 @@
                 border-radius: .125rem;
 
                 &:hover{
-                    background: $color-secondary-hover;
+                    background: initial;
                 }
             }
         }

@@ -1,0 +1,48 @@
+@mixin kill-btn {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin btn {
+  padding: 0.2rem 0.4rem;
+}
+
+@mixin bg {
+  font-size: 1rem;
+}
+
+@mixin outline--success {
+  background: transparent;
+  border: 1px solid $btn-success;
+  color: $btn-success;
+  @include transition-ease;
+
+  &:hover {
+    cursor: pointer;
+    background: $btn-success;
+    color: white;
+  }
+}
+
+@mixin success {
+  background: $btn-success;
+  color: white;
+  &:hover {
+    cursor: pointer;
+    background: darken($btn-success, 10);
+  }
+}
+
+@mixin btn--outline--success {
+  @include btn;
+  @include outline--success;
+}
+
+@mixin btn--bg--success {
+  @include kill-btn;
+  @include btn;
+  @include bg;
+  @include success;
+}
