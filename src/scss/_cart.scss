@@ -6,6 +6,7 @@
   border-radius: 0.2rem;
   color: $color-text-secondary;
   background: $color-parmary;
+  box-shadow: -1px 1px 3px -1px #000000;
 
   &:hover {
     @include pointer-cursor;

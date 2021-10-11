@@ -528,6 +528,7 @@ section {
   border-radius: 0.2rem;
   color: #f7fbf9;
   background: #00a27a;
+  box-shadow: -1px 1px 3px -1px #000000;
 }
 
 .cart:hover {
