@@ -1,63 +1,67 @@
-.cart-product{
-    @include grid;
-    grid-template-columns: auto 1fr auto;
-    column-gap: .4rem;
-    padding: .5rem .5rem 1rem .5rem;
+.cart-product {
+  @include grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 0.4rem;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
 
+  &:nth-child(2n) {
+    background: $color-bg;
+  }
 
-    &:nth-child(2n){
-        background: $color-bg;
+  &__remove {
+    div {
+      @include grid--xy--center;
+      padding: 0.125rem;
+      border-radius: 0.1rem;
+      color: $color-secondary-hover;
+
+      &:hover {
+        @include pointer-cursor;
+        background: $color-secondary-hover;
+        color: $color-text-secondary;
+      }
+    }
+  }
+
+  &__details {
+    &--name {
+      @include text--md--bold;
+      margin-bottom: 0.4rem;
     }
 
-    &__remove{
-        div{
-            @include grid--xy--center;
-            padding: .125rem;
-            border-radius: .1rem;
-            color: $color-secondary-hover;
+    &__price {
+      @include flex--x--space-between--y--center;
+      @include text--sm--bold;
+      margin-bottom: 0.5rem;
+      column-gap: 0.8rem;
 
-            &:hover{
-                @include pointer-cursor;
-                background: $color-secondary-hover;
-                color: $color-text-secondary;
-
-            }
+      &--details {
+        @include flex--start--ver-base;
+        @include text--sm--bold;
+        column-gap: 0.5rem;
+        .total {
+          color: $color-parmary;
         }
+      }
+
+      &--actions {
+        @include flex--start--ver-base;
+  
+        button {
+          @include btn--outline--success;
+          width: 1.2rem;
+          height: 1.2rem;
+          padding: 0;
+        }
+  
+        &--count {
+          @include grid--xy--center;
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+      }
     }
 
-    &__details{
-        
-        &--name{
-            @include text--md--bold;
-            margin-bottom: .4rem;
-        }
-
-        &__price{
-            @include flex--start--ver-base;
-            @include text--sm--bold;
-            margin-bottom: .5rem;
-            column-gap: 0.8rem;
-
-            .total{
-                color: $color-parmary;
-            }
-        }
-
-        &__actions{
-            @include flex--start--ver-base;
-
-            button{
-                @include btn--outline--success;
-                width: 1.5rem;
-                height: 1.5rem;
-            }
-
-            &--count{
-                @include grid--xy--center;
-                width: 1.5rem;
-                height: 1.5rem;
-
-            }   
-        }
-    }
+    
+  }
 }

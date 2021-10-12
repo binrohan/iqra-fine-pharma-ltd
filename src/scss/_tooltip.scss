@@ -8,7 +8,7 @@
   content: attr(data-title);
   position: absolute;
   left: 60%;
-  bottom: -30px;
+  bottom: -22px;
   transform: translateX(-50%);
   width: auto;
   white-space: nowrap;
@@ -16,7 +16,25 @@
   color: $color-text-primary;
   border-radius: 2px;
   box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.1);
-  font-size: 14px;
+  font-size: 12px;
+  padding: 3px 5px;
+  z-index: 10;
+}
+
+.product-card [data-title]:hover::after,
+.product-card [data-title]:focus::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 95%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  width: auto;
+  white-space: nowrap;
+  background: $color-text-primary;
+  color: $color-text-secondary;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.1);
+  font-size: 12px;
   padding: 3px 5px;
   z-index: 10;
 }

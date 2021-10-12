@@ -8,9 +8,16 @@
     background: $color-foreground;
     box-shadow: -2px 4px 3px 1px #a9a9a980;
     position: relative;
+
+    &:hover &__img img{
+      transform: scale(1.1);
+    }
   
     &__img {
+      overflow: hidden;
+      
       img {
+        transition: all 500ms ease-in-out;
         max-width: 100%;
       }
     }

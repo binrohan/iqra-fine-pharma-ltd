@@ -4,36 +4,41 @@
 
 .perks {
   @include container;
-  @include grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 1rem;
-  justify-content: center;
   border-bottom: 1px solid $color-perk-border;
 
-  &__perk {
-    @include flex--x--start--y--center;
-    column-gap: .5rem;
-    border-right: 1px solid $color-perk-border;
+  &__slider {
+    @include grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-content: center;
+    padding-bottom: 1rem;
 
-    &:last-child {
-      border-right: none;
-    }
+    &__perk {
+      @include flex--x--start--y--center;
+      column-gap: 0.5rem;
+      border-right: 1px solid $color-perk-border;
 
-    &--icon {
-      width: 52px;
-
-      img {
-        width: 100%;
+      &:last-child {
+        border-right: none;
       }
-    }
 
-    &--text {
-      width: 200px;
+      &--icon {
+        width: 52px;
 
-      h3 {
-        @include text--md--bold;
-        margin-bottom: 0.5rem;
-        color: $color-parmary;
+        img {
+          width: 52px;
+        }
+      }
+
+      &--text {
+
+        h3 {
+          @include text--md--bold;
+          margin-bottom: 0.5rem;
+          color: $color-parmary;
+        }
       }
     }
   }

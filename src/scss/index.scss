@@ -11,15 +11,25 @@
 @import 'nav';
 @import 'slider';
 @import 'perks';
+@import 'notification-bar';
 @import 'product-row';
 @import 'product';
 @import 'cart';
 @import 'cart-product';
 @import 'footer';
-@import 'responsive-md';
 @import 'responsive-sm';
+@import 'media-xs';
+@import 'media-sm';
+@import 'media-min-600';
+@import 'media-md';
+@import 'media-min-800';
+@import 'media-min-900';
+@import 'media-min-1000';
+@import 'media-lg';
 
-
+html{
+    overflow-x: hidden;
+}
 
 body{
     background: white;

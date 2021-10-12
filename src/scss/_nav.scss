@@ -34,7 +34,17 @@
   &__download {
     @include flex--x--space-between--y--center;
     @include text--md;
-    column-gap: 0.5rem;
+    column-gap: 1rem;
+
+    .text{
+      color: $color-parmary;
+    }
+
+    .icon {
+      @include flex--x--space-between--y--center;
+      column-gap: .5rem;
+      @include pointer-cursor;
+    }
   }
 }
 
@@ -43,8 +53,6 @@
   @include flex--x--space-between--y--center;
   column-gap: 1rem;
   padding: 1.25rem 2rem;
-
-
 
   &__logo {
     @include flex--x--space-between--y--center;
@@ -109,7 +117,7 @@
       height: 32px;
       border-radius: 50%;
       box-shadow: -1px 1px 3px -1px #000000;
-      
+
       img {
         @include icon--sm;
       }
@@ -117,67 +125,66 @@
   }
 }
 
-.nav-bottom{
-    @include container;
-    padding-top: 0;
-    padding-bottom: 0;
-    z-index: 10;
-    
-    
-    &__items{
-        @include flex--x--start--y--center;
-        @include text--sm;
+.nav-bottom {
+  @include container;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 10;
 
-        &__btns{
-            @include text--lg--bold--uppercase;
-            @include flex--xy--center;
-            column-gap: 1.5rem;
-            height: 48px;
-            padding: .25rem 1.5rem;
-            background: $color-secondary;
-            color: $color-text-secondary;
+  &__items {
+    @include flex--x--start--y--center;
+    @include text--sm;
 
-            &--ham{
-                img{
-                    @include pointer-cursor;
-                    width: 2rem;
-                    height: 2rem;
-                    padding: .25rem;
-                    border-radius: .125rem;
+    &__btns {
+      @include text--lg--bold--uppercase;
+      @include flex--xy--center;
+      font-size: 1rem;
+      column-gap: 1rem;
+      height: 48px;
+      padding: 0.25rem 1rem;
+      background: $color-secondary;
+      color: $color-text-secondary;
 
-                    &:hover{
-                        background: initial;
-                    }
-                }
-            }
+      &--ham {
+        img {
+          @include pointer-cursor;
+          width: 2rem;
+          height: 2rem;
+          padding: 0.25rem;
+          border-radius: 0.125rem;
 
-            &--category-dropdown-btn{
-                @include flex--x--space-between--y--center;
-                @include pointer-cursor;
-                column-gap: 2rem;
-                padding: .5rem;
-                border-radius: .125rem;
-
-                &:hover{
-                    background: initial;
-                }
-            }
+          &:hover {
+            background: initial;
+          }
         }
+      }
 
-        &__links{
-            padding: .25rem 1.5rem;
+      &--category-dropdown-btn {
+        @include flex--x--space-between--y--center;
+        @include pointer-cursor;
+        column-gap: 2rem;
+        padding: 0.5rem;
+        border-radius: 0.125rem;
 
-            &--link{
-                @include kill-anchore;
-                @include text--md--bold;
-                padding: .25rem 1rem;
-                color: $color-text-secondary;
-
-                &:hover{
-                    text-decoration: underline;
-                }
-            }
+        &:hover {
+          background: initial;
         }
-        
+      }
     }
+
+    &__links {
+      padding: 0.25rem 1.5rem;
+
+      &--link {
+        @include kill-anchore;
+        @include text--md--bold;
+        padding: 0.25rem 1rem;
+        color: $color-text-secondary;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
