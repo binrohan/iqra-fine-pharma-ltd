@@ -23,7 +23,7 @@ cartCloseBtn.addEventListener('click', () => {
 
 const openCart = () => {
     cartOpenBtn.style.display = 'none';
-    cartExpan.style.display = 'block';
+    cartExpan.style.display = 'grid';
 }
 
 const closeCart = () => {

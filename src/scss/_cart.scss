@@ -55,9 +55,10 @@
   }
 
   &--expan {
+    height: 100vh;
     display: none;
     box-shadow: -1px 1px 3px -1px #000000;
-
+    grid-template-rows: auto 1fr auto auto;
     &__header {
       @include flex--x--space-between;
       font-size: 1rem;
@@ -80,7 +81,6 @@
 
     &__items {
       width: 300px;
-      height: 360px;
       background: $color-foreground;
       color: $color-text-primary;
       overflow-y: scroll;

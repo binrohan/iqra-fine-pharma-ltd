@@ -86,7 +86,7 @@
         height: 2rem;
         padding: 8px;
         border-radius: 1rem;
-        box-shadow: -1px 1px 3px -1px #000000;
+        
   
         img {
           width: 22px;
@@ -94,7 +94,7 @@
         }
   
         &:hover {
-          box-shadow: -2px 4px 6px -1px #444444;
+          background: darken($color-parmary, 10);
         }
       }
     }
