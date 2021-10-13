@@ -39,40 +39,14 @@
     </section>
     <section class="bg-nav-mid" id="mid-nav">
       <nav class="nav-mid" >
-        <!-- <div class="nav-mid--mobile">
-          <img src="./images/Fine Pharma3.png" alt="fine pharma logo" />
-          <div class="nav-mid--mobile__menu">
-            <ul class="nav-mid__links">
-              <li class="nav-mid__links--link" data-title="Upload Prescription">
-                <a href="#">
-                  <img class="" src="./icons/document.svg" alt="prescription" />
-                </a>
-              </li>
-              <li class="nav-mid__links--link" data-title="Call for order">
-                <a href="#">
-                  <img class="" src="./icons/support.svg" alt="call to order" />
-                </a>
-              </li>
-              <li class="nav-mid__links--link" data-title="All wishlisted items">
-                <a href="#">
-                  <img src="./icons/black-outline-heart.svg" alt="wishlist" />
-                </a>
-              </li>
-              <li class="nav-mid__links--link" data-title="Notifications">
-                <a href="#">
-                  <img src="./icons/e-bell.svg" alt="notification" />
-                </a>
-              </li>
-              <li class="nav-mid__links--link" data-title="User Profile">
-                <a href="#">
-                  <img src="./icons/e-user.svg" alt="profile-icon" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div> -->
+        
         <div class="nav-mid__logo">
-          <img src="./images/Fine Pharma3.png" alt="fine pharma logo" />
+          <buttton class="nav-mid__logo--ham" id="drawer-toggle-btn">
+            <img src="./icons/e-hamburger-black.svg" alt="" />
+          </buttton>
+          <div class="logo-container">
+            <img src="./images/Fine Pharma3.png" alt="fine pharma logo" />
+          </div>
         </div>
         <div class="nav-mid__search">
           <input type="text" placeholder="Search by Trade or Generic Names" />
@@ -815,6 +789,8 @@
             </div>
         </div>
     </section>
+    <!-- following elements are absolute relavtive to body -->
+    <!-- cart and cart small -->
     <div class="cart" style="display: none;">
       <div class="cart--compact" id="cart-open-btn">
         <div class="cart--compact__item-count">
@@ -895,5 +871,42 @@
         </div>
     </div>
     </div>
+    <!-- cart and cart small ends-->
+    <!-- side brawer -->
+    <div id="js--drawer" class="drawer">
+      <div class="drawer__categories">
+        <header class="drawer__categories__category--header">
+          <h2>Categories</h2>
+          <div class="drawer__categories__category--header__close">
+            <div>
+              🗙 
+            </div>
+          </div>
+        </header>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Covid-19 Special</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Women Care</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Devices</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Sexual Wellness</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Herbal and Homeopathy</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Baby & Mom care</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Nutrition and drinks</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Personal care</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Supplements and Vitamins</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">OTC Medicines</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Prescription Medicines</a></div>
+        
+      </div>
+      
+      <div class="drawer__links">
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link" title="Hello World">Home</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Orders</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Shop Location</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Gallery</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Career</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Contact</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">About Us</a></div>
+      </div>
+    </div>
+    <!-- side brawer ends -->
   </body>
 </html>

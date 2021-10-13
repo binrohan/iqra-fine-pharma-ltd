@@ -7,6 +7,10 @@
     display: flex;
 }
 
+@mixin flex--y {
+    flex-direction: column;
+}
+
 
 @mixin flex--x--space-between($g: 0) {
     @include flex;
@@ -35,4 +39,10 @@
     @include flex;
     justify-content: start;
     align-items: center;
+}
+
+@mixin flex--y--center {
+    @include flex;
+    @include flex--y;
+    justify-content: center;
 }

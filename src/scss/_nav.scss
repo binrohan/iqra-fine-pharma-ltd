@@ -59,6 +59,18 @@
     width: 240px;
     height: auto;
 
+    &--ham{
+      display: none;
+      min-width: 25px;
+      @include btn--outline--success;
+      padding: 1px;
+      background: $color-second-bg;
+
+      img{
+        width: 100%;
+      }
+    }
+
     img {
       max-width: 100%;
     }

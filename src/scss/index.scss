@@ -17,7 +17,6 @@
 @import 'cart';
 @import 'cart-product';
 @import 'footer';
-@import 'responsive-sm';
 @import 'media-xs';
 @import 'media-sm';
 @import 'media-min-600';
@@ -26,6 +25,7 @@
 @import 'media-min-900';
 @import 'media-min-1000';
 @import 'media-lg';
+@import 'drawer';
 
 html{
     overflow-x: hidden;
@@ -35,8 +35,10 @@ body{
     background: white;
     color: $color-text-primary;
     min-height: 100vh;
+    max-height: unset;
     font-family: 'Roboto', sans-serif;
     line-height: 1;
     position: relative;
+    overflow: visible;
 }
 

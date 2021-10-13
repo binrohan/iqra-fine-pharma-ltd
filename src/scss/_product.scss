@@ -2,12 +2,17 @@
     @include pointer-cursor;
     @include flex--y-space-between;
     padding: 5px;
-    width: 176px;
+    width: 175px;
     height: 100%;
     border-radius: 0.25rem;
     background: $color-foreground;
     box-shadow: -2px 4px 3px 1px #a9a9a980;
     position: relative;
+    border: 1px solid transparent;
+
+    &:hover{
+      border: 1px solid $color-parmary;
+    }
 
     &:hover &__img img{
       transform: scale(1.1);
@@ -75,6 +80,7 @@
         @include transition-ease;
         @include pointer-cursor;
         @include flex--x--space-between--y--center(5px);
+        font-size: .8rem;
         color: $color-text-secondary;
         background: $color-parmary;
         height: 2rem;
