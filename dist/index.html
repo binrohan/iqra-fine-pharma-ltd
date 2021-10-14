@@ -49,10 +49,89 @@
           </div>
         </div>
         <div class="nav-mid__search">
-          <input type="text" placeholder="Search by Trade or Generic Names" />
+          <input type="text" id="search" placeholder="Search by Trade or Generic Names" />
           <button>
             <img src="./icons/e-search.svg" alt="" />
           </button>
+          <div class="search-result" id="search-result">
+            <div class="search-result__no-product-message">
+              No Product Found! &nbsp; &#128532;
+            </div>
+            <div class="search-result__items">
+              <!-- search result -->
+            <div class="result-card">
+              <div class="result-card__img">
+                <img src="./images/p (1).webp" alt="">
+              </div>
+              <div class="result-card__details">
+                <a href="#" class="result-card__details--name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.
+                </a>
+                <p class="result-card__details--price">
+                  <span>Price: </span><span class="current">2800<span>BDT</span></span> <span class="original">3200 <span>BDT</span></span>
+                </p>
+                <a class="result-card__details--category">
+                  Lorem, ipsum dolor.
+                </a>
+              </div>
+              <div class="result-card__details--actions">
+                <button>
+                  <img src="./icons/cart-filled.svg" alt="">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <!-- search result ends -->
+            <!-- search result -->
+            <div class="result-card">
+              <div class="result-card__img">
+                <img src="./images/p (5).webp" alt="">
+              </div>
+              <div class="result-card__details">
+                <a href="#" class="result-card__details--name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus. Lorem ipsum dolor sit amet.
+                </a>
+                <p class="result-card__details--price">
+                  <span>Price: </span><span class="current">2800<span>BDT</span></span> <span class="original">3200 <span>BDT</span></span>
+                </p>
+                <a class="result-card__details--category">
+                  Lorem, ipsum dolor.
+                </a>
+              </div>
+              <div class="result-card__details--actions">
+                <button>
+                  <img src="./icons/cart-filled.svg" alt="">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <!-- search result ends -->
+            <!-- search result -->
+            <div class="result-card">
+              <div class="result-card__img">
+                <img src="./images/b (1).webp" alt="">
+              </div>
+              <div class="result-card__details">
+                <a href="#" class="result-card__details--name">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </a>
+                <p class="result-card__details--price">
+                  <span>Price: </span><span class="current">2800<span>BDT</span></span> <span class="original">3200 <span>BDT</span></span>
+                </p>
+                <a class="result-card__details--category">
+                  Lorem, ipsum dolor.
+                </a>
+              </div>
+              <div class="result-card__details--actions">
+                <button>
+                  <img src="./icons/cart-filled.svg" alt="">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <!-- search result ends -->
+            </div>
+            <div class="search-result__view-more">
+              <button>View All Result</button>
+            </div>
+          </div>
         </div>
         <ul class="nav-mid__links">
           <li class="nav-mid__links--link" data-title="Upload Prescription">
@@ -877,7 +956,7 @@
       <div class="drawer__categories">
         <header class="drawer__categories__category--header">
           <h2>Categories</h2>
-          <div class="drawer__categories__category--header__close">
+          <div class="drawer__categories__category--header__close" id="js--drawer-close-btn">
             <div>
               🗙 
             </div>

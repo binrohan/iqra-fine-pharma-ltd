@@ -7,8 +7,8 @@ document.querySelector('#drawer-toggle-btn').addEventListener('click', () => {
     openSideDrawer();
 });
 
-document.querySelector('.drawer__categories__category--header__close').addEventListener('click', () => {
-    openSideDrawer();
+document.querySelector('#js--drawer-close-btn').addEventListener('click', () => {
+    toggleSideDrawer();
 });
 
 cartOpenBtn.addEventListener('click', () => {
@@ -17,6 +17,10 @@ cartOpenBtn.addEventListener('click', () => {
 
 cartCloseBtn.addEventListener('click', () => {
     closeCart();
+});
+
+document.querySelector('#search').addEventListener('input', (e) => {
+    renderSearchResult(e);
 });
 
 
@@ -31,7 +35,7 @@ const closeCart = () => {
     cartExpan.style.display = 'none';
 }
 
-const openSideDrawer = () => {
+const toggleSideDrawer = () => {
     const bodyEl = document.querySelector('body');
 
     drawer.classList.toggle('drawer-open');
@@ -39,3 +43,11 @@ const openSideDrawer = () => {
     bodyEl.style.overflow = bodyEl.style.overflow === 'hidden' ? 'visible' : 'hidden';
     bodyEl.style.maxHeight = bodyEl.style.maxHeight === '' ? '100vh' : '';
 }
+
+const renderSearchResult = (e) => {
+    if(e.target.value){
+        document.querySelector('#search-result').style.height = 'auto';
+    } else {
+        document.querySelector('#search-result').style.height = '0';
+    }
+} 

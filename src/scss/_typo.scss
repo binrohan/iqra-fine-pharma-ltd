@@ -6,6 +6,10 @@
     text-transform: uppercase;
 }
 
+@mixin text--center {
+  text-align: center;
+}
+
 @mixin text--sm {
   font-size: 0.75rem;
 }
@@ -19,9 +23,24 @@
   font-size: 0.88rem;
 }
 
+@mixin text--md--uppercase {
+  @include text--md;
+  @include text--uppercase;
+}
+
 @mixin text--md--bold {
   @include text--md;
   @include text--bold;
+}
+
+@mixin text--md--bold--uppercase {
+  @include text--md--bold;
+  @include text--uppercase;
+}
+
+@mixin text--md--bold--uppercase--center{
+  @include text--md--bold--uppercase;
+  @include text--center;
 }
 
 @mixin text--lg {

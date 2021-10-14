@@ -1,0 +1,115 @@
+.search-result{
+    width: 100%;
+    max-width: 580px;
+    height: 0;
+    background: $color-foreground;
+    position: absolute;
+    top: 100%;
+    z-index: 11;
+    overflow-y: hidden;
+    @include transition-ease;
+
+    &__no-product-message{
+        @include text--md--bold--uppercase--center;
+        padding: 1rem;
+    }
+    
+    &__items{
+        padding: .5rem
+    }
+
+    &__view-more{
+        button{
+            @include kill-btn;
+            background: $color-parmary;
+            width: 100%;
+            padding: .5rem;
+
+            &:hover{
+                @include pointer-cursor;
+                background: darken($color-parmary, 20);
+                color: $color-text-secondary;
+            }
+        }
+    }
+}
+
+.result-card{
+    @include grid;
+    grid-template-columns: 20% 1fr auto;
+    column-gap: .5rem;
+    padding: .5rem;
+    border-bottom: 1px solid $color-input-bg;
+
+    &:hover{
+        background: lighten($color-parmary, 10);
+    }
+
+    &__img{
+        img{
+            max-width: 100%;
+        }
+    }
+
+    &__details{
+        &--name{
+            @include kill-anchore;
+            @include text--md--bold;
+
+            &:hover{
+                color: lighten($color-text-primary, 20);
+                text-decoration: underline;
+                @include pointer-cursor;
+            }
+        }
+
+        &--price{
+            @include text--md;
+            margin-bottom: 0.5rem;
+            margin-top: 0.5rem;
+
+            .current{
+                color: $color-text-primary;
+            }
+
+            .original{
+                text-decoration: line-through;
+                color: $color-secondary;
+            }
+        }
+
+        &--category{
+            @include kill-anchore;
+            @include text--md;
+
+            &:hover{
+                text-decoration: underline;
+                @include pointer-cursor;
+            }
+        }
+
+        &--actions{
+            @include grid--xy--center;
+            button{
+                @include pointer-cursor;
+                @include kill-btn;
+                @include flex--x--space-between--y--center;
+                @include transition-ease;
+                width: 120px;
+                padding: .5rem;
+                background: $color-parmary;
+                color: $color-text-secondary;
+                border-radius: .25rem;
+                white-space: nowrap;
+
+
+                &:hover{
+                    background: darken($color-parmary, 20);
+                }
+                img{
+                    max-width: 25px;
+                }
+            }
+        }
+    }
+}
