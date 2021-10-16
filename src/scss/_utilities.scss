@@ -1,0 +1,15 @@
+.container {
+  @include container;
+}
+
+.overflow-x-hidden{
+    overflow-x: hidden;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.transition-ease{
+    @include transition-ease;
+}

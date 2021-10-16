@@ -80,3 +80,9 @@
   }
 }
 
+.btn-round{
+  @include btn;
+  border-radius: 50%;
+}
+
+

@@ -64,6 +64,9 @@
 }
 
 // utilities
+.t-8{
+  font-size: .5rem;
+}
 .t-12{
   font-size: .75rem;
 }
@@ -88,6 +91,19 @@
 .t-uppercase{
   text-transform: uppercase;
 }
+.t-limited {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.t-line-thro{
+  text-decoration: line-through;
+}
+
 .t-white{
   color: white;
+}
+.t-danger{
+  color: $color-secondary;
 }

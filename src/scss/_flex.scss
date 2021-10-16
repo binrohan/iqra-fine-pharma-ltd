@@ -48,6 +48,15 @@
 }
 
 //-----------------------------------//
+.g4{
+    column-gap: .25rem;
+}
+.fx-row{
+    flex-direction: row;
+}
+.fx-col{
+    flex-direction: column;
+}
 .fx-right{
     display: flex;
     justify-content: flex-end;

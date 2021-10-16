@@ -9,44 +9,22 @@
 @import 'button-mixins';
 @import 'classes';
 @import 'nav';
-@import 'slider';
-@import 'perks';
-@import 'notification-bar';
-@import 'product-row';
 @import 'product';
 @import 'cart';
 @import 'cart-product';
 @import 'footer';
 @import 'media-xs';
-@import 'media-sm';
-@import 'media-min-600';
-@import 'media-md';
-@import 'media-min-800';
-@import 'media-min-900';
-@import 'media-min-1000';
-@import 'media-lg';
 @import 'drawer';
 @import 'search-result';
 @import 'category-list';
-@import 'monami';
 @import 'layout';
 @import 'visual';
 @import 'element';
-@import 'ulities';
-
+@import 'utilities';
+@import 'path';
+@import 'product-display';
 html{
     overflow-x: hidden;
-}
-
-.overlay{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(121, 121, 121, 0.288);
-    top: 0;
-    left: 0;
-    z-index: -1;
-    display: none;
 }
 
 body{
@@ -60,3 +38,23 @@ body{
     overflow: visible;
 }
 
+.header{
+    background: $color-parmary;
+    color: $color-text-secondary
+}
+.products{
+    background: $color-bg;
+}
+.product-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    column-gap: 0.75rem;
+    row-gap: .75rem;
+
+    .product{
+        width: max-content;
+        height: auto;
+    }
+}
