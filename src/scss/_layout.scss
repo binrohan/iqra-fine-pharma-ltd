@@ -1,0 +1,74 @@
+// padding
+.p-4{
+    padding: .25rem;
+}
+.p-8{
+    padding: .5rem;
+}
+.p-16{
+    padding: 1rem;
+}
+.py-16{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.px-16{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+// margin
+.mb-2{
+    margin-bottom: 0.125rem;
+}
+.mb-4{
+    margin-bottom: 0.25rem;
+}
+.mb-8{
+    margin-bottom: 0.5rem;
+}
+.mb-16{
+    margin-bottom: 1rem;
+}
+.mt-2{
+    margin-top: 0.125rem;
+}
+.h-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// width
+.full-screen{
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.max-content{
+    width: max-content;
+}
+.w-250{
+    width: 250px;
+}
+.w-350{
+    width: 350px;
+}
+
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+.right-top{
+    right: 0 !important;
+    top: 0 !important;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.z-14{
+    z-index: 14;
+}

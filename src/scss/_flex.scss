@@ -46,3 +46,18 @@
     @include flex--y;
     justify-content: center;
 }
+
+//-----------------------------------//
+.fx-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.fx-between{
+    display: flex;
+    justify-content: space-between;
+}
+.fx-hor-between-ver-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

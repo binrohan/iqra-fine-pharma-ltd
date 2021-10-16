@@ -17,6 +17,10 @@
   box-shadow: 0px 2px 4px -1px black;
 }
 
+#category-toggle-btn-arrow {
+  @include transition-ease;
+}
+
 .nav-top {
   @include container;
   @include flex--x--space-between;
@@ -36,13 +40,13 @@
     @include text--md;
     column-gap: 1rem;
 
-    .text{
+    .text {
       color: $color-parmary;
     }
 
     .icon {
       @include flex--x--space-between--y--center;
-      column-gap: .5rem;
+      column-gap: 0.5rem;
       @include pointer-cursor;
     }
   }
@@ -59,14 +63,14 @@
     width: 150px;
     height: auto;
 
-    &--ham{
+    &--ham {
       display: none;
       min-width: 25px;
       @include btn--outline--success;
       padding: 1px;
-      background: $color-second-bg;
+      
 
-      img{
+      img {
         width: 100%;
       }
     }
@@ -99,7 +103,7 @@
       }
     }
 
-    &>button {
+    & > button {
       @include kill;
       @include grid--xy--center;
       height: 40px;
@@ -174,14 +178,21 @@
       }
 
       &--category-dropdown-btn {
+          position: relative;
         @include flex--x--space-between--y--center;
-        @include pointer-cursor;
-        column-gap: 2rem;
-        padding: 0.5rem;
-        border-radius: 0.125rem;
 
-        &:hover {
-          background: initial;
+        div#category-toggle-btn {
+          @include flex--x--space-between--y--center;
+          @include pointer-cursor;
+          height: 100%;
+          width: 100%;
+          column-gap: 2rem;
+          padding: 0.5rem;
+          border-radius: 0.125rem;
+
+          &:hover {
+            background: #d41e1e;
+          }
         }
       }
     }

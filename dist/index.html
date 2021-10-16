@@ -33,7 +33,6 @@
             </div>
             <div class="text--sm">Download Our App</div>
           </div>
-          
         </div>
       </nav>
     </section>
@@ -54,6 +53,7 @@
             <img src="./icons/e-search.svg" alt="" />
           </button>
           <div class="search-result" id="search-result">
+            
             <div class="search-result__no-product-message">
               No Product Found! &nbsp; &#128532;
             </div>
@@ -154,7 +154,7 @@
               <img src="./icons/e-bell.svg" alt="notification" />
             </a>
           </li>
-          <li class="nav-mid__links--link" data-title="User Profile">
+          <li class="nav-mid__links--link" id="profile" data-title="User Profile">
             <a href="#">
               <img src="./icons/e-user.svg" alt="profile-icon" />
             </a>
@@ -169,15 +169,60 @@
             <div class="nav-bottom__items__btns--ham">
               <img src="./icons/e-hamburger.svg" alt="" />
             </div>
-            <div class="nav-bottom__items__btns--category-dropdown-btn">
-              <div>Categories</div>
-              <div>
-                <img src="./icons/e-down-angle.svg" alt="" />
+            <div class="nav-bottom__items__btns--category-dropdown-btn" >
+              <div id="category-toggle-btn">
+                <div>Categories</div>
+                <div id="category-toggle-btn-arrow">
+                  <img src="./icons/e-down-angle.svg" alt="" />
+                </div>
               </div>
+              
+              <!-- calegory list -->
+              <div class="category-list" id="category-list">
+                <div class="categories">
+                  <div class="categories__category">
+                    <a href="#" class="level-one">Covid-19 Special</a>
+                    <div class="categories__category__subs">
+                      <div class="categories__category__subs__sub"><a href="#" >Women Care</a></div>
+                      <div class="categories__category__subs__sub"><a href="#" >Devices</a></div>
+                      <div class="categories__category__subs__sub"><a href="#" >Sexual Wellness</a></div>
+                      <div class="categories__category__subs__sub"><a href="#" >Herbal and Homeopathy</a></div>
+                    </div>
+                  </div>
+                  <div class="categories__category">
+                    <a href="#" class="level-one">Women Care</a>
+                    <div class="categories__category__subs">
+                      <div class="categories__category__subs__sub"><a href="#" >Women Care</a></div>
+                      <div class="categories__category__subs__sub"><a href="#" >Devices</a></div>
+                      <div class="categories__category__subs__sub"><a href="#" >Sexual Wellness</a></div>
+                      <div class="categories__category__subs__sub"><a href="#" >Herbal and Homeopathy</a></div>
+                    </div>
+                  </div>
+                  <div class="categories__category"><a href="#" class="level-one">Devices</a></div>
+                  <div class="categories__category"><a href="#" class="level-one">Sexual Wellness</a></div>
+                  <div class="categories__category">
+                    <a href="#" class="level-one">Herbal and Homeopathy</a>
+                    <div class="categories__category__subs">
+                      <div class="categories__category__subs__sub"><a href="#">Women Care</a></div>
+                      <div class="categories__category__subs__sub"><a href="#">Devices</a></div>
+                      <div class="categories__category__subs__sub"><a href="#">Sexual Wellness</a></div>
+                      <div class="categories__category__subs__sub"><a href="#">Herbal and Homeopathy</a></div>
+                    </div>
+                  </div>
+                  <div class="categories__category"><a href="#" class="level-one">Baby & Mom care</a></div>
+                  <div class="categories__category"><a href="#" class="level-one">Nutrition and drinks</a></div>
+                  <div class="categories__category"><a href="#" class="level-one">Personal care</a></div>
+                  <div class="categories__category"><a href="#" class="level-one">Supplements and Vitamins</a></div>
+                  <div class="categories__category"><a href="#" class="level-one">OTC Medicines</a></div>
+                  <div class="categories__category"><a href="#" class="level-one">Prescription Medicines</a></div>
+                </div>
+              </div>
+              <!-- calegory list ends-->
             </div>
+            
           </div>
           <div class="nav-bottom__items__links">
-            <a href="#" class="nav-bottom__items__links--link" title="Hello World">Home</a>
+            <a href="#" class="nav-bottom__items__links--link active-nav" title="Hello World">Home</a>
             <a href="#" class="nav-bottom__items__links--link">Orders</a>
             <a href="#" class="nav-bottom__items__links--link">Shop Location</a>
             <a href="#" class="nav-bottom__items__links--link">Gallery</a>
@@ -185,25 +230,17 @@
             <a href="#" class="nav-bottom__items__links--link">Contact</a>
             <a href="#" class="nav-bottom__items__links--link">About Us</a>
           </div>
-          <!-- <a href="#" class="nav-bottom__links--link">Covid-19 Special</a>
-                <a href="#" class="nav-bottom__links--link">Women Care</a>
-                <a href="#" class="nav-bottom__links--link">Devices</a>
-                <a href="#" class="nav-bottom__links--link">Sexual Wellness</a>
-                <a href="#" class="nav-bottom__links--link">Herbal and Homeopathy</a>
-                <a href="#" class="nav-bottom__links--link">Baby & Mom care</a> -->
-          <!-- <a href="#" class="nav-bottom__categories--category">Nutrition and drinks</a>
-                <a href="#" class="nav-bottom__categories--category">Personal care</a>
-                <a href="#" class="nav-bottom__categories--category">Supplements and Vitamins</a>
-                <a href="#" class="nav-bottom__categories--category">OTC Medicines</a>
-                <a href="#" class="nav-bottom__categories--category">Prescription Medicines</a> -->
         </div>
       </nav>
     </section>
     <section class="bg-slider">
       <div class="slider">
-        <div class="slider__item">
-          <img src="./images/s1.webp" alt="" />
+        <div class="slider__items">
+          <div class="slider__item">
+            <img src="./images/s1.webp" alt="" />
+          </div>
         </div>
+        
       </div>
     </section>
     <section class="bg-perks">
@@ -987,5 +1024,121 @@
       </div>
     </div>
     <!-- side brawer ends -->
+    <!-- registration -->
+    <div class="pop-up full-screen fixed z-14 bg-black3 center" 
+         id="registration-pop-up" 
+         data-visible="false" 
+         data-role="pop-up"
+         >
+      <div class="pop-up__content p-16 bg-white-500 round-corner relative">
+        <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">Sign Up</div>
+        <div class="pop-up__body">
+          <form>
+            <div class="bg-gray-100 p-8 mb-4">
+              <label for="email" class="t-bold t-8 t-uppercase">
+                Phone Number
+                <input type="text" name="phone" id="phone" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
+              </label>
+            </div>
+            <div class="bg-gray-100 p-8 mb-4">
+              <label for="password" class="t-bold t-8 t-uppercase">
+                Password
+                <input 
+                type="password" 
+                name="phone" 
+                id="password" 
+                class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
+              </label>
+            </div>
+            <div class="bg-gray-100 p-8 mb-4">
+              <label for="retry-password" class="t-bold t-8 t-uppercase">
+                Retry Password
+                <input 
+                type="password" 
+                name="phone" 
+                id="retry-password" 
+                class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
+              </label>
+            </div>
+          </form>
+          
+        </div>
+        <div class="pop-up__footer fx-hor-between-ver-center">
+          <div class="t-12 t-bold">Have Account? &nbsp; <a href="#" id="open-login">Login</a></div>
+          <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner" id="sign-up">Sign Up</button>
+        </div>
+        <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-registration-pop-up">
+          X
+        </div>
+      </div>
+    </div>
+    <!-- pop up overlay ends -->
+    <!-- otp pop up -->
+    <div class="pop-up full-screen fixed z-14 bg-black3 center" 
+         id="otp-pop-up" 
+         data-visible="false" 
+         data-role="pop-up"
+         >
+      <div class="pop-up__content p-16 bg-white-500 round-corner relative">
+        <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">VERIFICATION</div>
+        <div class="pop-up__body">
+          <form>
+            <div class="bg-gray-100 p-8 mb-4">
+              <label for="otp" class="t-bold t-8 t-uppercase">
+                Please Enter Your OTP Code
+                <input type="text" name="otp" id="otp" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
+              </label>
+            </div>
+          </form>
+          
+        </div>
+        <div class="pop-up__footer fx-hor-between-ver-center">
+          <div class="t-12 t-bold">Didn't receive the OTP? &nbsp; <a href="#">Resend</a></div>
+          <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner">Verify</button>
+        </div>
+        <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-otp-pop-up">
+          X
+        </div>
+      </div>
+    </div>
+    <!-- otp pop up ends -->
+    <!-- registration -->
+    <div class="pop-up full-screen fixed z-14 bg-black3 center" 
+         id="login-pop-up" 
+         data-visible="false" 
+         data-role="pop-up"
+         >
+      <div class="pop-up__content p-16 bg-white-500 round-corner relative">
+        <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">Login</div>
+        <div class="pop-up__body">
+          <form>
+            <div class="bg-gray-100 p-8 mb-4">
+              <label for="email" class="t-bold t-8 t-uppercase">
+                Phone Number
+                <input type="text" name="phone" id="phone" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
+              </label>
+            </div>
+            <div class="bg-gray-100 p-8 mb-4">
+              <label for="password" class="t-bold t-8 t-uppercase">
+                Password
+                <input 
+                type="password" 
+                name="phone" 
+                id="password" 
+                class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="pop-up__footer fx-hor-between-ver-center">
+          <div class="t-12 t-bold">Don't have account? &nbsp;<a href="#" id="open-registation">REGISTER</a></div>
+          <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner" id="log-in">Login</button>
+        </div>
+        <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-login-pop-up">
+          X
+        </div>
+      </div>
+    </div>
+    <!-- login pop up ends -->
   </body>
 </html>

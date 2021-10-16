@@ -2,7 +2,7 @@
     @include pointer-cursor;
     @include flex--y-space-between;
     padding: 5px;
-    width: 175px;
+    width: 165px;
     height: 100%;
     border-radius: 0.25rem;
     background: $color-foreground;
@@ -102,8 +102,8 @@
     &__tag {
       @include text--md--bold;
       @include grid--xy--center;
-      top: 10px;
-      left: 0;
+      top: 5px;
+      left: 5px;
       height: 17px;
       position: absolute;
       color: $color-text-secondary;

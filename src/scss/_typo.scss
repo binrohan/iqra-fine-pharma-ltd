@@ -62,3 +62,32 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
+// utilities
+.t-12{
+  font-size: .75rem;
+}
+.t-16{
+  font-size: 1rem;
+}
+.t-18{
+  font-size: 1.5rem;
+}
+.t-bold{
+  font-weight: 600;
+}
+.t-left{
+  text-align: left;
+}
+.t-center{
+  text-align: center;
+}
+.t-light{
+  font-weight: 400;
+}
+.t-uppercase{
+  text-transform: uppercase;
+}
+.t-white{
+  color: white;
+}

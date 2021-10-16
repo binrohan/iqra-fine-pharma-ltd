@@ -6,3 +6,8 @@
     @include grid;
     place-items: center;
 }
+
+.center{
+    display: grid !important;
+    place-items: center;
+}

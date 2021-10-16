@@ -52,3 +52,31 @@
   @include curve;
   @include success;
 }
+
+//-------------------
+@mixin btn{
+  border: none;
+  box-shadow: none;
+  padding: .25rem .5rem;
+  cursor: pointer;
+  background: rgb(236, 236, 236);
+  transition: all 200ms ease-in-out;
+}
+
+.btn{
+  @include btn;
+}
+
+.btn:hover{
+  background: rgb(212, 211, 211);
+}
+
+.btn-primary{
+  @include btn;
+  background: $color-parmary;
+
+  &:hover{
+    background: darken($color-parmary, 10);
+  }
+}
+

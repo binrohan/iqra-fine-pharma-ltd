@@ -1,0 +1,34 @@
+[data-visible="false"][data-role="pop-up"]{
+    display: none !important;
+}
+
+
+
+.opacity-3{
+    opacity: 0.3;
+}
+
+// border
+.round-corner{
+    border-radius: .125rem;
+}
+.bb{
+    border-bottom: 1px solid white !important;
+}
+
+// color
+.bg-white-500{
+    background: rgb(255, 255, 255);
+}
+
+.bg-gray-100{
+    background: rgb(226, 226, 226);
+}
+
+.bg-black3{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.pointer{
+    cursor: pointer;
+}

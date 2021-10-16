@@ -27,9 +27,25 @@
 @import 'media-lg';
 @import 'drawer';
 @import 'search-result';
+@import 'category-list';
+@import 'monami';
+@import 'layout';
+@import 'visual';
+@import 'element';
 
 html{
     overflow-x: hidden;
+}
+
+.overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(121, 121, 121, 0.288);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
 }
 
 body{
