@@ -67,7 +67,7 @@ const Popup = (selector) => {
 
     document.querySelector('#profile').addEventListener('click', (e) => {
         e.preventDefault();
-        Popup('#registration-pop-up').toggle();
+        Popup('#login-pop-up').toggle();
     });
 
     document.querySelector('#close-registration-pop-up').addEventListener('click', () => {

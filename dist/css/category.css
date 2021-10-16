@@ -107,12 +107,20 @@ section {
   font-size: .75rem;
 }
 
+.t-14 {
+  font-size: .88rem;
+}
+
 .t-16 {
   font-size: 1rem;
 }
 
-.t-18 {
+.t-20 {
   font-size: 1.5rem;
+}
+
+.t-30 {
+  font-size: 1.875rem;
 }
 
 .t-bold {
@@ -157,6 +165,16 @@ section {
 .center {
   display: grid !important;
   place-items: center;
+}
+
+.grid-1-to-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-1-to-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .btn {
@@ -1465,6 +1483,10 @@ section {
   margin-bottom: 1rem;
 }
 
+.mb-20 {
+  margin-bottom: 1.5rem;
+}
+
 .mt-2 {
   margin-top: 0.125rem;
 }
@@ -1597,8 +1619,8 @@ a.kill-anchore {
 .product-display {
   background: #fff;
   box-shadow: 0px 0px 3px 0px #0000006b;
-  max-width: 216px;
-  min-width: 216px;
+  max-width: 200px;
+  min-width: 200px;
   border: 1px solid transparent;
 }
 
