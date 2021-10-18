@@ -1,0 +1,57 @@
+@import "var";
+@import "config";
+@import "tooltip";
+@import "mixins";
+@import "flex";
+@import "typo";
+@import "grid";
+@import "icon";
+@import "button-mixins";
+@import "classes";
+@import "nav";
+@import "cart";
+@import "cart-product";
+@import "footer";
+@import "drawer";
+@import "search-result";
+@import "category-list";
+@import "layout";
+@import "visual";
+@import "element";
+@import "utilities";
+@import "material";
+
+@import "media-xs";
+@import "media-sm";
+@import "media-min-600";
+@import "media-md";
+@import "media-min-800";
+@import "media-min-900";
+@import "media-min-1000";
+@import "media-lg";
+
+.checkout{
+    
+    .checkout-product{
+        img{
+            width: 5rem;
+        }
+        
+        .quantity-row{
+            display: flex;
+                justify-content: center;
+                gap: 0.5rem;
+    
+                input{
+                    width: 40px;
+                    text-align: center;
+                }
+                button{
+                    width: min-content;
+                }
+           
+            
+        }
+        
+    }
+}

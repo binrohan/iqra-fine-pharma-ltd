@@ -182,6 +182,10 @@ input[type=number] {
   text-align: left;
 }
 
+.t-right {
+  text-align: right;
+}
+
 .t-center {
   text-align: center;
 }
@@ -1623,6 +1627,56 @@ span.brick.chips.medium {
 span.brick.chips.medium.primary {
   background: #00a27a;
   color: #f7fbf9;
+}
+
+div.tabs.brick .tab-buttons {
+  background: #e1e1e1;
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+}
+
+div.tabs.brick .tab-buttons div {
+  min-width: 150px;
+  padding: 0.5rem 0;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+div.tabs.brick .tab-buttons div.active {
+  border-bottom: 2px solid #00a27a;
+}
+
+div.tabs.brick .tab-contents {
+  padding-top: 1rem;
+}
+
+div.brick.label {
+  font-size: .88rem;
+  padding: 1rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.125rem;
+}
+
+div.brick.label.default {
+  color: #686868;
+}
+
+table.brick {
+  width: 100%;
+  border-spacing: 0;
+}
+
+table.brick.primary thead {
+  background: #00a27a;
+  color: #f7fbf9;
+  height: 2rem;
+}
+
+table.brick.primary td, table.brick.primary th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
 @media screen and (max-width: 479px) {

@@ -141,3 +141,56 @@ span.brick.chips{
     }
   }
 }
+
+div.tabs.brick{
+  .tab-buttons{
+    background: $color-second-bg;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+
+    div{
+      min-width: 150px;
+      padding: 0.5rem 0;
+      text-align: center;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+
+      &.active{
+        border-bottom: 2px solid $color-primary;
+      }
+    }
+  }
+
+  .tab-contents{
+    padding-top: 1rem;
+  }
+}
+
+div.brick.label{
+  font-size: .88rem;
+  padding: 1rem;
+  border: 1px solid $color-second-bg;
+  border-radius: 0.125rem;
+
+  &.default{
+    color: $color-text-gray;
+  }
+}
+
+table.brick{
+  width: 100%;
+  border-spacing: 0;
+
+  &.primary{
+    thead{
+      background: $color-primary;
+      color: $color-text-secondary;
+      height: 2rem;
+    }
+    td,th{
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+  }
+}

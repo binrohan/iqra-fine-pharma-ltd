@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/products-by-category.css">
+    <link rel="stylesheet" href="./css/checkout.css">
 </head>
 <body>
+    <!-- common sections -->
     <section class="bg-nav-top">
         <nav class="nav-top">
           <div class="nav-top__contacts">
@@ -232,133 +233,144 @@
         </div>
     </nav>
     </section>
-      <!-- category specific -->
+    <!-- common sections ends -->
+
+    <!-- page path section starts-->
     <section class="bg-primary">
         <div class="container">
-            <h2 class="t-18 t-bold mb-4 t-white">Covid 19 Special</h2>
-            <p class="path t-12 t-white">Home > Covid 19 special</p>
+            <h2 class="t-18 t-bold mb-4 t-white t-uppercase">Checkout</h2>
+            <p class="path t-12 t-white">Home > checkout</p>
         </div>
     </section>
-    <!-- all product list  -->
-    <section class="products">
+    <!-- page path section ends -->
+
+    <!-- checkout specific starts -->
+    <section class="checkout">
         <div class="container">
-            <div class="product-grid">
-                <!-- new product card -->
-                <div class="product p-4">
-                  <a href="#" class="product-display p-8 round-corner kill-anchore fx-between fx-col relative h-100p">
-                    <div class="img overflow-hidden mb-8">
-                      <img src="./images/p (1).jpg" alt="" class="transition-ease" />
-                    </div>
-                    <div class="details">
-                      <div class="generic-name t-limited">Hand Sanitizer</div>
-                      <div class="name t-limited t-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, a.</div>
-                      <div class="price">
-                        <span class="current t-bold">
-                          2800BDT
-                        </span>
-                        &nbsp;
-                        <span class="original t-line-thro t-danger t-12">
-                         3200BDT
-                        </span>
-                      </div>
-                    </div>
-                    <div class="actions fx-hor-between-ver-center">
-                      <button data-title="Add to wishlist" class="btn-round wish p-4 center transition-ease">
-                          <img src="./icons/heart-outline.svg" alt="" />
-                      </button>
-                      <button class="add-to-cart btn-primary p-4 fx-hor-between-ver-center g4">
-                        <img src="./icons/cart-filled.svg" alt="" />Add to
-                        Cart
-                      </button>
-                    </div>
-                    <div class="tag t-16 t-bold t-white absolute bg-primary p-2">
-                      25%
-                    </div>
-                  </a>
+            <div class="brick label default mb-8">
+                Your shopping cart contains: 2 Products
+            </div>
+            <div class="tabs brick">
+                <div class="tab-buttons">
+                    <div class="active">Summary</div>
+                    <div>Address</div>
+                    <div>Payment</div>
                 </div>
-                <!-- new product card ends -->
-                <!-- new product card -->
-                <div class="product p-4">
-                  <a href="#" class="product-display p-8 round-corner kill-anchore relative fx-between fx-col h-100p">
-                    <div class="img overflow-hidden mb-8">
-                      <img src="./images/p (2).jpg" alt="" class="transition-ease" />
+                <div class="tab-contents">
+                    <div class="active">
+                        <table class="brick primary mb-8">
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Product Name</th>
+                                    <th>Unit Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total Amount</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="checkout-product">
+                                    <td><img src="./images/p (6).webp" alt="" class="w-max"></td>
+                                    <td>
+                                        <p class="t-16 pointer t-hover-primary mb-2">ROSSMAX PULS OXYMETER</p>
+                                        <p class="t-12 mb-2">Type : DEVICE</p>
+                                        <p class="t-12 mb-2">Strength: MODEL: SB100</p>
+                                        <p class="t-12">Company: MICROMED</p>
+                                    </td>
+                                    <td>
+                                        <div class="t-right">
+                                            41000BDT
+                                        </div>
+                                    </td>
+                                    <td >
+                                        <div class="quantity-row"> 
+                                            <button class="brick outline primary small">&#9650;</button>
+                                            <input type="number" value="2">
+                                            <button class="brick outline primary small">&#9660;</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="t-right">8200.72BDT</div>
+                                    </td>
+                                    <td>
+                                        <div class="center">
+                                            <button class="brick fill danger t-center">&#9932;</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="checkout-product">
+                                    <td><img src="./images/p (2).webp" alt="" class="w-max"></td>
+                                    <td>
+                                        <p class="t-16 pointer t-hover-primary mb-2">ROSSMAX PULS OXYMETER</p>
+                                        <p class="t-12 mb-2">Type : DEVICE</p>
+                                        <p class="t-12 mb-2">Strength: MODEL: SB100</p>
+                                        <p class="t-12">Company: MICROMED</p>
+                                    </td>
+                                    <td>
+                                        <div class="t-right">
+                                            41000BDT
+                                        </div>
+                                    </td>
+                                    <td >
+                                        <div class="quantity-row"> 
+                                            <button class="brick outline primary small">&#9650;</button>
+                                            <input type="number" value="2">
+                                            <button class="brick outline primary small">&#9660;</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="t-right">8200.72BDT</div>
+                                    </td>
+                                    <td>
+                                        <div class="center">
+                                            <button class="brick fill danger t-center">&#9932;</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4">
+                                        <div class="t-14 t-bold t-right">Total Amount(tax incl.)</div>
+                                    </td>
+                                    <td>
+                                        <div class="t-14 t-bold t-right">44, 500.72 BDT</div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">
+                                        <div class="t-14 t-bold t-right">Delivery Change</div>
+                                    </td>
+                                    <td>
+                                        <div class="t-14 t-bold t-right">120 BDT</div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">
+                                        <div class="t-14 t-bold t-right">Total</div>
+                                    </td>
+                                    <td>
+                                        <div class="t-14 t-bold t-right">44, 620.72 BDT</div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div class="fx-hor-between-ver-center">
+                            <button class="brick outline primary">Continue Shopping</button>
+                            <button class="brick fill primary">Proceed to Checkout</button>
+                            
+                        </div>
                     </div>
-                    <div class="details">
-                      <div class="generic-name t-limited">Hand Sanitizer</div>
-                      <div class="name t-limited t-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, a.</div>
-                      <div class="price">
-                        <span class="current t-bold">
-                          2800BDT
-                        </span>
-                        &nbsp;
-                        <span class="original t-line-thro t-danger t-12">
-                         3200BDT
-                        </span>
-                      </div>
-                    </div>
-                    <div class="actions fx-hor-between-ver-center">
-                      <button data-title="Add to wishlist" class="btn-round wish p-4 center transition-ease">
-                          <img src="./icons/heart-outline.svg" alt="" />
-                      </button>
-                      <button class="add-to-cart btn-primary p-4 fx-hor-between-ver-center g4">
-                        <img src="./icons/cart-filled.svg" alt="" />Add to
-                        Cart
-                      </button>
-                    </div>
-                    <div class="tag t-16 t-bold t-white absolute bg-primary p-2">
-                      25%
-                    </div>
-                  </a>
                 </div>
-                <!-- new product card ends -->
-                <!-- new product card -->
-                <div class="product p-4">
-                  <a href="#" class="product-display p-8 round-corner kill-anchore relative fx-between fx-col h-100p">
-                    <div class="img overflow-hidden mb-8">
-                      <img src="./images/p (3).jpg" alt="" class="transition-ease" />
-                    </div>
-                    <div class="details">
-                      <div class="generic-name t-limited">Hand Sanitizer</div>
-                      <div class="name t-limited t-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, a.</div>
-                      <div class="price">
-                        <span class="current t-bold">
-                          2800BDT
-                        </span>
-                        &nbsp;
-                        <span class="original t-line-thro t-danger t-12">
-                         3200BDT
-                        </span>
-                      </div>
-                    </div>
-                    <div class="actions fx-hor-between-ver-center">
-                      <button data-title="Add to wishlist" class="btn-round wish p-4 center transition-ease">
-                          <img src="./icons/heart-outline.svg" alt="" />
-                      </button>
-                      <button class="add-to-cart btn-primary p-4 fx-hor-between-ver-center g4">
-                        <img src="./icons/cart-filled.svg" alt="" />Add to
-                        Cart
-                      </button>
-                    </div>
-                    <div class="tag t-16 t-bold t-white absolute bg-primary p-2">
-                      25%
-                    </div>
-                  </a>
-                </div>
-                <!-- new product card ends -->
-                
-               
-             
-              
-             
-              
-              
-              
-              
-              
             </div>
         </div>
     </section>
-    <!-- all product list ends -->
+    <!-- checkout specific ends  -->
+
 
     <!-- footer -->
     <section class="bg-footer">
@@ -475,7 +487,7 @@
     </section>
     <!-- footer ends -->
 
-    <!-- category specific ends -->
+    
     <!-- following elements are absolute relavtive to body -->
     <!-- cart and cart small -->
     <div class="cart">
@@ -557,159 +569,159 @@
             <button>Order Now</button>
           </div>
       </div>
-      </div>
-      <!-- cart and cart small ends-->
-      <!-- side brawer -->
-      <div id="js--drawer" class="drawer">
-        <div class="drawer__categories">
-          <header class="drawer__categories__category--header">
-            <h2>Categories</h2>
-            <div class="drawer__categories__category--header__close" id="js--drawer-close-btn">
-              <div>
-                🗙 
-              </div>
+    </div>
+    <!-- cart and cart small ends-->
+    <!-- side brawer -->
+    <div id="js--drawer" class="drawer">
+    <div class="drawer__categories">
+        <header class="drawer__categories__category--header">
+        <h2>Categories</h2>
+        <div class="drawer__categories__category--header__close" id="js--drawer-close-btn">
+            <div>
+            🗙 
             </div>
-          </header>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Covid-19 Special</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Women Care</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Devices</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Sexual Wellness</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Herbal and Homeopathy</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Baby & Mom care</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Nutrition and drinks</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Personal care</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Supplements and Vitamins</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">OTC Medicines</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Prescription Medicines</a></div>
-          
         </div>
+        </header>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Covid-19 Special</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Women Care</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Devices</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Sexual Wellness</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Herbal and Homeopathy</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Baby & Mom care</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Nutrition and drinks</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Personal care</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Supplements and Vitamins</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">OTC Medicines</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Prescription Medicines</a></div>
         
-        <div class="drawer__links">
-          <div class="drawer__links__link"><a href="#" class="drawer__links--link" title="Hello World">Home</a></div>
-          <div class="drawer__links__link"><a href="#" class="drawer__links--link">Orders</a></div>
-          <div class="drawer__links__link"><a href="#" class="drawer__links--link">Shop Location</a></div>
-          <div class="drawer__links__link"><a href="#" class="drawer__links--link">Gallery</a></div>
-          <div class="drawer__links__link"><a href="#" class="drawer__links--link">Career</a></div>
-          <div class="drawer__links__link"><a href="#" class="drawer__links--link">Contact</a></div>
-          <div class="drawer__links__link"><a href="#" class="drawer__links--link">About Us</a></div>
+    </div>
+    
+    <div class="drawer__links">
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link" title="Hello World">Home</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Orders</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Shop Location</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Gallery</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Career</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Contact</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">About Us</a></div>
+    </div>
+    </div>
+    <!-- side brawer ends -->
+    <!-- registration -->
+    <div class="pop-up full-screen fixed z-14 bg-black3 center" 
+        id="registration-pop-up" 
+        data-visible="false" 
+        data-role="pop-up"
+        >
+    <div class="pop-up__content p-16 bg-white-500 round-corner relative">
+        <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">Sign Up</div>
+        <div class="pop-up__body">
+        <form>
+            <div class="bg-gray-100 p-8 mb-4">
+            <label for="email" class="t-bold t-8 t-uppercase">
+                Phone Number
+                <input type="text" name="phone" id="phone" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
+            </label>
+            </div>
+            <div class="bg-gray-100 p-8 mb-4">
+            <label for="password" class="t-bold t-8 t-uppercase">
+                Password
+                <input 
+                type="password" 
+                name="phone" 
+                id="password" 
+                class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
+            </label>
+            </div>
+            <div class="bg-gray-100 p-8 mb-4">
+            <label for="retry-password" class="t-bold t-8 t-uppercase">
+                Retry Password
+                <input 
+                type="password" 
+                name="phone" 
+                id="retry-password" 
+                class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
+            </label>
+            </div>
+        </form>
+        
         </div>
-      </div>
-      <!-- side brawer ends -->
-      <!-- registration -->
-      <div class="pop-up full-screen fixed z-14 bg-black3 center" 
-           id="registration-pop-up" 
-           data-visible="false" 
-           data-role="pop-up"
-           >
-        <div class="pop-up__content p-16 bg-white-500 round-corner relative">
-          <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">Sign Up</div>
-          <div class="pop-up__body">
-            <form>
-              <div class="bg-gray-100 p-8 mb-4">
-                <label for="email" class="t-bold t-8 t-uppercase">
-                  Phone Number
-                  <input type="text" name="phone" id="phone" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
-                </label>
-              </div>
-              <div class="bg-gray-100 p-8 mb-4">
-                <label for="password" class="t-bold t-8 t-uppercase">
-                  Password
-                  <input 
-                  type="password" 
-                  name="phone" 
-                  id="password" 
-                  class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
-                </label>
-              </div>
-              <div class="bg-gray-100 p-8 mb-4">
-                <label for="retry-password" class="t-bold t-8 t-uppercase">
-                  Retry Password
-                  <input 
-                  type="password" 
-                  name="phone" 
-                  id="retry-password" 
-                  class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
-                </label>
-              </div>
-            </form>
-            
-          </div>
-          <div class="pop-up__footer fx-hor-between-ver-center">
-            <div class="t-12 t-bold">Have Account? &nbsp; <a href="#" id="open-login">Login</a></div>
-            <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner" id="sign-up">Sign Up</button>
-          </div>
-          <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-registration-pop-up">
-            X
-          </div>
+        <div class="pop-up__footer fx-hor-between-ver-center">
+        <div class="t-12 t-bold">Have Account? &nbsp; <a href="#" id="open-login">Login</a></div>
+        <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner" id="sign-up">Sign Up</button>
         </div>
-      </div>
-      <!-- pop up overlay ends -->
-      <!-- otp pop up -->
-      <div class="pop-up full-screen fixed z-14 bg-black3 center" 
-           id="otp-pop-up" 
-           data-visible="false" 
-           data-role="pop-up"
-           >
-        <div class="pop-up__content p-16 bg-white-500 round-corner relative">
-          <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">VERIFICATION</div>
-          <div class="pop-up__body">
-            <form>
-              <div class="bg-gray-100 p-8 mb-4">
-                <label for="otp" class="t-bold t-8 t-uppercase">
-                  Please Enter Your OTP Code
-                  <input type="text" name="otp" id="otp" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
-                </label>
-              </div>
-            </form>
-            
-          </div>
-          <div class="pop-up__footer fx-hor-between-ver-center">
-            <div class="t-12 t-bold">Didn't receive the OTP? &nbsp; <a href="#">Resend</a></div>
-            <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner">Verify</button>
-          </div>
-          <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-otp-pop-up">
-            X
-          </div>
+        <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-registration-pop-up">
+        X
         </div>
-      </div>
-      <!-- otp pop up ends -->
-      <!-- registration -->
-      <div class="pop-up full-screen fixed z-14 bg-black3 center" 
-           id="login-pop-up" 
-           data-visible="false" 
-           data-role="pop-up"
-           >
-        <div class="pop-up__content p-16 bg-white-500 round-corner relative">
-          <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">Login</div>
-          <div class="pop-up__body">
-            <form>
-              <div class="bg-gray-100 p-8 mb-4">
-                <label for="email" class="t-bold t-8 t-uppercase">
-                  Phone Number
-                  <input type="text" name="phone" id="phone" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
-                </label>
-              </div>
-              <div class="bg-gray-100 p-8 mb-4">
-                <label for="password" class="t-bold t-8 t-uppercase">
-                  Password
-                  <input 
-                  type="password" 
-                  name="phone" 
-                  id="password" 
-                  class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
-                </label>
-              </div>
-            </form>
-          </div>
-          <div class="pop-up__footer fx-hor-between-ver-center">
-            <div class="t-12 t-bold">Don't have account? &nbsp;<a href="#" id="open-registation">REGISTER</a></div>
-            <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner" id="log-in">Login</button>
-          </div>
-          <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-login-pop-up">
-            X
-          </div>
+    </div>
+    </div>
+    <!-- pop up overlay ends -->
+    <!-- otp pop up -->
+    <div class="pop-up full-screen fixed z-14 bg-black3 center" 
+        id="otp-pop-up" 
+        data-visible="false" 
+        data-role="pop-up"
+        >
+    <div class="pop-up__content p-16 bg-white-500 round-corner relative">
+        <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">VERIFICATION</div>
+        <div class="pop-up__body">
+        <form>
+            <div class="bg-gray-100 p-8 mb-4">
+            <label for="otp" class="t-bold t-8 t-uppercase">
+                Please Enter Your OTP Code
+                <input type="text" name="otp" id="otp" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
+            </label>
+            </div>
+        </form>
+        
         </div>
-      </div>
-      <!-- login pop up ends -->
+        <div class="pop-up__footer fx-hor-between-ver-center">
+        <div class="t-12 t-bold">Didn't receive the OTP? &nbsp; <a href="#">Resend</a></div>
+        <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner">Verify</button>
+        </div>
+        <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-otp-pop-up">
+        X
+        </div>
+    </div>
+    </div>
+    <!-- otp pop up ends -->
+    <!-- registration -->
+    <div class="pop-up full-screen fixed z-14 bg-black3 center" 
+        id="login-pop-up" 
+        data-visible="false" 
+        data-role="pop-up"
+        >
+    <div class="pop-up__content p-16 bg-white-500 round-corner relative">
+        <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">Login</div>
+        <div class="pop-up__body">
+        <form>
+            <div class="bg-gray-100 p-8 mb-4">
+            <label for="email" class="t-bold t-8 t-uppercase">
+                Phone Number
+                <input type="text" name="phone" id="phone" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
+            </label>
+            </div>
+            <div class="bg-gray-100 p-8 mb-4">
+            <label for="password" class="t-bold t-8 t-uppercase">
+                Password
+                <input 
+                type="password" 
+                name="phone" 
+                id="password" 
+                class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
+            </label>
+            </div>
+        </form>
+        </div>
+        <div class="pop-up__footer fx-hor-between-ver-center">
+        <div class="t-12 t-bold">Don't have account? &nbsp;<a href="#" id="open-registation">REGISTER</a></div>
+        <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner" id="log-in">Login</button>
+        </div>
+        <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-login-pop-up">
+        X
+        </div>
+    </div>
+    </div>
+    <!-- login pop up ends -->
 </body>
 </html>
