@@ -48,9 +48,7 @@
 }
 
 //-----------------------------------//
-.g4{
-    column-gap: .25rem;
-}
+
 .fx-row{
     flex-direction: row;
 }
@@ -69,4 +67,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.fx-hor-start-ver-center{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.fx-hor-start-ver-start{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.fx{
+    display: flex;
+    
+    &.column{
+        flex-direction: column;
+    }
+
+    &.between{
+        justify-content: space-between;
+    }
 }

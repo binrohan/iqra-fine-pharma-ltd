@@ -10,10 +10,6 @@
   max-width: 1280px;
   padding: .5rem 2rem;
   @include horontal-center-by-margin;
-
-  // @include media-xs{
-  //     padding: 1rem 1rem;
-  // }
 }
 
 @mixin horontal-center-by-margin {

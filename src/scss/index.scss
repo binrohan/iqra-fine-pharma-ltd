@@ -13,7 +13,7 @@
 @import 'perks';
 @import 'notification-bar';
 @import 'product-row';
-@import 'product';
+@import 'product-card';
 @import 'cart';
 @import 'cart-product';
 @import 'footer';
@@ -33,10 +33,9 @@
 @import 'visual';
 @import 'element';
 @import 'utilities';
+@import 'material';
 
-html{
-    overflow-x: hidden;
-}
+
 
 .overlay{
     position: fixed;
@@ -49,14 +48,5 @@ html{
     display: none;
 }
 
-body{
-    background: white;
-    color: $color-text-primary;
-    min-height: 100vh;
-    max-height: unset;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1;
-    position: relative;
-    overflow: visible;
-}
+
 

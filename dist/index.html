@@ -1031,44 +1031,62 @@
          data-role="pop-up"
          >
       <div class="pop-up__content p-16 bg-white-500 round-corner relative">
-        <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">Sign Up</div>
+        <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Sign Up</div>
         <div class="pop-up__body">
-          <form>
-            <div class="bg-gray-100 p-8 mb-4">
-              <label for="email" class="t-bold t-8 t-uppercase">
-                Phone Number
-                <input type="text" name="phone" id="phone" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
-              </label>
-            </div>
-            <div class="bg-gray-100 p-8 mb-4">
-              <label for="password" class="t-bold t-8 t-uppercase">
-                Password
-                <input 
-                type="password" 
+          <form id="registration-form">
+            <div class="mb-4 grid-1-to-2 gc-16 py-16">
+              <label for="email" class="t-14">Phone Number</label>
+              <input 
+                type="text" 
                 name="phone" 
-                id="password" 
-                class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
-              </label>
+                id="phone" 
+                class="brick t-18 kill-input"
+                required
+                maxlength="14"
+                minlength="11">
             </div>
-            <div class="bg-gray-100 p-8 mb-4">
-              <label for="retry-password" class="t-bold t-8 t-uppercase">
-                Retry Password
-                <input 
-                type="password" 
-                name="phone" 
-                id="retry-password" 
-                class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
-              </label>
+            <div class="mb-4 grid-1-to-2 gc-16 py-16">
+              <label for="password" class="t-14">Password</label>
+              <input 
+              type="password" 
+              name="phone" 
+              id="password" 
+              class="brick t-18 kill-input"
+              required>
+            </div>
+            <div class="mb-4 grid-1-to-2 gc-16 py-16">
+              <label for="retry-password" class="t-14">Retry password</label>
+              <input 
+              type="password" 
+              name="phone" 
+              id="retry-password" 
+              class="brick t-18 kill-input"
+              required>
             </div>
           </form>
-          
         </div>
         <div class="pop-up__footer fx-hor-between-ver-center">
-          <div class="t-12 t-bold">Have Account? &nbsp; <a href="#" id="open-login">Login</a></div>
-          <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner" id="sign-up">Sign Up</button>
+          <div class="t-12 t-bold">
+            Have Account? &nbsp; 
+            <a 
+              href="#" 
+              id="open-login" 
+              class="t-hover-primary t-hover-underline"
+              >LOGIN
+            </a>
+          </div>
+          <button 
+            type="submit" 
+            form="registration-form" 
+            class="brick primary" 
+            id="sign-up"
+            >Sign Up
+          </button>
         </div>
-        <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-registration-pop-up">
-          X
+        <div 
+          class="pop-up__close p-8 t-16 absolute right-top max-content pointer" 
+          id="close-registration-pop-up"
+          >X
         </div>
       </div>
     </div>
@@ -1080,21 +1098,34 @@
          data-role="pop-up"
          >
       <div class="pop-up__content p-16 bg-white-500 round-corner relative">
-        <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">VERIFICATION</div>
+        <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Verify</div>
         <div class="pop-up__body">
-          <form>
-            <div class="bg-gray-100 p-8 mb-4">
-              <label for="otp" class="t-bold t-8 t-uppercase">
-                Please Enter Your OTP Code
-                <input type="text" name="otp" id="otp" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
-              </label>
+          <form id="otp-form">
+            <div class="mb-4 grid-1-to-1 gc-16 py-16">
+              <label for="otp" class="t-14">Please Enter Your OTP Code</label>
+              <input 
+                type="text" 
+                name="otp" 
+                id="otp" 
+                class="brick t-18"
+                required
+                maxlength="6"
+                minlength="6"
+                placeholder="- - - - - -"
+                >
             </div>
           </form>
-          
         </div>
         <div class="pop-up__footer fx-hor-between-ver-center">
-          <div class="t-12 t-bold">Didn't receive the OTP? &nbsp; <a href="#">Resend</a></div>
-          <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner">Verify</button>
+          <div class="t-12 t-bold">
+            Didn't receive the OTP? &nbsp; 
+            <a href="#" class="t-hover-primary t-hover-underline">RESEND</a></div>
+          <button
+            type="submit"
+            form="otp-form"
+            class="brick primary"
+            >Verify
+          </button>
         </div>
         <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-otp-pop-up">
           X
@@ -1102,33 +1133,47 @@
       </div>
     </div>
     <!-- otp pop up ends -->
-    <!-- registration -->
+    <!-- login pop up ends -->
     <div class="pop-up full-screen fixed z-14 bg-black3 center" 
          id="login-pop-up" 
          data-visible="false" 
          data-role="pop-up"
          >
       <div class="pop-up__content p-16 bg-white-500 round-corner relative">
-        <div class="pop-up__title t-30 t-light t-left mb-20">Login</div>
+        <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Login</div>
         <div class="pop-up__body">
-          <form>
-            <div class="mb-4 grid-1-to-2">
+          <form id="login-form">
+            <div class="mb-4 grid-1-to-2 gc-16 py-16">
               <label for="phone" class="t-14">Phone Number</label>
-              <input type="text" name="phone" id="phone" class="mt-2 t-16 w-250 p-4 kill-input round-corner bb">
+              <input 
+                type="text" 
+                name="phone" 
+                id="phone" 
+                class="brick t-18 kill-input"
+                maxlength="14"
+                minlength="11"
+                required>
             </div>
-            <div class="mb-4 grid-1-to-2">
+            <div class="mb-4 grid-1-to-2 gc-16 py-16">
               <label for="password" class="t-14">Password</label>
               <input 
                 type="password" 
                 name="phone" 
                 id="password" 
-                class="">
+                class="brick t-18 kill-input"
+                required>
             </div>
           </form>
         </div>
         <div class="pop-up__footer fx-hor-between-ver-center">
-          <div class="t-12 t-bold">Don't have account? &nbsp;<a href="#" id="open-registation">REGISTER</a></div>
-          <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner" id="log-in">Login</button>
+          <div class="t-12 t-bold">Don't have account? &nbsp;<a href="#" id="open-registation" class="t-hover-primary t-hover-underline">REGISTER</a></div>
+          <button 
+            type="submit" 
+            form="login-form" 
+            class="brick primary" 
+            id="log-in"
+            >Login
+          </button>
         </div>
         <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-login-pop-up">
           X
@@ -1138,3 +1183,5 @@
     <!-- login pop up ends -->
   </body>
 </html>
+
+

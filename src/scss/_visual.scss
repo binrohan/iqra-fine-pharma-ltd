@@ -15,6 +15,12 @@
 .bb{
     border-bottom: 1px solid white !important;
 }
+.bb-1-gray{
+    border-bottom: 1px solid rgb(155, 155, 155) !important;
+}
+.b-1-primary{
+    border: 1px solid $color-primary;
+}
 
 // color
 .bg-primary{

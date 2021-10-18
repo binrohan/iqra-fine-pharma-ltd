@@ -63,7 +63,7 @@
   overflow: hidden;
 }
 
-// utilities
+// utilities font-size
 .t-8{
   font-size: .5rem;
 }
@@ -76,15 +76,21 @@
 .t-16{
   font-size: 1rem;
 }
+.t-18{
+  font-size: 1.125rem;
+}
 .t-20{
   font-size: 1.5rem;
 }
 .t-30{
   font-size: 1.875rem;
 }
+// font-weight
 .t-bold{
   font-weight: 600;
 }
+
+// alignment
 .t-left{
   text-align: left;
 }
@@ -97,6 +103,7 @@
 .t-uppercase{
   text-transform: uppercase;
 }
+
 .t-limited {
   max-width: 100%;
   text-overflow: ellipsis;
@@ -107,9 +114,31 @@
   text-decoration: line-through;
 }
 
+// text colors
+.t-primary{
+  color: $color-parmary;
+}
 .t-white{
   color: white;
 }
+.t-gray{
+  color: rgba(0,0,0,.54);
+}
 .t-danger{
   color: $color-secondary;
+}
+
+// hover
+.t-hover-underline{
+  text-decoration: none;
+  
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.t-hover-primary{
+  &:hover{
+    color: $color-parmary;
+  }
 }
