@@ -165,12 +165,12 @@
     <section class="bg-nav-bottom" id="bottom-nav">
       <nav class="nav-bottom">
         <div class="nav-bottom__items">
-          <div class="nav-bottom__items__btns">
+          <div class="nav-bottom__items__btns"  id="category-toggle-btn">
             <div class="nav-bottom__items__btns--ham">
               <img src="./icons/e-hamburger.svg" alt="" />
             </div>
             <div class="nav-bottom__items__btns--category-dropdown-btn" >
-              <div id="category-toggle-btn">
+              <div class="big-btn">
                 <div>Categories</div>
                 <div id="category-toggle-btn-arrow">
                   <img src="./icons/e-down-angle.svg" alt="" />
@@ -1034,33 +1034,33 @@
         <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Sign Up</div>
         <div class="pop-up__body">
           <form id="registration-form">
-            <div class="mb-4 grid-1-to-2 gc-16 py-16">
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
               <label for="email" class="t-14">Phone Number</label>
               <input 
                 type="text" 
                 name="phone" 
                 id="phone" 
-                class="brick t-18 kill-input"
+                class="pop t-18 kill-input"
                 required
                 maxlength="14"
                 minlength="11">
             </div>
-            <div class="mb-4 grid-1-to-2 gc-16 py-16">
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
               <label for="password" class="t-14">Password</label>
               <input 
               type="password" 
               name="phone" 
               id="password" 
-              class="brick t-18 kill-input"
+              class="pop t-18 kill-input"
               required>
             </div>
-            <div class="mb-4 grid-1-to-2 gc-16 py-16">
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
               <label for="retry-password" class="t-14">Retry password</label>
               <input 
               type="password" 
               name="phone" 
               id="retry-password" 
-              class="brick t-18 kill-input"
+              class="pop t-18 kill-input"
               required>
             </div>
           </form>
@@ -1078,7 +1078,7 @@
           <button 
             type="submit" 
             form="registration-form" 
-            class="brick primary" 
+            class="brick fill primary" 
             id="sign-up"
             >Sign Up
           </button>
@@ -1101,17 +1101,16 @@
         <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Verify</div>
         <div class="pop-up__body">
           <form id="otp-form">
-            <div class="mb-4 grid-1-to-1 gc-16 py-16">
+            <div class="mb-4 grid-1-to-1 gc-16 py-16 align-center">
               <label for="otp" class="t-14">Please Enter Your OTP Code</label>
               <input 
                 type="text" 
                 name="otp" 
                 id="otp" 
-                class="brick t-18"
+                class="pop t-18"
                 required
                 maxlength="6"
                 minlength="6"
-                placeholder="- - - - - -"
                 >
             </div>
           </form>
@@ -1123,7 +1122,7 @@
           <button
             type="submit"
             form="otp-form"
-            class="brick primary"
+            class="brick fill primary"
             >Verify
           </button>
         </div>
@@ -1143,24 +1142,24 @@
         <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Login</div>
         <div class="pop-up__body">
           <form id="login-form">
-            <div class="mb-4 grid-1-to-2 gc-16 py-16">
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
               <label for="phone" class="t-14">Phone Number</label>
               <input 
                 type="text" 
                 name="phone" 
                 id="phone" 
-                class="brick t-18 kill-input"
+                class="pop t-18 kill-input"
                 maxlength="14"
                 minlength="11"
                 required>
             </div>
-            <div class="mb-4 grid-1-to-2 gc-16 py-16">
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
               <label for="password" class="t-14">Password</label>
               <input 
                 type="password" 
                 name="phone" 
                 id="password" 
-                class="brick t-18 kill-input"
+                class="pop t-18 kill-input"
                 required>
             </div>
           </form>
@@ -1170,7 +1169,7 @@
           <button 
             type="submit" 
             form="login-form" 
-            class="brick primary" 
+            class="brick fill primary" 
             id="log-in"
             >Login
           </button>

@@ -98,6 +98,22 @@ input[type=number] {
   z-index: 10;
 }
 
+.align-center {
+  align-items: center;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.flex {
+  display: flex;
+}
+
 .fx-row {
   flex-direction: row;
 }
@@ -174,6 +190,10 @@ input[type=number] {
   font-size: 1.875rem;
 }
 
+.t-light {
+  font-weight: 400;
+}
+
 .t-bold {
   font-weight: 600;
 }
@@ -190,8 +210,12 @@ input[type=number] {
   text-align: center;
 }
 
-.t-light {
-  font-weight: 400;
+.t-justify {
+  text-align: justify;
+}
+
+.t-capitalize {
+  text-transform: capitalize;
 }
 
 .t-uppercase {
@@ -217,8 +241,12 @@ input[type=number] {
   color: white;
 }
 
+.t-black {
+  color: black;
+}
+
 .t-gray {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.658);
 }
 
 .t-danger {
@@ -250,6 +278,11 @@ input[type=number] {
 .grid-1-to-2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+
+.grid-1-to-auto {
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
 
 .btn {
@@ -495,10 +528,15 @@ input[type=number] {
 .nav-mid__links--link {
   display: grid;
   place-items: center;
+  transition: all 500ms ease-in-out;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   box-shadow: -1px 1px 3px -1px #000000;
+}
+
+.nav-mid__links--link:hover {
+  box-shadow: 2px 1px 3px -1px #000000;
 }
 
 .nav-mid__links--link img {
@@ -531,12 +569,17 @@ input[type=number] {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   font-size: 1rem;
   column-gap: 1rem;
   height: 48px;
   padding: 0.25rem 1rem;
   background: #ed2645;
   color: #f7fbf9;
+}
+
+.nav-bottom__items__btns:hover {
+  text-decoration: underline;
 }
 
 .nav-bottom__items__btns--ham {
@@ -566,7 +609,7 @@ input[type=number] {
   align-items: center;
 }
 
-.nav-bottom__items__btns--category-dropdown-btn div#category-toggle-btn {
+.nav-bottom__items__btns--category-dropdown-btn div.big-btn {
   display: flex;
   column-gap: 0;
   row-gap: 0;
@@ -574,16 +617,11 @@ input[type=number] {
   column-gap: 0;
   row-gap: 0;
   align-items: center;
-  cursor: pointer;
   height: 100%;
   width: 100%;
   column-gap: 2rem;
   padding: 0.5rem;
   border-radius: 0.125rem;
-}
-
-.nav-bottom__items__btns--category-dropdown-btn div#category-toggle-btn:hover {
-  background: #d41e1e;
 }
 
 .nav-bottom__items__links {
@@ -986,7 +1024,7 @@ input[type=number] {
 }
 
 .cart--expan {
-  height: 100vh;
+  height: calc(100vh - 9rem);
   display: none;
   box-shadow: -1px 1px 3px -1px #000000;
   grid-template-rows: auto 1fr auto auto;
@@ -1079,6 +1117,12 @@ input[type=number] {
 .cart--expan__actions button:hover {
   cursor: pointer;
   background: #006f54;
+}
+
+@media screen and (max-height: 640px) {
+  .cart--expan {
+    height: 100vh;
+  }
 }
 
 .cart-product {
@@ -2060,6 +2104,14 @@ input[type=number] {
   padding-left: 1rem;
 }
 
+.mt-2 {
+  margin-top: 0.125rem;
+}
+
+.mt-4 {
+  margin-top: 0.25rem;
+}
+
 .mb-2 {
   margin-bottom: 0.125rem;
 }
@@ -2072,6 +2124,10 @@ input[type=number] {
   margin-bottom: 0.5rem;
 }
 
+.mb-12 {
+  margin-bottom: 0.75rem;
+}
+
 .mb-16 {
   margin-bottom: 1rem;
 }
@@ -2080,8 +2136,17 @@ input[type=number] {
   margin-bottom: 1.5rem;
 }
 
-.mt-2 {
-  margin-top: 0.125rem;
+.ml-8 {
+  margin-left: 0.5rem;
+}
+
+.ml-12 {
+  margin-left: 0.75rem;
+}
+
+.my-8 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .my-16 {
@@ -2113,6 +2178,10 @@ input[type=number] {
 
 .w-350 {
   width: 350px;
+}
+
+.w-32r {
+  width: 2rem;
 }
 
 .h-100p {
@@ -2242,35 +2311,40 @@ a.kill-anchore {
   transition: all 0.3s ease-in-out;
 }
 
-input.brick {
+input.pop {
   border: none;
   border-bottom: 2px solid lightgray;
-  transition: border-color .3s;
+  transition: border-color 0.3s;
 }
 
-input.brick:focus, input.brick:hover {
+input.pop:focus, input.pop:hover {
   border-color: #00a27a;
   outline: 0;
 }
 
-input.brick.warning {
+input.pop.warning {
   border-color: #ff9800;
 }
 
-input.brick.error {
+input.pop.error {
   border-color: #f44336;
 }
 
-input.brick.valid {
+input.pop.valid {
   border-color: #4caf50;
 }
 
 button.brick {
   padding: 0.5rem 1rem;
-  transition: border-color .3s;
+  transition: border-color 0.3s;
   cursor: pointer;
   box-shadow: none;
   border: none;
+}
+
+button.brick.big {
+  padding: 0.5em 1em;
+  font-size: 1rem;
 }
 
 button.brick.small {
@@ -2377,7 +2451,7 @@ button.brick.outline.primary:hover {
 span.brick.chips.medium {
   font-size: 0.88rem;
   font-weight: bold;
-  padding: 0.25rem .75rem;
+  padding: 0.25rem 0.75rem;
   border-radius: 1rem;
 }
 
@@ -2386,14 +2460,16 @@ span.brick.chips.medium.primary {
   color: #f7fbf9;
 }
 
-div.tabs.brick .tab-buttons {
-  background: #e1e1e1;
+div.tabs.brick .tabs__buttons {
+  background: transparent;
   display: flex;
   justify-content: start;
   align-items: baseline;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.65);
 }
 
-div.tabs.brick .tab-buttons div {
+div.tabs.brick .tabs__buttons .tabs__button {
   min-width: 150px;
   padding: 0.5rem 0;
   text-align: center;
@@ -2401,16 +2477,25 @@ div.tabs.brick .tab-buttons div {
   cursor: pointer;
 }
 
-div.tabs.brick .tab-buttons div.active {
+div.tabs.brick .tabs__buttons .tabs__button.active {
   border-bottom: 2px solid #00a27a;
 }
 
-div.tabs.brick .tab-contents {
+div.tabs.brick .tabs__contents {
   padding-top: 1rem;
 }
 
+@media screen and (max-width: 500px) {
+  .tab-buttons {
+    flex-direction: column;
+  }
+  .tab-buttons div {
+    width: 100%;
+  }
+}
+
 div.brick.label {
-  font-size: .88rem;
+  font-size: 0.88rem;
   padding: 1rem;
   border: 1px solid #e1e1e1;
   border-radius: 0.125rem;
@@ -2431,9 +2516,43 @@ table.brick.primary thead {
   height: 2rem;
 }
 
-table.brick.primary td, table.brick.primary th {
+table.brick.primary td,
+table.brick.primary th {
   border: 1px solid #ddd;
   padding: 8px;
+}
+
+input.brick,
+textarea.brick {
+  border: none;
+  height: 2em;
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  color: #686868;
+  transition: border-color 0.3s;
+  border: 1px solid lightgray;
+}
+
+input.brick:focus, input.brick:hover,
+textarea.brick:focus,
+textarea.brick:hover {
+  border-color: #00a27a;
+  outline: 0;
+}
+
+input.brick.warning,
+textarea.brick.warning {
+  border-color: #ff9800;
+}
+
+input.brick.error,
+textarea.brick.error {
+  border-color: #f44336;
+}
+
+input.brick.valid,
+textarea.brick.valid {
+  border-color: #4caf50;
 }
 
 .overlay {

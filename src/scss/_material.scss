@@ -1,196 +1,234 @@
-input.brick{
-    border: none;
-    border-bottom: 2px solid lightgray;
-    transition: border-color .3s;
+input.pop {
+  border: none;
+  border-bottom: 2px solid lightgray;
+  transition: border-color 0.3s;
 
-    &:focus, &:hover {
-      border-color: $color-parmary;
-      outline: 0;
-    }
-    &.warning {
-      border-color: #ff9800;
-    }
-    
-    &.error {
-      border-color: #f44336;
-    }
-    
-    &.valid {
-      border-color: #4caf50;
-    }
+  &:focus,
+  &:hover {
+    border-color: $color-parmary;
+    outline: 0;
+  }
+  &.warning {
+    border-color: #ff9800;
+  }
+
+  &.error {
+    border-color: #f44336;
+  }
+
+  &.valid {
+    border-color: #4caf50;
+  }
 }
 
-button.brick{
+button.brick {
   padding: 0.5rem 1rem;
-  &.small{
+  &.big{
+    padding: 0.5em 1em;
+    font-size: 1rem;
+  }
+  &.small {
     padding: 0.25rem 0.5rem;
   }
-  transition: border-color .3s;
+  transition: border-color 0.3s;
   cursor: pointer;
   box-shadow: none;
   border: none;
 
-  &.text{
+  &.text {
     background: transparent;
     border: 1px solid transparent;
 
-    &.primary{
+    &.primary {
       color: $color-primary;
 
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
     }
   }
-  
 
-  &.fill{
+  &.fill {
     &:hover {
       background-color: white;
     }
-    
+
     &.warning {
       background-color: #ff9800;
       &:hover {
         background-color: darken(#ff9800, 10);
-        
       }
     }
-    
+
     &.danger {
       background-color: #f44336;
-  
+
       &:hover {
         background-color: darken(#f44336, 10);
       }
     }
-    
+
     &.success {
       background-color: #4caf50;
-  
+
       &:hover {
         background-color: darken(#4caf50, 10);
-        
       }
     }
     &.default {
       background-color: white;
-  
+
       &:hover {
         background-color: darken(white, 10);
-        
       }
     }
     &.primary {
       background-color: $color-primary;
       color: $color-text-secondary;
-  
+
       &:hover {
         background-color: darken($color-primary, 10);
-        
       }
     }
     &.secondary {
       background-color: $color-secondary;
       color: $color-text-primary;
-  
+
       &:hover {
         background-color: darken($color-secondary, 10);
-        
       }
     }
   }
 
-  &.icon{
+  &.icon {
     @include flex--x--space-between--y--center;
     gap: 0.5rem;
 
-    img{
+    img {
       width: 25px;
       height: 25px;
     }
   }
 
-  
-
-  &.outline{
+  &.outline {
     border: 1px solid black;
     background: white;
 
-    &.primary{
+    &.primary {
       border: 1px solid $color-primary;
       color: $color-primary;
 
-      &:hover{
+      &:hover {
         background: lighten($color-primary, 50%);
       }
     }
   }
 }
 
-span.brick.chips{
-  &.medium{
+span.brick.chips {
+  &.medium {
     font-size: 0.88rem;
     font-weight: bold;
-    padding: 0.25rem .75rem;
+    padding: 0.25rem 0.75rem;
     border-radius: 1rem;
-    
-    &.primary{
+
+    &.primary {
       background: $color-primary;
       color: $color-text-secondary;
     }
   }
 }
 
-div.tabs.brick{
-  .tab-buttons{
-    background: $color-second-bg;
+div.tabs.brick {
+  .tabs__buttons {
+    background: transparent;
     display: flex;
     justify-content: start;
     align-items: baseline;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, 0.65);
 
-    div{
+    .tabs__button {
       min-width: 150px;
       padding: 0.5rem 0;
       text-align: center;
       border-bottom: 2px solid transparent;
       cursor: pointer;
 
-      &.active{
+      &.active {
         border-bottom: 2px solid $color-primary;
       }
     }
   }
 
-  .tab-contents{
+  .tabs__contents {
     padding-top: 1rem;
   }
 }
 
-div.brick.label{
-  font-size: .88rem;
+@media screen and (max-width: 500px) {
+  .tab-buttons {
+    flex-direction: column;
+
+    div {
+      width: 100%;
+    }
+  }
+}
+
+div.brick.label {
+  font-size: 0.88rem;
   padding: 1rem;
   border: 1px solid $color-second-bg;
   border-radius: 0.125rem;
 
-  &.default{
+  &.default {
     color: $color-text-gray;
   }
 }
 
-table.brick{
+table.brick {
   width: 100%;
   border-spacing: 0;
 
-  &.primary{
-    thead{
+  &.primary {
+    thead {
       background: $color-primary;
       color: $color-text-secondary;
       height: 2rem;
     }
-    td,th{
+    td,
+    th {
       border: 1px solid #ddd;
       padding: 8px;
     }
+  }
+}
+
+input.brick,
+textarea.brick {
+  border: none;
+  height: 2em;
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  color: $color-text-gray;
+  transition: border-color 0.3s;
+  border: 1px solid lightgray;
+
+  &:focus,
+  &:hover {
+    border-color: $color-parmary;
+    outline: 0;
+  }
+  &.warning {
+    border-color: #ff9800;
+  }
+
+  &.error {
+    border-color: #f44336;
+  }
+
+  &.valid {
+    border-color: #4caf50;
   }
 }

@@ -30,28 +30,46 @@
 @import "media-min-1000";
 @import "media-lg";
 
-.checkout{
-    
-    .checkout-product{
-        img{
-            width: 5rem;
-        }
-        
-        .quantity-row{
-            display: flex;
-                justify-content: center;
-                gap: 0.5rem;
-    
-                input{
-                    width: 40px;
-                    text-align: center;
-                }
-                button{
-                    width: min-content;
-                }
-           
-            
-        }
-        
+.checkout {
+  .cart-products-table {
+    overflow-x: auto;
+    table {
+      width: 100%;
+      min-width: 550px;
+      overflow-x: auto;
     }
+  }
+  .checkout-product {
+    img {
+      width: 5rem;
+    }
+
+    .quantity-row {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+
+      input {
+        width: 40px;
+        text-align: center;
+      }
+      button {
+        width: min-content;
+      }
+    }
+  }
+
+  .shipping-contact{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 100%));
+    gap: 1rem;
+
+    input, textarea{
+      width: 100%;
+    }
+
+    textarea{
+      height: 148px;
+    }
+  }
 }

@@ -137,7 +137,7 @@ const Popup = (selector) => {
     // when user clicked outside those elements
     const closePopOver = (path) => {
 
-        if (isClickedOutside(path, 'div.nav-bottom__items__btns--category-dropdown-btn')) {
+        if (isClickedOutside(path, 'div.nav-bottom__items__btns')) {
             closeCategoryList();
         }
 

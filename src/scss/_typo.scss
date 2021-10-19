@@ -86,6 +86,9 @@
   font-size: 1.875rem;
 }
 // font-weight
+.t-light{
+  font-weight: 400;
+}
 .t-bold{
   font-weight: 600;
 }
@@ -100,8 +103,12 @@
 .t-center{
   text-align: center;
 }
-.t-light{
-  font-weight: 400;
+.t-justify{
+  text-align: justify;
+}
+
+.t-capitalize{
+  text-transform: capitalize;
 }
 .t-uppercase{
   text-transform: uppercase;
@@ -124,8 +131,11 @@
 .t-white{
   color: white;
 }
+.t-black{
+  color: black;
+}
 .t-gray{
-  color: rgba(0,0,0,.54);
+  color: rgba(0, 0, 0, 0.658);
 }
 .t-danger{
   color: $color-secondary;

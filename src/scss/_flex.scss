@@ -47,8 +47,21 @@
     justify-content: center;
 }
 
-//-----------------------------------//
+.align-center{
+    align-items: center;
+}
+.align-stretch{
+    align-items: stretch;
+}
 
+.justify-start{
+    justify-content: start;
+}
+
+//-----------------------------------//
+.flex{
+    display: flex;
+}
 .fx-row{
     flex-direction: row;
 }
