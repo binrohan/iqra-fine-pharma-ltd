@@ -6,6 +6,10 @@ a.kill-anchore{
     @include kill-anchore;
 }
 
+ul.kill{
+    list-style-type: none;
+}
+
 .block{
     display: block;
 }

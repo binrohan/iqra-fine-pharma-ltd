@@ -1663,6 +1663,10 @@ a.kill-anchore {
   text-decoration: none;
 }
 
+ul.kill {
+  list-style-type: none;
+}
+
 .block {
   display: block;
 }
