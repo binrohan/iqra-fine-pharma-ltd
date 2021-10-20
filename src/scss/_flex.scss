@@ -57,10 +57,21 @@
 .justify-start{
     justify-content: start;
 }
+.flex.wrap{
+    flex-wrap: wrap;
+}
+
+
 
 //-----------------------------------//
 .flex{
     display: flex;
+
+    &.justify{
+        &-between{
+            justify-content: space-between;
+        }
+    }
 }
 .fx-row{
     flex-direction: row;

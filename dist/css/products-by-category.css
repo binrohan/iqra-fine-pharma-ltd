@@ -110,8 +110,16 @@ input[type=number] {
   justify-content: start;
 }
 
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
 .flex {
   display: flex;
+}
+
+.flex.justify-between {
+  justify-content: space-between;
 }
 
 .fx-row {
@@ -184,6 +192,10 @@ input[type=number] {
 
 .t-20 {
   font-size: 1.5rem;
+}
+
+.t-24 {
+  font-size: 2rem;
 }
 
 .t-30 {
@@ -1549,6 +1561,10 @@ input[type=number] {
   max-width: 100%;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-250 {
   width: 250px;
 }
@@ -1563,6 +1579,10 @@ input[type=number] {
 
 .h-100p {
   height: 100%;
+}
+
+.h-250 {
+  height: 200px !important;
 }
 
 .absolute {
@@ -1601,8 +1621,16 @@ input[type=number] {
   gap: 0.5rem;
 }
 
+.g-16 {
+  gap: 1rem;
+}
+
 .gc-4 {
   column-gap: .25rem;
+}
+
+.gc-8 {
+  column-gap: 0.5rem;
 }
 
 .gc-16 {
@@ -2032,12 +2060,12 @@ div.brick.icon.medium img {
   width: 100%;
 }
 
-div.brick.icon.medium {
+div.brick.icon.big {
   width: 38px;
   height: 38px;
 }
 
-div.brick.icon.medium img {
+div.brick.icon.big img {
   height: 100%;
   width: 100%;
 }
