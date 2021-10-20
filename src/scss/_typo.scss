@@ -85,6 +85,13 @@
 .t-30{
   font-size: 1.875rem;
 }
+
+// line height
+.line-height{
+  line-height: 1.5em;
+}
+
+
 // font-weight
 .t-light{
   font-weight: 400;
@@ -117,7 +124,7 @@
 .t-limited {
   max-width: 100%;
   text-overflow: ellipsis;
-  overflow-x: hidden;
+  overflow: hidden;
   white-space: nowrap;
 }
 .t-line-thro{
@@ -127,6 +134,9 @@
 // text colors
 .t-primary{
   color: $color-parmary;
+}
+.t-secondary{
+  color: $color-secondary;
 }
 .t-white{
   color: white;

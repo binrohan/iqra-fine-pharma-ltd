@@ -72,4 +72,24 @@
       height: 148px;
     }
   }
+
+  .payment-table{
+    table{
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 0.88rem;
+
+      td{
+        padding: 0.25rem;
+        border: 1px solid gray;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .shipping-contact{
+    grid-template-columns: 1fr !important;
+  }
 }

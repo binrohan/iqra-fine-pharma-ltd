@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font google ends -->
     <title>Document</title>
     <link rel="stylesheet" href="./css/product.css">
     <script src="./js/product.js" type="module" defer></script>
+    <script src="./js/style.js" defer></script>
 </head>
 <body>
+    <!-- navigations -->
     <!-- common sections -->
     <section class="bg-nav-top">
       <nav class="nav-top">
@@ -223,20 +230,18 @@
             
           </div>
           <div class="nav-bottom__items__links">
-            <a href="#" class="nav-bottom__items__links--link active-nav" title="Hello World">Home</a>
-            <a href="#" class="nav-bottom__items__links--link">Orders</a>
-            <a href="#" class="nav-bottom__items__links--link">Shop Location</a>
-            <a href="#" class="nav-bottom__items__links--link">Gallery</a>
-            <a href="#" class="nav-bottom__items__links--link">Career</a>
-            <a href="#" class="nav-bottom__items__links--link">Contact</a>
+            <a href="./index.html" class="nav-bottom__items__links--link active-nav" title="Hello World">Home</a>
+            <a href="#" class="nav-bottom__items__links--link">Order Us</a>
             <a href="#" class="nav-bottom__items__links--link">About Us</a>
+            <a href="#" class="nav-bottom__items__links--link">Contact Us</a>
           </div>
         </div>
       </nav>
     </section>
+    <!-- navigations end -->
     <!-- common sections ends -->
-    <!-- product by category specific starts -->
 
+    <!-- product by category specific starts -->
     <section class="product container" >
       <div class="img p-16 b-1-primary round-corner">
         <img src="./images/pro.webp" alt="" class="w-max">
@@ -245,19 +250,20 @@
         <h1 class="t-20 t-primary t-uppercase mb-16">Product Name Goes Here </h1>
         <h5 class="t-14 mb-8 t-gray">Generic Name: <span class="generic-name">Product generic name</span></h5>
         <div class="fx-hor-start-ver-center gc-16 mb-16">
-          <span class="brick chips primary medium">4.7</span>
           <span class="t-primary">5 Reviews</span>  
           <button class="brick primary text round-corner">Add Review</button>
         </div>
         
         <hr>
-        <div class="t-gray t-14 my-16">
-          <ul class="t-bold ">
-            Product Hightlights
-            <li class="t-light t-black mt-4 ml-12">It is useful in enhancing blood circulation</li>
-            <li class="t-light t-black mt-4 ml-12">It supplies the body with needed nutrients</li>
-            <li class="t-light t-black mt-4 ml-12">It strengthens the central nervous system</li>
-          </ul>
+        <div class="t-14 my-16">
+          <h4 class="mb-12 t-uppercase t-bold t-14">Uses of Hhomega Capsule</h4>
+            <ul class="t-14">
+              <li class="mb-8 ml-12">Use as directed by the physician.</li>
+              <li class="mb-8 ml-12">Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+              <li class="mb-8 ml-12">Lorem ipsum dolor sit amet.</li>
+              <li class="mb-8 ml-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ducimus?</li>
+              <li class="mb-8 ml-12">Lorem ipsum dolor sit amet consectetur.</li>
+            </ul>
         </div>
         <hr>
         <div class="fx-hor-start-ver-center gc-16 my-16">
@@ -282,6 +288,15 @@
       <div class="suggestions p-16 b-1-primary round-corner">
         <h4 class="mb-16 t-center">Related Product</h4>
         <div>
+          <div class="card gc-4 pb-8 bb-1-gray mb-16">
+            <div class="img">
+              <img src="./images/p (5).webp" alt="" class="w-max">
+            </div>
+            <div class="details">
+              <p class="t-14 t-hover-underline pointer t-hover-primary mb-8">Lorem ipsum dolor sit amet.</p>
+              <p class="t-bold t-primary">2800BDT</p>
+            </div>
+          </div>
           <div class="card gc-4 pb-8 bb-1-gray">
             <div class="img">
               <img src="./images/p (7).webp" alt="" class="w-max">
@@ -301,67 +316,113 @@
           </div>
           <div class="tabs__contents">
               <div class="tabs__content">
-                <div class="mb-20 t-justify">
-                  <p><strong>Hhomega Capsule: </strong>
+                <div class="mb-24 t-justify">
+                  <p class="t-14"><strong class="t-uppercase">Hhomega Capsule: </strong>
                     helps improve blood circulation and oxygen saturation. It helps supply a sufficient amount of the nutrients to the organs and tissues. It has a good influence on the central nervous system and due to this, it helps prevent problems with sleep. It also lowers the risk of depression will be reduced and enhances one's mood. 
                   </p>
                 </div>
-                <div class="mb-20">
-                  <h4 class="mb-12">Uses of Hhomega Capsule</h4>
-                  <ul>
-                    <li class="mb-8 ml-12">Use as directed by the physician.</li>
-                    <li class="mb-8 ml-12">Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-                    <li class="mb-8 ml-12">Lorem ipsum dolor sit amet.</li>
-                    <li class="mb-8 ml-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ducimus?</li>
-                    <li class="mb-8 ml-12">Lorem ipsum dolor sit amet consectetur.</li>
-                  </ul>
+                <div class="mb-24">
+                  
                 </div>
-                <div class="mb-20">
-                  <h4 class="mb-12">Benefit of Hhomega Capsule</h4>
-                  <ul>
+                <div class="mb-24">
+                  <h4 class="mb-12 t-uppercase t-bold t-14">Benefit of Hhomega Capsule</h4>
+                  <ul class="t-14">
                     <li class="mb-8 ml-12">It is useful in enhancing blood circulation</li>
                     <li class="mb-8 ml-12">It supplies the body with needed nutrients</li>
                     <li class="mb-8 ml-12">It strengthens the central nervous system</li>
                   </ul>
                 </div>
-                <div class="mb-20">
-                  <h4 class="mb-12">Side effect of Hhomega Capsule</h4>
-                  <p class="t-justify mb-8">
+                <div class="mb-24">
+                  <h4 class="mb-12 t-uppercase t-bold t-14">Side effect of Hhomega Capsule</h4>
+                  <p class="t-justify mb-8 t-14">
                     Most side effects do not require any medical attention and disappear as your body adjusts to the medicine. Consult your doctor if they persist or if you’re worried about them
                   </p>
-                  <ul>
-                    <h5 class="mb-12">Some common side effect of Hhomega Capsule</h5>
+                  <ul class="t-14">
+                    <h5 class="mb-12 t-14">Some common side effect of Hhomega Capsule</h5>
                     <li class="mb-8 ml-12">Lorem, ipsum dolor.</li>
                     <li class="mb-8 ml-12">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
                     <li class="mb-8 ml-12">Lorem ipsum dolor sit amet.</li>
                   </ul>
                 </div>
-                <div class="mb-20">
-                  <h4 class="mb-12 t-capitalize">How to use Hhomega Capsule</h4>
-                  <p class="t-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloribus quisquam architecto!</p>  
+                <div class="mb-24">
+                  <h4 class="mb-12 t-uppercase t-bold t-14">How to use Hhomega Capsule</h4>
+                  <p class="t-justify t-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloribus quisquam architecto!</p>  
                 </div>
-                <div class="mb-20">
-                  <h4 class="mb-12 t-capitalize">How Hhomega Capsule works</h4>
-                  <p class="t-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius facilis nostrum blanditiis possimus? Ad obcaecati totam expedita qui illo recusandae quia nulla fugiat quaerat commodi.</p>
+                <div class="mb-24">
+                  <h4 class="mb-12 t-uppercase t-bold t-14">How Hhomega Capsule works</h4>
+                  <p class="t-justify t-14">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius facilis nostrum blanditiis possimus? Ad obcaecati totam expedita qui illo recusandae quia nulla fugiat quaerat commodi.</p>
                 </div>
-                <div class="mb-20">
-                  <h4 class="mb-12 t-capitalize">Safety advice of Hhomega Capsule Tablet</h4>
-                  <ul>
-                    <li class="mb-8 ml-12">Alcohol- Consult Your Doctor, Caution, Unsafe</li>
-                    <li class="mb-8 ml-12">Pregnancy- Consult your doctor, Safe in prescribed</li>
-                    <li class="mb-8 ml-12">Breast feeding- Consult your doctor, Safe in prescribed, Caution</li>
-                    <li class="mb-8 ml-12">Driving- Safe, Unsafe, Consult your doctor</li>
-                    <li class="mb-8 ml-12">Kidney- Safe in prescribed, Caution</li>
-                    <li class="mb-8 ml-12">Liver: Safe in prescribed, Caution</li>
-                  </ul>
+                <div class="mb-24">
+                  <h4 class="mb-12 t-uppercase t-bold t-14">Safety advice of Hhomega Capsule Tablet</h4>
+                  <ul class="t-14">
+                    <li class="mb-8 ml-12">
+                      <div class="flex justify-start align-center gc-16 mb-12">
+                        <div class="img brick icon medium">
+                          <img src="./icons/alcohol.svg" alt="">
+                        </div>
+                        <h6 class="t-bold t-14">Alcohol</h6>
+                        <span class="brick chips danger medium t-uppercase t-light">Unsafe</span>
+                      </div>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus reprehenderit minima optio expedita repellendus nulla autem eos, fugit quibusdam eum officia cum soluta obcaecati eligendi?</p>
+                    </li>
+                    <li class="mb-8 ml-12">
+                      <div class="flex justify-start align-center gc-16 mb-12">
+                        <div class="img brick icon medium">
+                          <img src="./icons/pregnant-woman.svg" alt="">
+                        </div>
+                        <h6 class="t-bold t-14">Pregnancy</h6>
+                        <span class="brick chips warning medium t-uppercase t-light">Consult Your Doctor</span>
+                      </div>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus reprehenderit minima optio expedita repellendus nulla autem eos, fugit quibusdam eum officia cum soluta obcaecati eligendi?</p>
+                    </li>
+                    <li class="mb-8 ml-12">
+                      <div class="flex justify-start align-center gc-16 mb-12">
+                        <div class="img brick icon medium">
+                          <img src="./icons/breast-feeding.svg" alt="">
+                        </div>
+                        <h6 class="t-bold t-14">Breast Feeding</h6>
+                        <span class="brick chips primary medium t-uppercase t-light">SAFE IF PRESCRIBED</span>
+                      </div>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus reprehenderit minima optio expedita repellendus nulla autem eos, fugit quibusdam eum officia cum soluta obcaecati eligendi?</p>
+                    </li>
+                    <li class="mb-8 ml-12">
+                      <div class="flex justify-start align-center gc-16 mb-12">
+                        <div class="img brick icon medium">
+                          <img src="./icons/car.svg" alt="">
+                        </div>
+                        <h6 class="t-bold t-14">Driving</h6>
+                        <span class="brick chips warning medium t-uppercase t-light">Caution</span>
+                      </div>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus reprehenderit minima optio expedita repellendus nulla autem eos, fugit quibusdam eum officia cum soluta obcaecati eligendi?</p>
+                    </li>
+                    <li class="mb-8 ml-12">
+                      <div class="flex justify-start align-center gc-16 mb-12">
+                        <div class="img brick icon medium">
+                          <img src="./icons/kidney.svg" alt="">
+                        </div>
+                        <h6 class="t-bold t-14">Kidney</h6>
+                        <span class="brick chips success medium t-uppercase t-light">Safe</span>
+                      </div>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus reprehenderit minima optio expedita repellendus nulla autem eos, fugit quibusdam eum officia cum soluta obcaecati eligendi?</p>
+                    </li>
+                    <li class="mb-8 ml-12">
+                      <div class="flex justify-start align-center gc-16 mb-12">
+                        <div class="img brick icon medium">
+                          <img src="./icons/liver.svg" alt="">
+                        </div>
+                        <h6 class="t-bold t-14">Liver</h6>
+                        <span class="brick chips warning medium t-uppercase t-light">Consult Your Doctor</span>
+                      </div>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus reprehenderit minima optio expedita repellendus nulla autem eos, fugit quibusdam eum officia cum soluta obcaecati eligendi?</p>
+                    </li>
                 </div>
-                <div class="mb-20">
-                  <h4 class="mb-12">What if you forget to take Hhomega Capsule?</h4>
-                  <p class="mb-8 t-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vero laudantium doloribus!</p>
+                <div class="mb-24">
+                  <h4 class="mb-12 t-uppercase t-bold t-14">What if you forget to take Hhomega Capsule?</h4>
+                  <p class="mb-8 t-capitalize t-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vero laudantium doloribus!</p>
                 </div>
-                <div class="mb-20">
-                  <h4 class="mb-12 t-capitalize">Quick Tips</h4>
-                  <ul>
+                <div class="mb-24">
+                  <h4 class="mb-12 t-uppercase t-bold t-14">Quick Tips</h4>
+                  <ul class="t-14">
                     <li class="mb-8 ml-12">Lorem ipsum dolor sit amet.</li>
                     <li class="mb-8 ml-12">Lorem, ipsum dolor.</li>
                   </ul>
@@ -373,11 +434,11 @@
                   <button type="button" class="brick primary fill big t-uppercase">Post</button>
                 </div>
                 <div class="post-card py-16">
-                  <p class="t-14 t-gray mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magni aut delectus!</p>
+                  <p class="t-14  mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magni aut delectus!</p>
                   <p class="t-12 t-bold t-gray">12 January 2014 12.43PM</p>
                 </div>
                 <div class="post-card py-16">
-                  <p class="t-14 t-gray mb-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, in. Assumenda magni ducimus vitae, rem temporibus cumque enim doloribus suscipit blanditiis minima inventore vel laborum, maxime tenetur, eius reprehenderit amet?</p>
+                  <p class="t-14  mb-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, in. Assumenda magni ducimus vitae, rem temporibus cumque enim doloribus suscipit blanditiis minima inventore vel laborum, maxime tenetur, eius reprehenderit amet?</p>
                   <p class="t-12 t-bold t-gray">12 January 2014 12.43PM</p>
                 </div>
               </div>
@@ -587,158 +648,198 @@
           </div>
       </div>
     </div>
-      <!-- cart and cart small ends-->
-      <!-- side brawer -->
-      <div id="js--drawer" class="drawer">
-        <div class="drawer__categories">
-          <header class="drawer__categories__category--header">
-            <h2>Categories</h2>
-            <div class="drawer__categories__category--header__close" id="js--drawer-close-btn">
-              <div>
-                🗙 
-              </div>
+    <!-- cart and cart small ends-->
+    <!-- side brawer -->
+    <div id="js--drawer" class="drawer">
+      <div class="drawer__categories">
+        <header class="drawer__categories__category--header">
+          <h2>Categories</h2>
+          <div class="drawer__categories__category--header__close" id="js--drawer-close-btn">
+            <div>
+              🗙 
             </div>
-          </header>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Covid-19 Special</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Women Care</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Devices</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Sexual Wellness</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Herbal and Homeopathy</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Baby & Mom care</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Nutrition and drinks</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Personal care</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Supplements and Vitamins</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">OTC Medicines</a></div>
-          <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Prescription Medicines</a></div>
-          
-        </div>
+          </div>
+        </header>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Covid-19 Special</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Women Care</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Devices</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Sexual Wellness</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Herbal and Homeopathy</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Baby & Mom care</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Nutrition and drinks</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Personal care</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Supplements and Vitamins</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">OTC Medicines</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Prescription Medicines</a></div>
         
-        <div class="drawer__links">
-          <div class="drawer__links__link"><a href="#" class="drawer__links--link" title="Hello World">Home</a></div>
-          <div class="drawer__links__link"><a href="#" class="drawer__links--link">Orders</a></div>
-          <div class="drawer__links__link"><a href="#" class="drawer__links--link">Shop Location</a></div>
-          <div class="drawer__links__link"><a href="#" class="drawer__links--link">Gallery</a></div>
-          <div class="drawer__links__link"><a href="#" class="drawer__links--link">Career</a></div>
-          <div class="drawer__links__link"><a href="#" class="drawer__links--link">Contact</a></div>
-          <div class="drawer__links__link"><a href="#" class="drawer__links--link">About Us</a></div>
+      </div>
+      
+      <div class="drawer__links">
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link" title="Hello World">Home</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Orders</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Shop Location</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Gallery</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Career</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Contact</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">About Us</a></div>
+      </div>
+    </div>
+    <!-- side brawer ends -->
+    <!-- registration -->
+    <div class="pop-up full-screen fixed z-14 bg-black3 center" 
+         id="registration-pop-up" 
+         data-visible="false" 
+         data-role="pop-up"
+         >
+      <div class="pop-up__content p-16 bg-white-500 round-corner relative">
+        <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Sign Up</div>
+        <div class="pop-up__body">
+          <form id="registration-form">
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
+              <label for="email" class="t-14">Phone Number</label>
+              <input 
+                type="text" 
+                name="phone" 
+                id="phone" 
+                class="pop t-18 kill-input"
+                required
+                maxlength="14"
+                minlength="11">
+            </div>
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
+              <label for="password" class="t-14">Password</label>
+              <input 
+              type="password" 
+              name="phone" 
+              id="password" 
+              class="pop t-18 kill-input"
+              required>
+            </div>
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
+              <label for="retry-password" class="t-14">Retry password</label>
+              <input 
+              type="password" 
+              name="phone" 
+              id="retry-password" 
+              class="pop t-18 kill-input"
+              required>
+            </div>
+          </form>
+        </div>
+        <div class="pop-up__footer fx-hor-between-ver-center">
+          <div class="t-12 t-bold">
+            Have Account? &nbsp; 
+            <a 
+              href="#" 
+              id="open-login" 
+              class="t-hover-primary t-secondary t-hover-underline"
+              >LOGIN
+            </a>
+          </div>
+          <button 
+            type="submit" 
+            form="registration-form" 
+            class="brick fill primary" 
+            id="sign-up"
+            >Sign Up
+          </button>
+        </div>
+        <div 
+          class="pop-up__close p-8 t-16 absolute right-top max-content pointer" 
+          id="close-registration-pop-up"
+          >X
         </div>
       </div>
-      <!-- side brawer ends -->
-      <!-- registration -->
-      <div class="pop-up full-screen fixed z-14 bg-black3 center" 
-           id="registration-pop-up" 
-           data-visible="false" 
-           data-role="pop-up"
-           >
-        <div class="pop-up__content p-16 bg-white-500 round-corner relative">
-          <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">Sign Up</div>
-          <div class="pop-up__body">
-            <form>
-              <div class="bg-gray-100 p-8 mb-4">
-                <label for="email" class="t-bold t-8 t-uppercase">
-                  Phone Number
-                  <input type="text" name="phone" id="phone" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
-                </label>
-              </div>
-              <div class="bg-gray-100 p-8 mb-4">
-                <label for="password" class="t-bold t-8 t-uppercase">
-                  Password
-                  <input 
-                  type="password" 
-                  name="phone" 
-                  id="password" 
-                  class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
-                </label>
-              </div>
-              <div class="bg-gray-100 p-8 mb-4">
-                <label for="retry-password" class="t-bold t-8 t-uppercase">
-                  Retry Password
-                  <input 
-                  type="password" 
-                  name="phone" 
-                  id="retry-password" 
-                  class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
-                </label>
-              </div>
-            </form>
-            
-          </div>
-          <div class="pop-up__footer fx-hor-between-ver-center">
-            <div class="t-12 t-bold">Have Account? &nbsp; <a href="#" id="open-login">Login</a></div>
-            <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner" id="sign-up">Sign Up</button>
-          </div>
-          <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-registration-pop-up">
-            X
-          </div>
+    </div>
+    <!-- pop up overlay ends -->
+    <!-- otp pop up -->
+    <div class="pop-up full-screen fixed z-14 bg-black3 center" 
+         id="otp-pop-up" 
+         data-visible="false" 
+         data-role="pop-up"
+         >
+      <div class="pop-up__content p-16 bg-white-500 round-corner relative">
+        <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Verify</div>
+        <div class="pop-up__body">
+          <form id="otp-form">
+            <div class="mb-4 grid-auto-to-1 gc-16 py-16 align-center">
+              <label for="otp" class="t-14">Please Enter Your OTP Code</label>
+              <input 
+                type="text" 
+                name="otp" 
+                id="otp" 
+                class="pop t-18"
+                required
+                maxlength="6"
+                minlength="6"
+                >
+            </div>
+          </form>
+        </div>
+        <div class="pop-up__footer fx-hor-between-ver-center">
+          <div class="t-12 t-bold">
+            Didn't receive the OTP? &nbsp; 
+            <a href="#" class="t-hover-primary t-secondary t-hover-underline">RESEND</a></div>
+          <button
+            type="submit"
+            form="otp-form"
+            class="brick fill primary"
+            >Verify
+          </button>
+        </div>
+        <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-otp-pop-up">
+          X
         </div>
       </div>
-      <!-- pop up overlay ends -->
-      <!-- otp pop up -->
-      <div class="pop-up full-screen fixed z-14 bg-black3 center" 
-           id="otp-pop-up" 
-           data-visible="false" 
-           data-role="pop-up"
-           >
-        <div class="pop-up__content p-16 bg-white-500 round-corner relative">
-          <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">VERIFICATION</div>
-          <div class="pop-up__body">
-            <form>
-              <div class="bg-gray-100 p-8 mb-4">
-                <label for="otp" class="t-bold t-8 t-uppercase">
-                  Please Enter Your OTP Code
-                  <input type="text" name="otp" id="otp" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
-                </label>
-              </div>
-            </form>
-            
-          </div>
-          <div class="pop-up__footer fx-hor-between-ver-center">
-            <div class="t-12 t-bold">Didn't receive the OTP? &nbsp; <a href="#">Resend</a></div>
-            <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner">Verify</button>
-          </div>
-          <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-otp-pop-up">
-            X
-          </div>
+    </div>
+    <!-- otp pop up ends -->
+    <!-- login pop up ends -->
+    <div class="pop-up full-screen fixed z-14 bg-black3 center" 
+         id="login-pop-up" 
+         data-visible="false" 
+         data-role="pop-up"
+         >
+      <div class="pop-up__content p-16 bg-white-500 round-corner relative">
+        <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Login</div>
+        <div class="pop-up__body">
+          <form id="login-form">
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
+              <label for="phone" class="t-14">Phone Number</label>
+              <input 
+                type="text" 
+                name="phone" 
+                id="phone" 
+                class="pop t-18 kill-input"
+                maxlength="14"
+                minlength="11"
+                required>
+            </div>
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
+              <label for="password" class="t-14">Password</label>
+              <input 
+                type="password" 
+                name="phone" 
+                id="password" 
+                class="pop t-18 kill-input"
+                required>
+            </div>
+          </form>
+        </div>
+        <div class="pop-up__footer fx-hor-between-ver-center">
+          <div class="t-12 t-bold">Don't have account? &nbsp;<a href="#" id="open-registation" class="t-hover-primary t-secondary t-hover-underline">REGISTER</a></div>
+          <button 
+            type="submit" 
+            form="login-form" 
+            class="brick fill primary" 
+            id="log-in"
+            >Login
+          </button>
+        </div>
+        <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-login-pop-up">
+          X
         </div>
       </div>
-      <!-- otp pop up ends -->
-      <!-- registration -->
-      <div class="pop-up full-screen fixed z-14 bg-black3 center" 
-           id="login-pop-up" 
-           data-visible="false" 
-           data-role="pop-up"
-           >
-        <div class="pop-up__content p-16 bg-white-500 round-corner relative">
-          <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">Login</div>
-          <div class="pop-up__body">
-            <form>
-              <div class="bg-gray-100 p-8 mb-4">
-                <label for="email" class="t-bold t-8 t-uppercase">
-                  Phone Number
-                  <input type="text" name="phone" id="phone" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
-                </label>
-              </div>
-              <div class="bg-gray-100 p-8 mb-4">
-                <label for="password" class="t-bold t-8 t-uppercase">
-                  Password
-                  <input 
-                  type="password" 
-                  name="phone" 
-                  id="password" 
-                  class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
-                </label>
-              </div>
-            </form>
-          </div>
-          <div class="pop-up__footer fx-hor-between-ver-center">
-            <div class="t-12 t-bold">Don't have account? &nbsp;<a href="#" id="open-registation">REGISTER</a></div>
-            <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner" id="log-in">Login</button>
-          </div>
-          <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-login-pop-up">
-            X
-          </div>
-        </div>
-      </div>
+    </div>
       <!-- login pop up ends -->
 </body>
 </html>

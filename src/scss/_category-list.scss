@@ -20,6 +20,7 @@
     width: 100%;
     background: $color-parmary;
     @include text--md--bold;
+    box-shadow: 0px 2px 3px -1px black;
 
     &__category{
         position: relative;

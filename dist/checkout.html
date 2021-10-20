@@ -2,13 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">\
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font google ends -->
     <link rel="stylesheet" href="./css/checkout.css">
     <script src="./js/checkout.js" type="module" defer></script>
+    <script src="./js/style.js" defer></script>
 </head>
 <body>
+    <!-- navigations -->
     <!-- common sections -->
     <section class="bg-nav-top">
       <nav class="nav-top">
@@ -223,17 +230,15 @@
             
           </div>
           <div class="nav-bottom__items__links">
-            <a href="#" class="nav-bottom__items__links--link active-nav" title="Hello World">Home</a>
-            <a href="#" class="nav-bottom__items__links--link">Orders</a>
-            <a href="#" class="nav-bottom__items__links--link">Shop Location</a>
-            <a href="#" class="nav-bottom__items__links--link">Gallery</a>
-            <a href="#" class="nav-bottom__items__links--link">Career</a>
-            <a href="#" class="nav-bottom__items__links--link">Contact</a>
+            <a href="./index.html" class="nav-bottom__items__links--link active-nav" title="Hello World">Home</a>
+            <a href="#" class="nav-bottom__items__links--link">Order Us</a>
             <a href="#" class="nav-bottom__items__links--link">About Us</a>
+            <a href="#" class="nav-bottom__items__links--link">Contact Us</a>
           </div>
         </div>
       </nav>
     </section>
+    <!-- navigations end -->
     <!-- common sections ends -->
 
     <!-- page path section starts-->
@@ -436,10 +441,16 @@
                               Cash on Delivery
                             </label>
                           </div>
-                          <div class="label brick danger my-8">
-                            <p>*** Please pay first for outside Dhaka delivery (ঢাকার বাইরে অর্ডারের ক্ষেত্রে ক্যাশ অন ডেলিভারি প্রযোজ্য নয়)</p>
-                            <p>*** Please pay the delivery charge first for inside Dhaka delivery (Cash on Delivery) (ঢাকার ভিতর ক্যাশ অন ডেলিভারি এর ক্ষেত্রে ডেলিভারি চার্জ আগে প্রদান করতে হবে)</p>
-                            <p>*** LP agent will call you for delivery charge and reconfirm your order (আপনার অর্ডার পুনরায় নিশ্চিত করতে লাজ ফার্মা থেকে আপনার সাথে যোগাযোগ করা হবে)</p>
+                          <div class="label brick warning my-8">
+                            <p class="mb-8 line-height">*** Please pay first for outside Dhaka delivery (ঢাকার বাইরে অর্ডারের ক্ষেত্রে ক্যাশ অন ডেলিভারি প্রযোজ্য নয়)</p>
+                            <p class="mb-8 line-height">*** Please pay the delivery charge first for inside Dhaka delivery (Cash on Delivery) (ঢাকার ভিতর ক্যাশ অন ডেলিভারি এর ক্ষেত্রে ডেলিভারি চার্জ আগে প্রদান করতে হবে)</p>
+                            <p class="mb-8 line-height">*** LP agent will call you for delivery charge and reconfirm your order (আপনার অর্ডার পুনরায় নিশ্চিত করতে লাজ ফার্মা থেকে আপনার সাথে যোগাযোগ করা হবে)</p>
+                          </div>
+                          <div>
+                            <div class="fx-hor-between-ver-center">
+                              <button class="brick outline primary t-16">Continue Shopping</button>
+                              <button class="brick fill primary t-16 t-bold">Order Now</button>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -688,118 +699,158 @@
     <!-- side brawer ends -->
     <!-- registration -->
     <div class="pop-up full-screen fixed z-14 bg-black3 center" 
-        id="registration-pop-up" 
-        data-visible="false" 
-        data-role="pop-up"
-        >
-    <div class="pop-up__content p-16 bg-white-500 round-corner relative">
-        <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">Sign Up</div>
+         id="registration-pop-up" 
+         data-visible="false" 
+         data-role="pop-up"
+         >
+      <div class="pop-up__content p-16 bg-white-500 round-corner relative">
+        <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Sign Up</div>
         <div class="pop-up__body">
-        <form>
-            <div class="bg-gray-100 p-8 mb-4">
-            <label for="email" class="t-bold t-8 t-uppercase">
-                Phone Number
-                <input type="text" name="phone" id="phone" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
-            </label>
-            </div>
-            <div class="bg-gray-100 p-8 mb-4">
-            <label for="password" class="t-bold t-8 t-uppercase">
-                Password
-                <input 
-                type="password" 
+          <form id="registration-form">
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
+              <label for="email" class="t-14">Phone Number</label>
+              <input 
+                type="text" 
                 name="phone" 
-                id="password" 
-                class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
-            </label>
+                id="phone" 
+                class="pop t-18 kill-input"
+                required
+                maxlength="14"
+                minlength="11">
             </div>
-            <div class="bg-gray-100 p-8 mb-4">
-            <label for="retry-password" class="t-bold t-8 t-uppercase">
-                Retry Password
-                <input 
-                type="password" 
-                name="phone" 
-                id="retry-password" 
-                class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
-            </label>
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
+              <label for="password" class="t-14">Password</label>
+              <input 
+              type="password" 
+              name="phone" 
+              id="password" 
+              class="pop t-18 kill-input"
+              required>
             </div>
-        </form>
-        
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
+              <label for="retry-password" class="t-14">Retry password</label>
+              <input 
+              type="password" 
+              name="phone" 
+              id="retry-password" 
+              class="pop t-18 kill-input"
+              required>
+            </div>
+          </form>
         </div>
         <div class="pop-up__footer fx-hor-between-ver-center">
-        <div class="t-12 t-bold">Have Account? &nbsp; <a href="#" id="open-login">Login</a></div>
-        <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner" id="sign-up">Sign Up</button>
+          <div class="t-12 t-bold">
+            Have Account? &nbsp; 
+            <a 
+              href="#" 
+              id="open-login" 
+              class="t-hover-primary t-secondary t-hover-underline"
+              >LOGIN
+            </a>
+          </div>
+          <button 
+            type="submit" 
+            form="registration-form" 
+            class="brick fill primary" 
+            id="sign-up"
+            >Sign Up
+          </button>
         </div>
-        <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-registration-pop-up">
-        X
+        <div 
+          class="pop-up__close p-8 t-16 absolute right-top max-content pointer" 
+          id="close-registration-pop-up"
+          >X
         </div>
-    </div>
+      </div>
     </div>
     <!-- pop up overlay ends -->
     <!-- otp pop up -->
     <div class="pop-up full-screen fixed z-14 bg-black3 center" 
-        id="otp-pop-up" 
-        data-visible="false" 
-        data-role="pop-up"
-        >
-    <div class="pop-up__content p-16 bg-white-500 round-corner relative">
-        <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">VERIFICATION</div>
+         id="otp-pop-up" 
+         data-visible="false" 
+         data-role="pop-up"
+         >
+      <div class="pop-up__content p-16 bg-white-500 round-corner relative">
+        <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Verify</div>
         <div class="pop-up__body">
-        <form>
-            <div class="bg-gray-100 p-8 mb-4">
-            <label for="otp" class="t-bold t-8 t-uppercase">
-                Please Enter Your OTP Code
-                <input type="text" name="otp" id="otp" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
-            </label>
+          <form id="otp-form">
+            <div class="mb-4 grid-auto-to-1 gc-16 py-16 align-center">
+              <label for="otp" class="t-14">Please Enter Your OTP Code</label>
+              <input 
+                type="text" 
+                name="otp" 
+                id="otp" 
+                class="pop t-18"
+                required
+                maxlength="6"
+                minlength="6"
+                >
             </div>
-        </form>
-        
+          </form>
         </div>
         <div class="pop-up__footer fx-hor-between-ver-center">
-        <div class="t-12 t-bold">Didn't receive the OTP? &nbsp; <a href="#">Resend</a></div>
-        <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner">Verify</button>
+          <div class="t-12 t-bold">
+            Didn't receive the OTP? &nbsp; 
+            <a href="#" class="t-hover-primary t-secondary t-hover-underline">RESEND</a></div>
+          <button
+            type="submit"
+            form="otp-form"
+            class="brick fill primary"
+            >Verify
+          </button>
         </div>
         <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-otp-pop-up">
-        X
+          X
         </div>
-    </div>
+      </div>
     </div>
     <!-- otp pop up ends -->
-    <!-- registration -->
+    <!-- login pop up ends -->
     <div class="pop-up full-screen fixed z-14 bg-black3 center" 
-        id="login-pop-up" 
-        data-visible="false" 
-        data-role="pop-up"
-        >
-    <div class="pop-up__content p-16 bg-white-500 round-corner relative">
-        <div class="pop-up__title t-18 t-light t-center t-uppercase mb-16">Login</div>
+         id="login-pop-up" 
+         data-visible="false" 
+         data-role="pop-up"
+         >
+      <div class="pop-up__content p-16 bg-white-500 round-corner relative">
+        <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Login</div>
         <div class="pop-up__body">
-        <form>
-            <div class="bg-gray-100 p-8 mb-4">
-            <label for="email" class="t-bold t-8 t-uppercase">
-                Phone Number
-                <input type="text" name="phone" id="phone" class="mt-2 t-16 w-350 p-4 kill-input  block round-corner bb">
-            </label>
+          <form id="login-form">
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
+              <label for="phone" class="t-14">Phone Number</label>
+              <input 
+                type="text" 
+                name="phone" 
+                id="phone" 
+                class="pop t-18 kill-input"
+                maxlength="14"
+                minlength="11"
+                required>
             </div>
-            <div class="bg-gray-100 p-8 mb-4">
-            <label for="password" class="t-bold t-8 t-uppercase">
-                Password
-                <input 
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
+              <label for="password" class="t-14">Password</label>
+              <input 
                 type="password" 
                 name="phone" 
                 id="password" 
-                class="mt-2 t-16 p-4 w-350 kill-input  block round-corner bb">
-            </label>
+                class="pop t-18 kill-input"
+                required>
             </div>
-        </form>
+          </form>
         </div>
         <div class="pop-up__footer fx-hor-between-ver-center">
-        <div class="t-12 t-bold">Don't have account? &nbsp;<a href="#" id="open-registation">REGISTER</a></div>
-        <button class="t-uppercase t-16 t-bold t-white btn-primary round-corner" id="log-in">Login</button>
+          <div class="t-12 t-bold">Don't have account? &nbsp;<a href="#" id="open-registation" class="t-hover-primary t-secondary t-hover-underline">REGISTER</a></div>
+          <button 
+            type="submit" 
+            form="login-form" 
+            class="brick fill primary" 
+            id="log-in"
+            >Login
+          </button>
         </div>
         <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-login-pop-up">
-        X
+          X
         </div>
-    </div>
+      </div>
     </div>
     <!-- login pop up ends -->
 </body>

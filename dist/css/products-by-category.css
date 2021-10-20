@@ -190,6 +190,10 @@ input[type=number] {
   font-size: 1.875rem;
 }
 
+.line-height {
+  line-height: 1.5em;
+}
+
 .t-light {
   font-weight: 400;
 }
@@ -225,7 +229,7 @@ input[type=number] {
 .t-limited {
   max-width: 100%;
   text-overflow: ellipsis;
-  overflow-x: hidden;
+  overflow: hidden;
   white-space: nowrap;
 }
 
@@ -235,6 +239,10 @@ input[type=number] {
 
 .t-primary {
   color: #00a27a;
+}
+
+.t-secondary {
+  color: #ed2645;
 }
 
 .t-white {
@@ -283,6 +291,11 @@ input[type=number] {
 .grid-1-to-auto {
   display: grid;
   grid-template-columns: 1fr auto;
+}
+
+.grid-auto-to-1 {
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
 .btn {
@@ -684,7 +697,7 @@ input[type=number] {
   padding: 0.4rem 0.4rem;
   font-weight: bold;
   border-bottom-left-radius: 0.4rem;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .cart--compact__item-count {
@@ -697,7 +710,7 @@ input[type=number] {
   padding: 0.4rem 0.4rem;
   font-weight: bold;
   border-top-left-radius: 0.4rem;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .cart--expan {
@@ -1374,6 +1387,7 @@ input[type=number] {
   background: #00a27a;
   font-size: 0.88rem;
   font-weight: bold;
+  box-shadow: 0px 2px 3px -1px black;
 }
 
 .category-list .categories__category {
@@ -1493,6 +1507,10 @@ input[type=number] {
 
 .mb-20 {
   margin-bottom: 1.5rem;
+}
+
+.mb-24 {
+  margin-bottom: 2rem;
 }
 
 .ml-8 {
@@ -1728,6 +1746,296 @@ a.kill-anchore {
 .product-display .tag {
   left: 0.25rem;
   top: 0.25rem;
+}
+
+input.pop {
+  border: none;
+  border-bottom: 2px solid lightgray;
+  transition: border-color 0.3s;
+}
+
+input.pop:focus, input.pop:hover {
+  border-color: #00a27a;
+  outline: 0;
+}
+
+input.pop.warning {
+  border-color: #ff9800;
+}
+
+input.pop.error {
+  border-color: #f44336;
+}
+
+input.pop.valid {
+  border-color: #4caf50;
+}
+
+button.brick {
+  padding: 0.5rem 1rem;
+  transition: border-color 0.3s;
+  cursor: pointer;
+  box-shadow: none;
+  border: none;
+}
+
+button.brick.big {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+}
+
+button.brick.small {
+  padding: 0.25rem 0.5rem;
+}
+
+button.brick.text {
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+button.brick.text.primary {
+  color: #00a27a;
+}
+
+button.brick.text.primary:hover {
+  text-decoration: underline;
+}
+
+button.brick.fill:hover {
+  background-color: white;
+}
+
+button.brick.fill.warning {
+  background-color: #ff9800;
+}
+
+button.brick.fill.warning:hover {
+  background-color: #cc7a00;
+}
+
+button.brick.fill.danger {
+  background-color: #f44336;
+}
+
+button.brick.fill.danger:hover {
+  background-color: #ea1c0d;
+}
+
+button.brick.fill.success {
+  background-color: #4caf50;
+}
+
+button.brick.fill.success:hover {
+  background-color: #3d8b40;
+}
+
+button.brick.fill.default {
+  background-color: white;
+}
+
+button.brick.fill.default:hover {
+  background-color: #e6e6e6;
+}
+
+button.brick.fill.primary {
+  background-color: #00a27a;
+  color: #f7fbf9;
+}
+
+button.brick.fill.primary:hover {
+  background-color: #006f54;
+}
+
+button.brick.fill.secondary {
+  background-color: #ed2645;
+  color: #222222;
+}
+
+button.brick.fill.secondary:hover {
+  background-color: #cf112f;
+}
+
+button.brick.icon {
+  display: flex;
+  column-gap: 0;
+  row-gap: 0;
+  justify-content: space-between;
+  column-gap: 0;
+  row-gap: 0;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+button.brick.icon img {
+  width: 25px;
+  height: 25px;
+}
+
+button.brick.outline {
+  border: 1px solid black;
+  background: white;
+}
+
+button.brick.outline.primary {
+  border: 1px solid #00a27a;
+  color: #00a27a;
+}
+
+button.brick.outline.primary:hover {
+  background: #a2ffe8;
+}
+
+span.brick.chips.medium {
+  font-size: 0.88rem;
+  font-weight: bold;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+}
+
+span.brick.chips.danger {
+  background: #f44336;
+  color: #f7fbf9;
+}
+
+span.brick.chips.warning {
+  background: #ff9800;
+  color: #222222;
+}
+
+span.brick.chips.success {
+  background: #4caf50;
+  color: #f7fbf9;
+}
+
+span.brick.chips.primary {
+  background: #00a27a;
+  color: #f7fbf9;
+}
+
+div.tabs.brick .tabs__buttons {
+  background: transparent;
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.65);
+}
+
+div.tabs.brick .tabs__buttons .tabs__button {
+  min-width: 150px;
+  padding: 0.5rem 0;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+div.tabs.brick .tabs__buttons .tabs__button:hover {
+  font-weight: bold;
+}
+
+div.tabs.brick .tabs__buttons .tabs__button.active {
+  border-bottom: 2px solid #00a27a;
+  font-weight: bold;
+}
+
+div.tabs.brick .tabs__contents {
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .tab-buttons {
+    flex-direction: column;
+  }
+  .tab-buttons div {
+    width: 100%;
+  }
+}
+
+div.brick.label {
+  font-size: 0.88rem;
+  padding: 1rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.125rem;
+}
+
+div.brick.label.default {
+  color: #686868;
+}
+
+div.brick.label.warning {
+  color: rgba(0, 0, 0, 0.65);
+  border: 1px solid #ff9800;
+  background: #ff98002e;
+}
+
+table.brick {
+  width: 100%;
+  border-spacing: 0;
+}
+
+table.brick.primary thead {
+  background: #00a27a;
+  color: #f7fbf9;
+  height: 2rem;
+}
+
+table.brick.primary td,
+table.brick.primary th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+input.brick,
+textarea.brick {
+  border: none;
+  height: 2em;
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  color: #686868;
+  transition: border-color 0.3s;
+  border: 1px solid lightgray;
+}
+
+input.brick:focus, input.brick:hover,
+textarea.brick:focus,
+textarea.brick:hover {
+  border-color: #00a27a;
+  outline: 0;
+}
+
+input.brick.warning,
+textarea.brick.warning {
+  border-color: #ff9800;
+}
+
+input.brick.error,
+textarea.brick.error {
+  border-color: #f44336;
+}
+
+input.brick.valid,
+textarea.brick.valid {
+  border-color: #4caf50;
+}
+
+div.brick.icon.medium {
+  width: 25px;
+  height: 25px;
+}
+
+div.brick.icon.medium img {
+  height: 100%;
+  width: 100%;
+}
+
+div.brick.icon.medium {
+  width: 38px;
+  height: 38px;
+}
+
+div.brick.icon.medium img {
+  height: 100%;
+  width: 100%;
 }
 
 html {

@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font google ends -->
     <link rel="stylesheet" href="./css/index.css" />
     <script src="./js/style.js" defer></script>
     <title>Fine Pharma</title>
   </head>
   <body>
+    <!-- navigations -->
+    <!-- common sections -->
     <section class="bg-nav-top">
       <nav class="nav-top">
         <div class="nav-top__contacts">
@@ -222,17 +229,17 @@
             
           </div>
           <div class="nav-bottom__items__links">
-            <a href="#" class="nav-bottom__items__links--link active-nav" title="Hello World">Home</a>
-            <a href="#" class="nav-bottom__items__links--link">Orders</a>
-            <a href="#" class="nav-bottom__items__links--link">Shop Location</a>
-            <a href="#" class="nav-bottom__items__links--link">Gallery</a>
-            <a href="#" class="nav-bottom__items__links--link">Career</a>
-            <a href="#" class="nav-bottom__items__links--link">Contact</a>
+            <a href="./index.html" class="nav-bottom__items__links--link active-nav" title="Hello World">Home</a>
+            <a href="#" class="nav-bottom__items__links--link">Order Us</a>
             <a href="#" class="nav-bottom__items__links--link">About Us</a>
+            <a href="#" class="nav-bottom__items__links--link">Contact Us</a>
           </div>
         </div>
       </nav>
     </section>
+    <!-- navigations end -->
+    <!-- common sections ends -->
+
     <section class="bg-slider">
       <div class="slider">
         <div class="slider__items">
@@ -309,7 +316,7 @@
             <div class="product-row__item">
                 <div class="product-row__item__title">
                   <div class="product-row__item__title--text">
-                    <a href="">Covid-19 Special</a>
+                    <a href="./products-by-category.html">Covid-19 Special</a>
                   </div>
                   <div class="product-row__item__title__actions">
                     <button class="view-all">View All</button>
@@ -905,6 +912,7 @@
             </div>
         </div>
     </section>
+
     <!-- following elements are absolute relavtive to body -->
     <!-- cart and cart small -->
     <div class="cart">
@@ -1023,7 +1031,7 @@
         <div class="drawer__links__link"><a href="#" class="drawer__links--link">About Us</a></div>
       </div>
     </div>
-    <!-- side brawer ends -->
+    <!-- side drawer ends -->
     <!-- registration -->
     <div class="pop-up full-screen fixed z-14 bg-black3 center" 
          id="registration-pop-up" 
@@ -1071,7 +1079,7 @@
             <a 
               href="#" 
               id="open-login" 
-              class="t-hover-primary t-hover-underline"
+              class="t-hover-primary t-secondary t-hover-underline"
               >LOGIN
             </a>
           </div>
@@ -1101,7 +1109,7 @@
         <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Verify</div>
         <div class="pop-up__body">
           <form id="otp-form">
-            <div class="mb-4 grid-1-to-1 gc-16 py-16 align-center">
+            <div class="mb-4 grid-auto-to-1 gc-16 py-16 align-center">
               <label for="otp" class="t-14">Please Enter Your OTP Code</label>
               <input 
                 type="text" 
@@ -1118,7 +1126,7 @@
         <div class="pop-up__footer fx-hor-between-ver-center">
           <div class="t-12 t-bold">
             Didn't receive the OTP? &nbsp; 
-            <a href="#" class="t-hover-primary t-hover-underline">RESEND</a></div>
+            <a href="#" class="t-hover-primary t-secondary t-hover-underline">RESEND</a></div>
           <button
             type="submit"
             form="otp-form"
@@ -1165,7 +1173,7 @@
           </form>
         </div>
         <div class="pop-up__footer fx-hor-between-ver-center">
-          <div class="t-12 t-bold">Don't have account? &nbsp;<a href="#" id="open-registation" class="t-hover-primary t-hover-underline">REGISTER</a></div>
+          <div class="t-12 t-bold">Don't have account? &nbsp;<a href="#" id="open-registation" class="t-hover-primary t-secondary t-hover-underline">REGISTER</a></div>
           <button 
             type="submit" 
             form="login-form" 

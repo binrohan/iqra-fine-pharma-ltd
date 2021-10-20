@@ -14,7 +14,26 @@ export class BrickTabs {
 
         this.addEventsInButtons();
 
+        this.addButtonStackPoint(this.options.buttonsStackPoint || 0);
+
         this.mount(this.options.openingTabIndex || 0);
+    }
+
+    addButtonStackPoint(breakPoint){
+        const style = document.createElement('STYLE');
+        style.innerText = `
+            @media screen and (max-width: ${breakPoint}){
+                .tabs__buttons{
+                    flex-direction: column;
+                }
+
+                .tabs__button{
+                    width: 100%;
+                }
+            }
+        `;
+
+        this.tabsEl.append(style);
     }
 
     addEventsInButtons(){

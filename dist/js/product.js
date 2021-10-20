@@ -1,3 +1,3 @@
-import {BrickTabs} from './brick/brick-tabs.js';
+import { BrickTabs } from './brick/brick-tabs.js';
 
-const tabs = new BrickTabs('.tabs', {openingTabIndex: 1});
+const tabs = new BrickTabs('.tabs', { openingTabIndex: 0, buttonsStackPoint: '360px' });
