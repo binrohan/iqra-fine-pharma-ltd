@@ -1,0 +1,56 @@
+@import 'var';
+@import 'config';
+@import 'mixins';
+@import 'flex';
+@import 'typo';
+@import 'grid';
+@import 'icon';
+@import 'button-mixins';
+@import 'classes';
+@import 'nav';
+@import 'footer';
+@import 'media-xs';
+@import 'media-sm';
+@import 'media-min-600';
+@import 'media-md';
+@import 'media-min-800';
+@import 'media-min-900';
+@import 'media-min-1000';
+@import 'media-lg';
+@import 'drawer';
+@import 'search-result';
+@import 'category-list';
+@import 'layout';
+@import 'visual';
+@import 'element';
+@import 'utilities';
+@import 'material';
+
+.about{
+    h1{
+        font-size: 2.5vw;
+    }
+    .cover{
+        width: 100vw;
+        height: 75vh;
+        img{
+            width: 80vw;
+            max-width: 360px;
+        }
+        
+    }
+
+    .key-features{
+        .key-features__items{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .mobile{
+                width: 250px;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

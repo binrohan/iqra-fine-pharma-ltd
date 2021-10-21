@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font google ends -->
+    <link rel="stylesheet" href="./css/about.css" />
+    <script src="./js/style.js" defer></script>
+    <title>About Us</title>
+  </head>
+  <body>
+    <!-- navigations -->
+    <!-- common sections -->
+    <section class="bg-nav-top">
+      <nav class="nav-top">
+        <div class="nav-top__contacts">
+          <div class="nav-top__contacts--contact">
+            <div class="icon">
+              <img src="./icons/phone.svg" alt="" class="icon--sm" />
+            </div>
+            <div class="text--mid">+880 1555 555 5555</div>
+          </div>
+          <div class="nav-top__contacts--contact">
+            <div class="icon">
+              <img src="./icons/mail.svg" alt="" class="icon--sm" />
+            </div>
+            <div class="text--mid">support@finepharma.com</div>
+          </div>
+        </div>
+        <div class="nav-top__download">
+          <div class="text">Fine Pharma, Fine Life</div>
+          <div class="icon">
+            <div>
+              <img src="./icons/smart-phone.svg" alt="" class="icon--sm" />
+            </div>
+            <div class="text--sm">Download Our App</div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="bg-nav-mid" id="mid-nav">
+      <nav class="nav-mid" >
+        
+        <div class="nav-mid__logo">
+          <buttton class="nav-mid__logo--ham" id="drawer-toggle-btn">
+            <img src="./icons/e-hamburger-black.svg" alt="" />
+          </buttton>
+          <div class="logo-container">
+            <img src="./images/Fine Pharma3.png" alt="fine pharma logo" />
+          </div>
+        </div>
+        <div class="nav-mid__search">
+          <input type="text" id="search" placeholder="Search by Trade or Generic Names" />
+          <button>
+            <img src="./icons/e-search.svg" alt="" />
+          </button>
+          <div class="search-result" id="search-result">
+            
+            <div class="search-result__no-product-message">
+              No Product Found! &nbsp; &#128532;
+            </div>
+            <div class="search-result__items">
+              <!-- search result -->
+            <div class="result-card">
+              <div class="result-card__img">
+                <img src="./images/p (1).webp" alt="">
+              </div>
+              <div class="result-card__details">
+                <a href="#" class="result-card__details--name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.
+                </a>
+                <p class="result-card__details--price">
+                  <span>Price: </span><span class="current">2800<span>BDT</span></span> <span class="original">3200 <span>BDT</span></span>
+                </p>
+                <a class="result-card__details--category">
+                  Lorem, ipsum dolor.
+                </a>
+              </div>
+              <div class="result-card__details--actions">
+                <button>
+                  <img src="./icons/cart-filled.svg" alt="">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <!-- search result ends -->
+            <!-- search result -->
+            <div class="result-card">
+              <div class="result-card__img">
+                <img src="./images/p (5).webp" alt="">
+              </div>
+              <div class="result-card__details">
+                <a href="#" class="result-card__details--name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus. Lorem ipsum dolor sit amet.
+                </a>
+                <p class="result-card__details--price">
+                  <span>Price: </span><span class="current">2800<span>BDT</span></span> <span class="original">3200 <span>BDT</span></span>
+                </p>
+                <a class="result-card__details--category">
+                  Lorem, ipsum dolor.
+                </a>
+              </div>
+              <div class="result-card__details--actions">
+                <button>
+                  <img src="./icons/cart-filled.svg" alt="">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <!-- search result ends -->
+            <!-- search result -->
+            <div class="result-card">
+              <div class="result-card__img">
+                <img src="./images/b (1).webp" alt="">
+              </div>
+              <div class="result-card__details">
+                <a href="#" class="result-card__details--name">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </a>
+                <p class="result-card__details--price">
+                  <span>Price: </span><span class="current">2800<span>BDT</span></span> <span class="original">3200 <span>BDT</span></span>
+                </p>
+                <a class="result-card__details--category">
+                  Lorem, ipsum dolor.
+                </a>
+              </div>
+              <div class="result-card__details--actions">
+                <button>
+                  <img src="./icons/cart-filled.svg" alt="">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <!-- search result ends -->
+            </div>
+            <div class="search-result__view-more">
+              <button>View All Result</button>
+            </div>
+          </div>
+        </div>
+        <ul class="nav-mid__links">
+          <li class="nav-mid__links--link" data-title="Upload Prescription">
+            <a href="#">
+              <img class="" src="./icons/document.svg" alt="prescription" />
+            </a>
+          </li>
+          <li class="nav-mid__links--link" data-title="Call for order">
+            <a href="#">
+              <img class="" src="./icons/support.svg" alt="call to order" />
+            </a>
+          </li>
+          <li class="nav-mid__links--link" data-title="All wishlisted items">
+            <a href="#">
+              <img src="./icons/black-outline-heart.svg" alt="wishlist" />
+            </a>
+          </li>
+          <li class="nav-mid__links--link" data-title="Notifications">
+            <a href="#">
+              <img src="./icons/e-bell.svg" alt="notification" />
+            </a>
+          </li>
+          <li class="nav-mid__links--link" id="profile" data-title="User Profile">
+            <a href="#">
+              <img src="./icons/e-user.svg" alt="profile-icon" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section class="bg-nav-bottom" id="bottom-nav">
+      <nav class="nav-bottom">
+        <div class="nav-bottom__items">
+          <div class="nav-bottom__items__btns"  id="category-toggle-btn">
+            <div class="nav-bottom__items__btns--ham">
+              <img src="./icons/e-hamburger.svg" alt="" />
+            </div>
+            <div class="nav-bottom__items__btns--category-dropdown-btn" >
+              <div class="big-btn">
+                <div>Categories</div>
+                <div id="category-toggle-btn-arrow">
+                  <img src="./icons/e-down-angle.svg" alt="" />
+                </div>
+              </div>
+              
+              <!-- calegory list -->
+              <div class="category-list" id="category-list">
+                <div class="categories">
+                  <div class="categories__category">
+                    <a href="#" class="level-one">Covid-19 Special</a>
+                    <div class="categories__category__subs">
+                      <div class="categories__category__subs__sub"><a href="#" >Women Care</a></div>
+                      <div class="categories__category__subs__sub"><a href="#" >Devices</a></div>
+                      <div class="categories__category__subs__sub"><a href="#" >Sexual Wellness</a></div>
+                      <div class="categories__category__subs__sub"><a href="#" >Herbal and Homeopathy</a></div>
+                    </div>
+                  </div>
+                  <div class="categories__category">
+                    <a href="#" class="level-one">Women Care</a>
+                    <div class="categories__category__subs">
+                      <div class="categories__category__subs__sub"><a href="#" >Women Care</a></div>
+                      <div class="categories__category__subs__sub"><a href="#" >Devices</a></div>
+                      <div class="categories__category__subs__sub"><a href="#" >Sexual Wellness</a></div>
+                      <div class="categories__category__subs__sub"><a href="#" >Herbal and Homeopathy</a></div>
+                    </div>
+                  </div>
+                  <div class="categories__category"><a href="#" class="level-one">Devices</a></div>
+                  <div class="categories__category"><a href="#" class="level-one">Sexual Wellness</a></div>
+                  <div class="categories__category">
+                    <a href="#" class="level-one">Herbal and Homeopathy</a>
+                    <div class="categories__category__subs">
+                      <div class="categories__category__subs__sub"><a href="#">Women Care</a></div>
+                      <div class="categories__category__subs__sub"><a href="#">Devices</a></div>
+                      <div class="categories__category__subs__sub"><a href="#">Sexual Wellness</a></div>
+                      <div class="categories__category__subs__sub"><a href="#">Herbal and Homeopathy</a></div>
+                    </div>
+                  </div>
+                  <div class="categories__category"><a href="#" class="level-one">Baby & Mom care</a></div>
+                  <div class="categories__category"><a href="#" class="level-one">Nutrition and drinks</a></div>
+                  <div class="categories__category"><a href="#" class="level-one">Personal care</a></div>
+                  <div class="categories__category"><a href="#" class="level-one">Supplements and Vitamins</a></div>
+                  <div class="categories__category"><a href="#" class="level-one">OTC Medicines</a></div>
+                  <div class="categories__category"><a href="#" class="level-one">Prescription Medicines</a></div>
+                </div>
+              </div>
+              <!-- calegory list ends-->
+            </div>
+            
+          </div>
+          <div class="nav-bottom__items__links">
+            <a href="./index.html" class="nav-bottom__items__links--link active-nav" title="Hello World">Home</a>
+            <a href="#" class="nav-bottom__items__links--link">Order Us</a>
+            <a href="#" class="nav-bottom__items__links--link">About Us</a>
+            <a href="./contact.html" class="nav-bottom__items__links--link">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- navigations end -->
+    <!-- common sections ends -->
+
+    <!-- about us starts -->
+    <section class="about">
+        <div class="cover center" style="background: rgb(255, 117, 117)">
+            <div class="flex align-center fx-col g-16">
+                <img src="./images/Fine Pharma2.png" alt="">
+                <h1 class="t-uppercase t-bold t-center">We make healthcare
+                Understandable, Accessible and Affordable.</h1>
+            </div>
+        </div>
+        <div class="key-features full-screen center" style="background: pink">
+            <div class="container">
+                <h1 class="t-uppercase t-center">Key Features</h1>
+                <div class="key-features__items">
+                    <div>
+                        <div>
+                            <div class="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex align-center fx-col g-16">
+                        <div class="mobile">
+                            <img src="./images/app-iPhone.png" alt="">
+                        </div>
+                        <div>
+                            <button class="brick fill primary w-100">Download Fine Pharma Mobile</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="mission section full-screen" style="background: wheat">
+
+        </div>
+        <div class="team section full-screen" style="background: violet">
+
+        </div>
+    </section>
+    <!-- about us ends -->
+
+    
+    <section class="bg-footer">
+        <div class="footer">
+            <div class="footer__features">
+             <div class="footer__features--feature">
+                 <div class="footer__features--feature__icon">
+                     <img src=".//icons/free-delivery.svg" alt="">
+                 </div>
+                 <div class="footer__features--feature__text">
+                     <h3>Free Shipping.</h3>
+                     <p>No one rejects, dislikes.</p>
+                 </div>
+             </div>
+             <div class="footer__features--feature">
+                <div class="footer__features--feature__icon">
+                    <img src=".//icons/f-support.svg" alt="">
+                </div>
+                <div class="footer__features--feature__text">
+                    <h3>24/7 Support.</h3>
+                    <p>It has survived not only.</p>
+                </div>
+            </div>
+            <div class="footer__features--feature">
+                <div class="footer__features--feature__icon">
+                    <img src=".//icons/credit-card.svg" alt="">
+                </div>
+                <div class="footer__features--feature__text">
+                    <h3>Online Payment..</h3>
+                    <p>All the Lorem Ipsum on.</p>
+                </div>
+            </div>
+            <div class="footer__features--feature">
+                <div class="footer__features--feature__icon">
+                    <img src=".//icons/pilot.svg" alt="">
+                </div>
+                <div class="footer__features--feature__text">
+                    <h3>Fast Delivery.</h3>
+                    <p>Many desktop page now.</p>
+                </div>
+            </div>
+            </div>
+            <div class="footer__content">
+              <div class="footer__content--address">
+                  <div class="logo">
+                    <img src="./images/Fine Pharma2.png" alt="">
+                  </div>
+                  <h3>Address</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti commodi quia sapiente!</p>
+                  <p class="phone"><strong>Phone: </strong>+880 155 5555 555</p>
+                  <p class="mail"><strong>E-mail: </strong>support@finepharma.com</p>
+              </div>
+              <div class="footer__content--links">
+                  <h3>Useful Links</h3>
+                  <ul>
+                    <li>
+                      <a href="#">Terms And Condition</a>
+                    </li>
+                    <li>
+                      <a href="#">Return and Refund Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">Deliver Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">Product Request</a>
+                    </li>
+                  </ul>
+              </div>
+              <div class="footer__content--payments">
+                  <h3>Payement Methods</h5>
+                    <div class="footer__content--payments__methods">
+                      <div class="footer__content--payments__methods--method">
+                        <img src="./images/card4.png" alt="">
+                      </div>
+                      <div class="footer__content--payments__methods--method">
+                        <img src="./images/card4 (1).png" alt="">
+                      </div>
+                    </div>
+              </div>
+              <div class="footer__content--socials">
+                <div>
+                  <h3>Connect With Us</h3>
+                  <div class="social-links">
+                    <div class="social-links__link">
+                      <a href="#"><img src="./icons/facebook.svg" alt=""></a>
+                    </div>
+                    
+                    <div class="social-links__link">
+                      <a href="#"><img src="./icons/youtube.svg" alt=""></a>
+                    </div>
+                    <div class="social-links__link">
+                      <a href="#"><img src="./icons/whatsapp.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3>Download Our Android App</h3>
+                  <div class="download-links">
+                    <a href="#">
+                      <img src="./images/google-play-button.png.webp" alt="">
+                    </a>
+                  </div>
+                </div>  
+              </div>
+            </div>
+            <div class="footer-license">
+                <p>Powerd by <a href="https://iqrasys.com">Iqrasys solution Limited</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- following elements are absolute relavtive to body -->
+    <!-- cart and cart small -->
+    <div class="cart">
+      <div class="cart--compact" id="cart-open-btn">
+        <div class="cart--compact__item-count">
+          <span>Items: </span>9
+        </div>
+        <div class="cart--compact__icon">
+          <img src="./icons/cart-filled.svg" alt="">
+        </div>
+        <div class="cart--compact__amount">
+          2800 <span>BDT</span>
+        </div>
+      </div>
+      <div class="cart--expan" id="cart-expan">
+        <div class="cart--expan__header">
+          <div class="cart--expan__header--text">
+            Your Cart
+          </div>
+          <div class="cart--expan__header--close" id="cart-close-btn">
+            X
+          </div>
+        </div>
+        <div class="cart--expan__items">
+          <div class="cart--expan__items--empty-message">
+            Your shopping cart is empty!
+          </div>
+          <div class="cart--expan__items--cart-product">
+            <div class="cart-product">
+              <div class="cart-product__serial">
+                3.
+              </div>
+              <div class="cart-product__details">
+                <div class="cart-product__details--name">Face Shield Glass </div>
+                <div class="cart-product__details__price">
+                  <div class="cart-product__details__price--details">
+                    <div class="price">2800</div>
+                    <div> X </div>
+                    <div class="quantity">5</div>
+                    <div> = </div>
+                    <div class="total">35822222</div>
+                  </div>
+                  <div class="cart-product__details__price--actions">
+                    <div class="cart-product__details__price--actions--plus">
+                      <button>+</button>
+                    </div>
+                    <div class="cart-product__details__price--actions--count">5</div>
+                    <div class="cart-product__details__price--actions--minus">
+                      <button>-</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-product__remove">
+                <div>x</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart--expan__calc">
+          <div class="cart--expan__calc--item-count">
+            <div class="cart--expan__calc--item-count__text">
+              Total Items
+            </div>
+            <div class="cart--expan__calc--item-count__number"> 
+              9
+            </div>
+          </div>
+          <div class="cart--expan__calc--total-amount">
+            <div class="cart--expan__calc--total-amount__text">
+              Total Amount
+            </div>
+            <div class="cart--expan__calc--total-amount__number"> 
+              3560 <span>BDT</span>
+            </div>
+          </div>
+        </div>
+        <div class="cart--expan__actions">
+          <button>Order Now</button>
+        </div>
+    </div>
+    </div>
+    <!-- cart and cart small ends-->
+    <!-- side brawer -->
+    <div id="js--drawer" class="drawer">
+      <div class="drawer__categories">
+        <header class="drawer__categories__category--header">
+          <h2>Categories</h2>
+          <div class="drawer__categories__category--header__close" id="js--drawer-close-btn">
+            <div>
+              🗙 
+            </div>
+          </div>
+        </header>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Covid-19 Special</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Women Care</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Devices</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Sexual Wellness</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Herbal and Homeopathy</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories__category">Baby & Mom care</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Nutrition and drinks</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Personal care</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Supplements and Vitamins</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">OTC Medicines</a></div>
+        <div class="drawer__categories__category"><a href="#" class="drawer__categories--category">Prescription Medicines</a></div>
+        
+      </div>
+      
+      <div class="drawer__links">
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link" title="Hello World">Home</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Orders</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Shop Location</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Gallery</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Career</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">Contact</a></div>
+        <div class="drawer__links__link"><a href="#" class="drawer__links--link">About Us</a></div>
+      </div>
+    </div>
+    <!-- side drawer ends -->
+    <!-- registration -->
+    <div class="pop-up full-screen fixed z-14 bg-black3 center" 
+         id="registration-pop-up" 
+         data-visible="false" 
+         data-role="pop-up"
+         >
+      <div class="pop-up__content p-16 bg-white-500 round-corner relative">
+        <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Sign Up</div>
+        <div class="pop-up__body">
+          <form id="registration-form">
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
+              <label for="email" class="t-14">Phone Number</label>
+              <input 
+                type="text" 
+                name="phone" 
+                id="phone" 
+                class="pop t-18 kill-input"
+                required
+                maxlength="14"
+                minlength="11">
+            </div>
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
+              <label for="password" class="t-14">Password</label>
+              <input 
+              type="password" 
+              name="phone" 
+              id="password" 
+              class="pop t-18 kill-input"
+              required>
+            </div>
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
+              <label for="retry-password" class="t-14">Retry password</label>
+              <input 
+              type="password" 
+              name="phone" 
+              id="retry-password" 
+              class="pop t-18 kill-input"
+              required>
+            </div>
+          </form>
+        </div>
+        <div class="pop-up__footer fx-hor-between-ver-center">
+          <div class="t-12 t-bold">
+            Have Account? &nbsp; 
+            <a 
+              href="#" 
+              id="open-login" 
+              class="t-hover-primary t-secondary t-hover-underline"
+              >LOGIN
+            </a>
+          </div>
+          <button 
+            type="submit" 
+            form="registration-form" 
+            class="brick fill primary" 
+            id="sign-up"
+            >Sign Up
+          </button>
+        </div>
+        <div 
+          class="pop-up__close p-8 t-16 absolute right-top max-content pointer" 
+          id="close-registration-pop-up"
+          >X
+        </div>
+      </div>
+    </div>
+    <!-- pop up overlay ends -->
+    <!-- otp pop up -->
+    <div class="pop-up full-screen fixed z-14 bg-black3 center" 
+         id="otp-pop-up" 
+         data-visible="false" 
+         data-role="pop-up"
+         >
+      <div class="pop-up__content p-16 bg-white-500 round-corner relative">
+        <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Verify</div>
+        <div class="pop-up__body">
+          <form id="otp-form">
+            <div class="mb-4 grid-auto-to-1 gc-16 py-16 align-center">
+              <label for="otp" class="t-14">Please Enter Your OTP Code</label>
+              <input 
+                type="text" 
+                name="otp" 
+                id="otp" 
+                class="pop t-18"
+                required
+                maxlength="6"
+                minlength="6"
+                >
+            </div>
+          </form>
+        </div>
+        <div class="pop-up__footer fx-hor-between-ver-center">
+          <div class="t-12 t-bold">
+            Didn't receive the OTP? &nbsp; 
+            <a href="#" class="t-hover-primary t-secondary t-hover-underline">RESEND</a></div>
+          <button
+            type="submit"
+            form="otp-form"
+            class="brick fill primary"
+            >Verify
+          </button>
+        </div>
+        <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-otp-pop-up">
+          X
+        </div>
+      </div>
+    </div>
+    <!-- otp pop up ends -->
+    <!-- login pop up ends -->
+    <div class="pop-up full-screen fixed z-14 bg-black3 center" 
+         id="login-pop-up" 
+         data-visible="false" 
+         data-role="pop-up"
+         >
+      <div class="pop-up__content p-16 bg-white-500 round-corner relative">
+        <div class="pop-up__title t-30 t-light t-left t-primary mb-20">Login</div>
+        <div class="pop-up__body">
+          <form id="login-form">
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
+              <label for="phone" class="t-14">Phone Number</label>
+              <input 
+                type="text" 
+                name="phone" 
+                id="phone" 
+                class="pop t-18 kill-input"
+                maxlength="14"
+                minlength="11"
+                required>
+            </div>
+            <div class="mb-4 grid-1-to-2 gc-16 py-16 align-center">
+              <label for="password" class="t-14">Password</label>
+              <input 
+                type="password" 
+                name="phone" 
+                id="password" 
+                class="pop t-18 kill-input"
+                required>
+            </div>
+          </form>
+        </div>
+        <div class="pop-up__footer fx-hor-between-ver-center">
+          <div class="t-12 t-bold">Don't have account? &nbsp;<a href="#" id="open-registation" class="t-hover-primary t-secondary t-hover-underline">REGISTER</a></div>
+          <button 
+            type="submit" 
+            form="login-form" 
+            class="brick fill primary" 
+            id="log-in"
+            >Login
+          </button>
+        </div>
+        <div class="pop-up__close p-8 t-16 absolute right-top max-content pointer" id="close-login-pop-up">
+          X
+        </div>
+      </div>
+    </div>
+    <!-- login pop up ends -->
+  </body>
+</html>
+
+
