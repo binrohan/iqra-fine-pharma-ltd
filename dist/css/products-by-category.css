@@ -122,6 +122,10 @@ input[type=number] {
   justify-content: space-between;
 }
 
+.flex.justify-center {
+  justify-content: center;
+}
+
 .fx-row {
   flex-direction: row;
 }
@@ -2074,6 +2078,26 @@ div.brick.icon.big {
 }
 
 div.brick.icon.big img {
+  height: 100%;
+  width: 100%;
+}
+
+div.brick.icon.large {
+  width: 48px;
+  height: 488px;
+}
+
+div.brick.icon.large img {
+  height: 100%;
+  width: 100%;
+}
+
+div.brick.icon.extra-large {
+  width: 60px;
+  height: 60px;
+}
+
+div.brick.icon.extra-large img {
   height: 100%;
   width: 100%;
 }

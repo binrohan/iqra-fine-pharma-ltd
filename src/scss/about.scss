@@ -7,6 +7,8 @@
 @import 'icon';
 @import 'button-mixins';
 @import 'classes';
+@import 'cart';
+@import 'cart-product';
 @import 'nav';
 @import 'footer';
 @import 'media-xs';
@@ -27,12 +29,20 @@
 @import 'material';
 
 .about{
+    .container{
+        height: auto;
+    }
     h1{
         font-size: 2.5vw;
     }
+
+    & > div{
+        min-height: 75vh;
+
+    }
+
     .cover{
         width: 100vw;
-        height: 75vh;
         img{
             width: 80vw;
             max-width: 360px;
@@ -43,12 +53,74 @@
     .key-features{
         .key-features__items{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr auto;
 
             .mobile{
-                width: 250px;
+                width: 200px;
                 img{
                     max-width: 100%;
+                }
+            }
+
+            .feature-card{
+
+                .img{
+                    min-width: 60px;
+                }
+            }
+
+            .grid{
+                display: grid;
+                row-gap: 2rem;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media screen and (max-width: 768px){
+                .grid{
+                    grid-template-columns: 1fr;
+                }
+            }
+
+        }
+
+        @media screen and (max-width: 600px) {
+            .key-features__items{
+                grid-template-columns: 1fr;
+                row-gap: 2rem;
+            }
+        }
+    }
+
+    .mission{
+        .mission-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .img{
+                width: 100%;
+                img{
+                    max-width: 100%;
+                }
+            }
+
+            .text{
+                padding: 2vw;
+            }
+        }
+    }
+
+    .team{
+        .member{
+            width: 180px;
+            .img{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 0.25rem solid $color-primary;
+
+                img{
+                    width: 100%;
                 }
             }
         }

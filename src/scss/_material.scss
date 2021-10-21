@@ -281,4 +281,27 @@ div.brick.icon{
     width: 100%;
     }
   }
+
+  &.large{
+    width: 48px;
+    height: 488px;
+
+    img{
+    height: 100%;
+    width: 100%;
+    }
+  }
+
+  &.extra-large{
+    width: 60px;
+    height: 60px;
+
+    img{
+      height: 100%;
+      width: 100%;
+      }
+    
+  }
+
+  
 }
