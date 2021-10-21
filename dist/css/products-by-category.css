@@ -416,7 +416,7 @@ input[type=number] {
 }
 
 .nav-top__download .text {
-  color: #00a27a;
+  color: #C9151B;
 }
 
 .nav-top__download .icon {
@@ -604,7 +604,7 @@ input[type=number] {
 }
 
 .nav-bottom__items__btns:hover {
-  text-decoration: underline;
+  background: #f76e6e;
 }
 
 .nav-bottom__items__btns--ham {
@@ -1442,6 +1442,10 @@ input[type=number] {
 
 .category-list .categories__category__subs a:hover {
   background: #00a27a;
+}
+
+.pr-8 {
+  padding-right: 0.5rem;
 }
 
 .p-2 {

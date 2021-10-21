@@ -51,9 +51,9 @@
           <buttton class="nav-mid__logo--ham" id="drawer-toggle-btn">
             <img src="./icons/e-hamburger-black.svg" alt="" />
           </buttton>
-          <div class="logo-container">
+          <a class="logo-container block pointer" href="./index.html">
             <img src="./images/Fine Pharma3.png" alt="fine pharma logo" />
-          </div>
+          </a>
         </div>
         <div class="nav-mid__search">
           <input type="text" id="search" placeholder="Search by Trade or Generic Names" />
@@ -297,9 +297,27 @@
               <p class="t-bold t-primary">2800BDT</p>
             </div>
           </div>
-          <div class="card gc-4 pb-8 bb-1-gray">
+          <div class="card gc-4 pb-8 bb-1-gray mb-16">
             <div class="img">
-              <img src="./images/p (7).webp" alt="" class="w-max">
+              <img src="./images/b (2).webp" alt="" class="w-max">
+            </div>
+            <div class="details">
+              <p class="t-14 t-hover-underline pointer t-hover-primary mb-8">Some other product name with is similar</p>
+              <p class="t-bold t-primary">2800BDT</p>
+            </div>
+          </div>
+          <div class="card gc-4 pb-8 bb-1-gray mb-16">
+            <div class="img">
+              <img src="./images/b (3).webp" alt="" class="w-max">
+            </div>
+            <div class="details">
+              <p class="t-14 t-hover-underline pointer t-hover-primary mb-8">Some other product name with is similar</p>
+              <p class="t-bold t-primary">2800BDT</p>
+            </div>
+          </div>
+          <div class="card gc-4 pb-8 bb-1-gray mb-16">
+            <div class="img">
+              <img src="./images/b (3).jpg" alt="" class="w-max">
             </div>
             <div class="details">
               <p class="t-14 t-hover-underline pointer t-hover-primary mb-8">Some other product name with is similar</p>
@@ -317,15 +335,16 @@
           <div class="tabs__contents">
               <div class="tabs__content">
                 <div class="mb-24 t-justify">
-                  <p class="t-14"><strong class="t-uppercase">Hhomega Capsule: </strong>
-                    helps improve blood circulation and oxygen saturation. It helps supply a sufficient amount of the nutrients to the organs and tissues. It has a good influence on the central nervous system and due to this, it helps prevent problems with sleep. It also lowers the risk of depression will be reduced and enhances one's mood. 
+                  <h4 class="mb-12 t-uppercase t-bold t-14 t-primary">About Hhomega Capsule</h4>
+                  <p class="t-justify mb-8 t-14">
+                    Hhomega Capsule helps improve blood circulation and oxygen saturation. It helps supply a sufficient amount of the nutrients to the organs and tissues. It has a good influence on the central nervous system and due to this, it helps prevent problems with sleep. It also lowers the risk of depression will be reduced and enhances one's mood. 
                   </p>
                 </div>
                 <div class="mb-24">
                   
                 </div>
                 <div class="mb-24">
-                  <h4 class="mb-12 t-uppercase t-bold t-14">Benefit of Hhomega Capsule</h4>
+                  <h4 class="mb-12 t-uppercase t-bold t-14 t-primary">Benefit of Hhomega Capsule</h4>
                   <ul class="t-14">
                     <li class="mb-8 ml-12">It is useful in enhancing blood circulation</li>
                     <li class="mb-8 ml-12">It supplies the body with needed nutrients</li>
@@ -333,7 +352,7 @@
                   </ul>
                 </div>
                 <div class="mb-24">
-                  <h4 class="mb-12 t-uppercase t-bold t-14">Side effect of Hhomega Capsule</h4>
+                  <h4 class="mb-12 t-uppercase t-bold t-14 t-primary">Side effect of Hhomega Capsule</h4>
                   <p class="t-justify mb-8 t-14">
                     Most side effects do not require any medical attention and disappear as your body adjusts to the medicine. Consult your doctor if they persist or if you’re worried about them
                   </p>
@@ -345,15 +364,15 @@
                   </ul>
                 </div>
                 <div class="mb-24">
-                  <h4 class="mb-12 t-uppercase t-bold t-14">How to use Hhomega Capsule</h4>
+                  <h4 class="mb-12 t-uppercase t-bold t-14 t-primary">How to use Hhomega Capsule</h4>
                   <p class="t-justify t-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloribus quisquam architecto!</p>  
                 </div>
                 <div class="mb-24">
-                  <h4 class="mb-12 t-uppercase t-bold t-14">How Hhomega Capsule works</h4>
+                  <h4 class="mb-12 t-uppercase t-bold t-14 t-primary">How Hhomega Capsule works</h4>
                   <p class="t-justify t-14">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius facilis nostrum blanditiis possimus? Ad obcaecati totam expedita qui illo recusandae quia nulla fugiat quaerat commodi.</p>
                 </div>
                 <div class="mb-24">
-                  <h4 class="mb-12 t-uppercase t-bold t-14">Safety advice of Hhomega Capsule Tablet</h4>
+                  <h4 class="mb-12 t-uppercase t-bold t-14 t-primary">Safety advice of Hhomega Capsule Tablet</h4>
                   <ul class="t-14 kill">
                     <li class="mb-8 ml-12">
                       <div class="flex justify-start align-center gc-16 mb-12">
@@ -378,7 +397,7 @@
                     <li class="mb-8 ml-12">
                       <div class="flex justify-start align-center gc-16 mb-12">
                         <div class="img brick icon big">
-                          <img src="./icons/breast-feeding.svg" alt="">
+                          <img src="./icons/breast-feeding.svg" class="custom-size" alt="">
                         </div>
                         <h6 class="t-bold t-14">Breast Feeding</h6>
                         <span class="brick chips primary medium t-uppercase t-light">SAFE IF PRESCRIBED</span>
@@ -417,15 +436,19 @@
                     </li>
                 </div>
                 <div class="mb-24">
-                  <h4 class="mb-12 t-uppercase t-bold t-14">What if you forget to take Hhomega Capsule?</h4>
+                  <h4 class="mb-12 t-uppercase t-bold t-14 t-primary">What if you forget to take Hhomega Capsule?</h4>
                   <p class="mb-8 t-capitalize t-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vero laudantium doloribus!</p>
                 </div>
                 <div class="mb-24">
-                  <h4 class="mb-12 t-uppercase t-bold t-14">Quick Tips</h4>
+                  <h4 class="mb-12 t-uppercase t-bold t-14 t-primary">Quick Tips</h4>
                   <ul class="t-14">
                     <li class="mb-8 ml-12">Lorem ipsum dolor sit amet.</li>
                     <li class="mb-8 ml-12">Lorem, ipsum dolor.</li>
                   </ul>
+                </div>
+                <div class="mb-24">
+                  <h4 class="mb-12 t-uppercase t-bold t-14 t-primary">Disclaimer</h4>
+                  <p class="mb-8 t-capitalize t-14">The information provided here is for informational purposes only. This may not cover all possible side effects, drug interactions or warnings or alerts. Please consult your doctor and discuss all your queries related to any disease or medicine. We intend to support, not replace, the doctor-patient relationship.</p>
                 </div>
               </div>
               <div class="tabs__content">

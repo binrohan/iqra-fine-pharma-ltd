@@ -41,7 +41,7 @@
     column-gap: 1rem;
 
     .text {
-      color: $color-parmary;
+      color: #C9151B;
     }
 
     .icon {
@@ -169,7 +169,7 @@
       color: $color-text-secondary;
 
       &:hover{
-        text-decoration: underline;
+        background: #f76e6e;
       }
 
       &--ham {
