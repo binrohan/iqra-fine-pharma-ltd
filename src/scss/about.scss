@@ -21,6 +21,7 @@
 @import 'media-lg';
 @import 'drawer';
 @import 'search-result';
+
 @import 'category-list';
 @import 'layout';
 @import 'visual';
@@ -29,100 +30,64 @@
 @import 'material';
 
 .about{
-    .container{
-        height: auto;
-    }
-    h1{
-        font-size: 2.5vw;
-    }
-
-    & > div{
-        min-height: 75vh;
-
+    & > div:nth-child(even){
+        background: $color-bg;
     }
 
     .cover{
-        width: 100vw;
-        img{
-            width: 80vw;
-            max-width: 360px;
+        .img{
+            background-image: url('../images/about-cover.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 60vh;
+            display: grid;
+            place-items: center;
+
+            h1{
+                line-height: 1.5em;
+            }
         }
-        
     }
 
-    .key-features{
-        .key-features__items{
-            display: grid;
-            grid-template-columns: 1fr auto;
+    .about__about{
+        .grid{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
 
-            .mobile{
-                width: 200px;
-                img{
-                    max-width: 100%;
-                }
+            .card{
+                max-width: 250px;
             }
+        }
+    }
 
-            .feature-card{
+    .member{
+        .grid{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            .card{
+                max-width: 250px;
 
                 .img{
-                    min-width: 60px;
-                }
-            }
+                    width: 80%;
+                    height: 80%;
+                    border-radius: 50%;
+                    border: 2px solid $color-primary;
+                    overflow: hidden;
+                    margin-bottom: 1rem;
 
-            .grid{
-                display: grid;
-                row-gap: 2rem;
-                grid-template-columns: 1fr 1fr;
-            }
-
-            @media screen and (max-width: 768px){
-                .grid{
-                    grid-template-columns: 1fr;
-                }
-            }
-
-        }
-
-        @media screen and (max-width: 600px) {
-            .key-features__items{
-                grid-template-columns: 1fr;
-                row-gap: 2rem;
-            }
-        }
-    }
-
-    .mission{
-        .mission-grid{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-
-            .img{
-                width: 100%;
-                img{
-                    max-width: 100%;
-                }
-            }
-
-            .text{
-                padding: 2vw;
-            }
-        }
-    }
-
-    .team{
-        .member{
-            width: 180px;
-            .img{
-                width: 150px;
-                height: 150px;
-                border-radius: 50%;
-                overflow: hidden;
-                border: 0.25rem solid $color-primary;
-
-                img{
-                    width: 100%;
+                    img{
+                        max-width: 100%;
+                    }
                 }
             }
         }
     }
+
+    
 }
