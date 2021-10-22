@@ -98,6 +98,14 @@ button.brick {
         background-color: darken($color-secondary, 10);
       }
     }
+    &.warning {
+      background-color: #ff9800;
+      color: $color-text-primary;
+
+      &:hover {
+        background-color: darken(#ff9800, 10);
+      }
+    }
   }
 
   &.icon {
@@ -120,6 +128,15 @@ button.brick {
 
       &:hover {
         background: lighten($color-primary, 50%);
+      }
+    }
+
+    &.warning {
+      border: 1px solid #ff9800;
+      color: $color-text-gray;
+
+      &:hover {
+        background: lighten(#ff9800, 40%);
       }
     }
   }

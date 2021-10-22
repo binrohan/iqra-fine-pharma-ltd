@@ -2159,6 +2159,15 @@ button.brick.fill.secondary:hover {
   background-color: #cf112f;
 }
 
+button.brick.fill.warning {
+  background-color: #ff9800;
+  color: #222222;
+}
+
+button.brick.fill.warning:hover {
+  background-color: #cc7a00;
+}
+
 button.brick.icon {
   display: flex;
   column-gap: 0;
@@ -2187,6 +2196,15 @@ button.brick.outline.primary {
 
 button.brick.outline.primary:hover {
   background: #a2ffe8;
+}
+
+button.brick.outline.warning {
+  border: 1px solid #ff9800;
+  color: #686868;
+}
+
+button.brick.outline.warning:hover {
+  background: #ffeacc;
 }
 
 span.brick.chips.medium {
