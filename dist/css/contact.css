@@ -210,6 +210,10 @@ input[type=number] {
   font-size: 3rem;
 }
 
+.t-20w {
+  font-size: 2vw;
+}
+
 .line-height {
   line-height: 1.5em;
 }
@@ -1790,6 +1794,14 @@ input[type=number] {
   padding: 1rem;
 }
 
+.p-20 {
+  padding: 1.25rem;
+}
+
+.p-24 {
+  padding: 1.5rem;
+}
+
 .pb-8 {
   padding-bottom: 0.5rem;
 }
@@ -1855,6 +1867,10 @@ input[type=number] {
 
 .mb-16 {
   margin-bottom: 1rem;
+}
+
+.mb-18 {
+  margin-bottom: 1.125rem;
 }
 
 .mb-20 {
@@ -2396,7 +2412,6 @@ div.brick.icon.extra-large img {
   display: flex;
   gap: 5rem;
   justify-content: space-between;
-  border: 1px solid #00a27a;
   border-radius: 0.125rem;
   background: #fafafa;
 }
